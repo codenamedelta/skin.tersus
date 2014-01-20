@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<includes>
+
+	<!-- POSTERLIST SELECTION BUTTON -->
+	<variable name="PosterListSelectionButton">
+		<value condition="[Container.Content(tvshows) | Container.Content(seasons)] | Container.Content(movies)]">skindefault/ui/views/buttonhoverposterlist.png</value>
+		<value condition="Container.Content(episodes)">skindefault/ui/views/buttonhoverposterlistepisodes.png</value>
+	</variable>	
+	
+</includes>

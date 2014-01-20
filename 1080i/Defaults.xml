@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Foundation -->
+<includes>
+
+	<default type="label">
+		<left>0</left>
+		<top>0</top>
+		<label>-</label>
+		<height>66</height>
+		<align>left</align>
+		<aligny>center</aligny>
+		<font>Small</font>
+		<textcolor>T00-C03</textcolor>
+		<focusedcolor>White</focusedcolor>
+		<selectedcolor>T00-C01</selectedcolor>
+		<disabledcolor>Red</disabledcolor>
+	</default>
+
+	<default type="fadelabel">
+		<left>0</left>
+		<top>0</top>
+		<height>66</height>
+		<label>-</label>
+		<align>left</align>
+		<aligny>center</aligny>
+		<font>Small</font>
+		<textcolor>White</textcolor>
+		<focusedcolor>White</focusedcolor>
+		<selectedcolor>White</selectedcolor>
+		<disabledcolor>Red</disabledcolor>
+		<scrollout>false</scrollout>
+		<pauseatend>2000</pauseatend>
+	</default>
+
+	<default type="image">
+		<left>0</left>
+		<top>0</top>
+		<width>-</width>
+		<height>-</height>
+		<align>center</align>
+		<aligny>center</aligny>
+		<texture>-</texture>
+	</default>
+
+	<default type="button">
+		<left>0</left>
+		<top>0</top>
+		<width>450</width>
+		<height>75</height>
+		<align>center</align>
+		<aligny>center</aligny>
+		<font>Small</font>
+		<label>-</label>
+		<textoffsetx>15</textoffsetx>
+		<textcolor>T00-C01</textcolor>
+		<focusedcolor>T00-C01</focusedcolor>
+		<disabledcolor>T00-C04</disabledcolor>
+		<texturefocus border="5">skindefault/ui/buttonhover.png</texturefocus>
+		<pulseonselect>false</pulseonselect>
+	</default>
+
+	<default type="togglebutton">
+		<left>0</left>
+		<top>0</top>
+		<width>450</width>
+		<height>75</height>
+		<label>-</label>
+		<textoffsetx>15</textoffsetx>
+		<font>Small</font>
+		<textcolor>T00-C01</textcolor>
+		<focusedcolor>White</focusedcolor>
+		<disabledcolor>T00-C04</disabledcolor>
+		<texturefocus border="5">other_textures/ButtonFo.png</texturefocus>
+		<alttexturenofocus border="2">other_textures/ButtonNF.png</alttexturenofocus>
+		<alttexturefocus border="5">other_textures/ButtonFo.png</alttexturefocus>
+		<align>center</align>
+		<aligny>center</aligny>
+		<pulseonselect>false</pulseonselect>
+	</default>
+
+	<default type="radiobutton">
+		<left>0</left>
+		<top>0</top>
+		<width>450</width>
+		<height>75</height>
+		<align>center</align>
+		<aligny>center</aligny>
+		<font>Small</font>
+		<label>-</label>
+		<textcolor>T00-C01</textcolor>
+		<focusedcolor>T00-C01</focusedcolor>
+		<disabledcolor>T00-C04</disabledcolor>
+		<radiowidth>48</radiowidth>
+		<radioheight>48</radioheight>
+		<texturefocus border="5">skindefault/ui/buttonhover.png</texturefocus>
+		<textureradiofocus>skindefault/ui/radiobuttonfo.png</textureradiofocus>
+		<textureradionofocus>skindefault/ui/radiobuttonnf.png</textureradionofocus>
+		<textoffsetx>15</textoffsetx>
+		<pulseonselect>false</pulseonselect>
+	</default>
+
+	<default type="spincontrolex">
+		<left>0</left>
+		<top>0</top>
+		<width>450</width>
+		<height>75</height>
+		<label>-</label>
+		<font>Small</font>
+		<spinwidth>48</spinwidth>
+		<spinheight>48</spinheight>
+		<texturefocus border="5">skindefault/ui/buttonhover.png</texturefocus>
+		<textureup>skindefault/ui/spinarrownfup.png</textureup>
+		<texturedown>skindefault/ui/spinarrownfdown.png</texturedown>
+		<textureupfocus>skindefault/ui/spinarrowfoup.png</textureupfocus>
+		<texturedownfocus>skindefault/ui/spinarrowfodown.png</texturedownfocus>
+		<textcolor>T00-C01</textcolor>
+		<focusedcolor>T00-C01</focusedcolor>
+		<disabledcolor>T00-C04</disabledcolor>
+		<textoffsetx>15</textoffsetx>
+		<align>left</align>
+		<aligny>center</aligny>
+		<reverse>yes</reverse>
+		<pulseonselect>false</pulseonselect>
+	</default>
+
+	<default type="spincontrol">
+		<left>0</left>
+		<top>0</top>
+		<height>23</height>
+		<width>23</width>
+		<spinwidth>39</spinwidth>
+		<spinheight>39</spinheight>
+		<textureup>other_textures/ArrowUpNF.png</textureup>
+		<texturedown>other_textures/ArrowDownNF.png</texturedown>
+		<textureupfocus>other_textures/ArrowUpFo.png</textureupfocus>
+		<texturedownfocus>other_textures/ArrowDownFo.png</texturedownfocus>
+		<font>Small</font>
+		<textcolor>White</textcolor>
+		<focusedcolor>White</focusedcolor>
+		<disabledcolor>Red</disabledcolor>
+		<textoffsetx>15</textoffsetx>
+		<align>left</align>
+		<aligny>center</aligny>
+		<reverse>yes</reverse>
+		<pulseonselect>false</pulseonselect>
+	</default>
+
+	<default type="sliderex">
+		<left>0</left>
+		<top>0</top>
+		<height>66</height>
+		<width>450</width>
+		<texturenofocus border="2">other_textures/ButtonNF.png</texturenofocus>
+		<texturefocus border="5">other_textures/ButtonFO.png</texturefocus>
+		<sliderwidth>230</sliderwidth>
+		<sliderheight>23</sliderheight>
+		<texturesliderbar>other_textures/OSD/slider_bg.png</texturesliderbar>
+		<textureslidernib border="2">other_textures/OSD/SliderNibNF.png</textureslidernib>
+		<textureslidernibfocus border="2">other_textures/OSD/SliderNibFO.png</textureslidernibfocus>
+		<font>Small</font>
+		<textcolor>White</textcolor>
+		<focusedcolor>White</focusedcolor>
+		<disabledcolor>Red</disabledcolor>
+		<textoffsetx>15</textoffsetx>
+		<textoffsety>0</textoffsety>
+	</default>
+
+	<default type="progress">
+		<left>345</left>
+		<top>488</top>
+		<texturebg border="6">other_textures/OSD/ProgressBack.png</texturebg>
+		<lefttexture>-</lefttexture>
+		<midtexture border="6">other_textures/OSD/ProgressMid.png</midtexture>
+		<righttexture>-</righttexture>
+		<overlaytexture>-</overlaytexture>
+	</default>
+
+	<default type="slider">
+		<left>0</left>
+		<top>0</top>
+		<width>360</width>
+		<height>23</height>
+		<texturefocus>-</texturefocus>
+		<texturenofocus>-</texturenofocus>
+		<texturesliderbar>other_textures/OSD/slider_bg_2.png</texturesliderbar>
+		<textureslidernib border="2">other_textures/OSD/SliderNibNF.png</textureslidernib>
+		<textureslidernibfocus border="2">other_textures/OSD/SliderNibFO.png</textureslidernibfocus>
+	</default>
+
+	<default type="scrollbar">
+		<width>38</width>
+		<texturesliderbackground border="0,14,0,14">other_textures/ScrollBarV.png</texturesliderbackground>
+		<texturesliderbar border="0,14,0,14">other_textures/ScrollBarV_bar_focus.png</texturesliderbar>
+		<texturesliderbarfocus border="0,14,0,14">other_textures/ScrollBarV_bar_focus.png</texturesliderbarfocus>
+		<textureslidernib>other_textures/ScrollBarNib.png</textureslidernib>
+		<textureslidernibfocus>other_textures/ScrollBarNib.png</textureslidernibfocus>
+		<showonepage>true</showonepage>
+		<orientation>vertical</orientation>
+	</default>
+
+	<default type="textbox">
+		<label>-</label>
+		<font>Small</font>
+		<textcolor>white</textcolor>
+		<shadowcolor>black</shadowcolor>
+		<pagecontrol>61</pagecontrol>
+		<autoscroll delay="6000" time="3000" repeat="10000"/>
+	</default>
+
+</includes>

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Foundation -->
+<window id="12">
+	<defaultcontrol always="true">3</defaultcontrol>
+	<allowoverlay>yes</allowoverlay>
+
+	<controls>
+
+		<include>GlobalBackground</include>	
+			
+		<control type="image">
+			<left>96</left>
+			<top>108</top>
+			<height>861</height>
+			<width>355</width>
+			<texture colordiffuse="$VAR[ColorDiffuseSettingsLeftPanel]">skindefault/colordiffuse/white100solid.png</texture>
+		</control>
+		
+		<control type="image">
+			<left>461</left>
+			<top>108</top>
+			<height>861</height>
+			<width>1363</width>
+			<texture colordiffuse="$VAR[ColorDiffuseSettingsRightPanel]">skindefault/colordiffuse/white100solid.png</texture>
+		</control>
+		
+		<control type="image">
+			<left>96</left>
+			<top>128</top>
+			<height>75</height>
+			<width>355</width>
+			<texture>skindefault/logos/tersus.png</texture>
+		</control>
+		
+		<include>GlobalDateClock</include>
+
+		<control type="grouplist" id="3">
+			<description>Button Area</description>
+			<left>96</left>
+			<top>225</top>
+			<width>355</width>
+			<height>727</height>
+			<itemgap>3</itemgap>
+			<onleft>5</onleft>
+			<onright>5</onright>
+			<onup>20</onup>
+			<ondown>20</ondown>
+			<orientation>vertical</orientation>
+
+		</control>
+		
+		<control type="button" id="20">
+				<description>Setting level button</description>
+				<left>96</left>
+				<top>895</top>
+				<height>50</height>
+				<width>355</width>
+				<align>left</align>
+				<label>10037</label>
+				<font>SettingsLarge</font>
+				<textcolor>T00-C03</textcolor>
+				<onleft>5</onleft>
+				<onright>5</onright>
+				<onup>3</onup>
+				<ondown>3</ondown>
+				<onclick>SettingsLevelChange</onclick>
+		</control>
+		
+		<control type="label">
+				<left>111</left>
+				<top>865</top>
+				<height>25</height>
+				<width>355</width> 
+				<label>31142</label> 
+				<font>SettingsSmall</font>
+				<textcolor>T00-C05</textcolor> 
+				<align>left</align> 
+				<aligny>center</aligny>
+		</control>
+		
+		<control type="grouplist" id="5">
+			<description>Control Area</description>
+			<left>461</left>
+			<top>175</top>
+			<width>1363</width>
+			<height>727</height>
+			<itemgap>3</itemgap>
+			<onleft>3</onleft>
+			<onright>3</onright>
+			<onup>5</onup>
+			<ondown>5</ondown>
+			<orientation>vertical</orientation>
+		</control>
+
+		<control type="button" id="7">
+			<description>Default Button</description>
+			<align>left</align>
+			<height>75</height>
+			<font>SettingsMedium</font>
+		</control>
+
+		<control type="radiobutton" id="8">
+			<description>Default Radio Button</description>
+			<radioposx>1262</radioposx>
+			<align>left</align>
+			<font>SettingsMedium</font>
+		</control>
+
+		<control type="spincontrolex" id="9">
+			<description>Default Spin Control</description>
+			<align>left</align>
+			<font>SettingsMedium</font>
+		</control>
+
+		<control type="button" id="10">
+			<description>Default Category Button</description>
+			<align>left</align>
+			<font>SettingsLarge</font>
+			<textcolor>T00-C03</textcolor>
+		</control>
+
+	</controls>
+
+</window>

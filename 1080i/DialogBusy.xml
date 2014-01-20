@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Foundation -->
+<window id="136">
+	<defaultcontrol always="true">-</defaultcontrol>
+	<allowoverlay>yes</allowoverlay>
+
+	<controls>
+
+		<include>GlobalOverlay</include>
+
+		<control type="group">
+			<left>896</left>
+			<top>476</top>
+
+			<control type="image">
+				<description>Busy animation</description>
+				<width>128</width>
+				<height>128</height>
+				<texture>$INFO[Skin.CurrentTheme]/ui/busy.png</texture>
+				<aspectratio>keep</aspectratio>
+				<animation effect="rotate" start="0" end="360" center="64,64" time="3000" loop="true" condition="true">conditional</animation>
+			</control>
+
+		</control>
+
+	</controls>
+
+</window>

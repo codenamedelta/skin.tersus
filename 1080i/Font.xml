@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Foundation -->
+<fonts>
+	<fontset id="default" unicode="true">
+		<!-- HOME FONT -->
+		<font>
+			<name>Home</name>
+			<filename>NCS.ttf</filename>
+			<size>100</size>
+		</font>
+		<!-- GLOBAL FONTS -->
+		<font>
+			<name>XLarge</name>
+			<filename>NCS.ttf</filename>
+			<size>60</size>
+		</font>
+		<font>
+			<name>Large</name>
+			<filename>NCS.ttf</filename>
+			<size>48</size>
+		</font>
+		<font>
+			<name>Medium</name>
+			<filename>NCS.ttf</filename>
+			<size>39</size>
+		</font>
+		<font>
+			<name>Small</name>
+			<filename>NCS.ttf</filename>
+			<size>30</size>
+		</font>
+		<font>
+			<name>XLargeCAP</name>
+			<style>uppercase</style>
+			<filename>NCS.ttf</filename>
+			<size>60</size>
+		</font>
+		<font>
+			<name>LargeCAP</name>
+			<style>uppercase</style>
+			<filename>NCS.ttf</filename>
+			<size>48</size>
+		</font>
+		<font>
+			<name>MediumCAP</name>
+			<style>uppercase</style>
+			<filename>NCS.ttf</filename>
+			<size>39</size>
+		</font>
+		<font>
+			<name>SmallCAP</name>
+			<style>uppercase</style>
+			<filename>NCS.ttf</filename>
+			<size>30</size>
+		</font>
+		<!-- VIEW FONTS -->
+		<font>
+			<name>ViewFontMedium</name>
+			<style>uppercase</style>
+			<filename>NCS.ttf</filename>
+			<size>40</size>
+		</font>
+		<font>
+			<name>ViewFontSmall</name>
+			<style>uppercase</style>
+			<filename>NCS.ttf</filename>
+			<size>30</size>
+		</font>
+		<!-- SETTINGS FONTS -->
+		<font>
+			<name>SettingsLarge</name>
+			<style>uppercase</style>
+			<filename>NCS.ttf</filename>
+			<size>39</size>
+		</font>
+		<font>
+			<name>SettingsMedium</name>
+			<!--<style>uppercase</style>-->
+			<filename>NCS.ttf</filename>
+			<size>35</size>
+		</font>
+		<font>
+			<name>SettingsSmall</name>
+			<style>uppercase</style>
+			<filename>NCS.ttf</filename>
+			<size>30</size>
+		</font>
+		<!-- Required for system -->
+		<font>
+			<name>font13</name>
+			<filename>Arial.ttf</filename>
+			<size>30</size>
+		</font>
+	</fontset>
+</fonts>

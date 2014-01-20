@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Foundation -->
+<window id="2903">
+	<defaultcontrol always="true">2</defaultcontrol>
+	<allowoverlay>yes</allowoverlay>
+
+	<controls>
+
+		<control type="group">
+			<posx>30</posx>
+			<posy>177</posy>
+
+			<control type="group">
+
+				<visible>!Window.IsActive(visualisation) + !Window.IsActive(karaoke)</visible>
+
+				<control type="label">
+					<description>Now Playing Info</description>
+					<width>720</width>
+					<angle>270</angle>
+					<font>SmallCAP</font>
+					<label>$INFO[MusicPlayer.Title,[COLOR=DarkBlue]$LOCALIZE[13350] [/COLOR],]$INFO[MusicPlayer.Artist, - ,]</label>
+					<scroll>true</scroll>
+				</control>
+
+			</control>
+
+		</control>
+
+	</controls>
+
+</window>

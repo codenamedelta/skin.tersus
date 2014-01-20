@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Foundation -->
+<window id="107">
+	<defaultcontrol always="true">402</defaultcontrol>
+	<allowoverlay>yes</allowoverlay>
+
+	<controls>
+
+		    <control type="group">
+			<left>1260</left>
+			<top>0</top>
+
+			<control type="image">
+				<description>background image</description>
+				<left>0</left>
+				<top>0</top>
+				<width>610</width>
+				<height>90</height>
+				<texture>$INFO[Skin.CurrentTheme]/ui/views/contentpanelbg.png</texture>
+			</control>
+
+			<control type="image" id="400">
+				<left>4</left>
+				<top>4</top>
+				<width>82</width>
+				<height>82</height>
+				<aspectratio>keep</aspectratio>
+				<!--<texture>$INFO[Skin.CurrentTheme]/ui/busy.png</texture>
+				<animation effect="rotate" start="0" end="360" center="45,45" time="3000" loop="true" condition="true">conditional</animation>-->
+				<texture>DefaultFile.png</texture>
+			</control>
+
+			<control type="fadelabel" id="401">
+				<left>156</left>
+				<top>42</top>
+				<width>459</width>
+				<height>48</height>
+				<scroll>true</scroll>
+			</control>
+
+			<control type="fadelabel" id="402">
+				<left>156</left>
+				<top>4</top>
+				<width>459</width>
+				<height>48</height>
+				<scroll>true</scroll>
+			</control>
+
+			<control type="image" id="403">
+				<left>4</left>
+				<top>4</top>
+				<width>82</width>
+				<height>82</height>
+				<aspectratio>keep</aspectratio>
+				<visible>false</visible>
+				<texture>DefaultIconInfo.png</texture>
+			</control>
+
+			<control type="image" id="404">
+				<left>4</left>
+				<top>4</top>
+				<width>82</width>
+				<height>82</height>
+				<aspectratio>keep</aspectratio>
+				<visible>false</visible>
+				<texture>DefaultIconWarning.png</texture>
+			</control>
+
+			<control type="image" id="405">
+				<left>4</left>
+				<top>4</top>
+				<width>82</width>
+				<height>82</height>
+				<aspectratio>keep</aspectratio>
+				<visible>false</visible>
+				<texture>DefaultIconError.png</texture>
+			</control>
+
+		</control>
+
+	</controls>
+
+</window>

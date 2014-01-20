@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Foundation -->
+<window id="0">
+	<defaultcontrol always="true">300</defaultcontrol>
+	<allowoverlay>yes</allowoverlay>
+
+	<controls>
+
+		<include>GlobalBackground</include>
+		<include>GlobalDateClock</include>
+
+		<control type="wraplist" id="300">
+			<description>Home Wraplist</description>
+			<left>0</left>
+			<top>108</top>
+			<width>1920</width>
+			<height>872</height>
+			<onup>300</onup>
+			<ondown>300</ondown>
+			<onleft>300</onleft>
+			<onright>300</onright>
+			<focusposition>3</focusposition>
+			<scrolltime>200</scrolltime>
+
+			<itemlayout width="800" height="132">
+
+				<control type="label">
+					<left>1300</left>
+					<width>800</width>
+					<height>80</height>
+					<font>Home</font>
+					<info>ListItem.Label</info>
+					<align>left</align>
+				</control>
+
+			</itemlayout>
+
+			<focusedlayout width="810" height="132">
+
+				<control type="label">
+					<left>1300</left>
+					<width>800</width>
+					<height>80</height>
+					<info>ListItem.Label</info>
+					<font>Home</font>
+					<textcolor>T00-C02</textcolor>
+					<align>left</align>
+				</control>
+
+			</focusedlayout>
+
+			<content>
+				<item id="1">
+					<label>31010</label>
+					<onclick>ActivateWindow(weather)</onclick>
+				</item>
+				<item id="2">
+					<label>31005</label>
+					<onclick>ActivateWindow(Pictures,return)</onclick>
+				</item>
+				<item id="3">
+					<label>31003</label>
+					<onclick>ActivateWindow(Video,Files,return)</onclick>
+				</item>
+				<item id="4">
+					<label>31006</label>
+					<onclick>ActivateWindow(Video,movietitles,return)</onclick>
+					<visible>Library.HasContent(Movies)</visible>
+				</item>
+				<item id="5">
+					<label>31007</label>
+					<onclick>ActivateWindow(Video,tvshowtitles,return)</onclick>
+					<visible>Library.HasContent(TVShows)</visible>
+				</item>
+				<item id="6">
+					<label>31004</label>
+					<onclick>ActivateWindow(Music,return)</onclick>
+				</item>
+				<item id="7">
+					<label>31002</label>
+					<onclick>ActivateWindow(Programs,Addons,return)</onclick>
+				</item>
+				<item id="8">
+					<label>31012</label>
+					<onclick>ActivateWindow(settings)</onclick>
+				</item>
+				<item id="9">
+					<label>31008</label>
+					<onclick>ActivateWindow(Favourites,return)</onclick>
+				</item>
+				<item id="10">
+					<label>31013</label>
+					<onclick>ActivateWindow(shutdownmenu)</onclick>
+				</item>
+				<item id="11">
+					<label>31014</label>
+					<onclick>PlayDVD</onclick>
+					<visible>System.HasMediadvd</visible>
+				</item>
+			</content>
+
+		</control>
+		
+		<include>HomeScreenIcons</include>
+
+		<control type="rss">
+			<description>RSS Feed</description>
+			<left>0</left>
+			<top>1035</top>
+			<width>1920</width>
+			<height>21</height>
+			<font>Small</font>
+			<urlset>1</urlset>
+			<titlecolor>Red</titlecolor>
+			<headlinecolor>White</headlinecolor>
+			<textcolor>White</textcolor>
+		</control>
+
+	</controls>
+
+</window>

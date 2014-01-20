@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<includes>
+
+<!-- SETTINGS VARIABLES -->
+	<!-- COLOR DIFFUSE - SETTINGS ICONS -->
+	<variable name="ColorDiffuseSettingsIcons">		
+		<!-- SETTINGS ICONS - DEFAULT THEME -->
+		<value condition="[Skin.HasTheme(skindefault)]">T00-C04</value>
+	</variable>
+	
+	<!-- COLOR DIFFUSE - SETTINGS LEFT PANEL BG -->
+	<variable name="ColorDiffuseSettingsLeftPanel">		
+		<!-- SETTINGS LEFT PANEL BG - DEFAULT THEME -->
+		<value condition="[Skin.HasTheme(skindefault)]">T00-C04</value>
+	</variable>
+	
+	<!-- COLOR DIFFUSE - SETTINGS RIGHT PANEL BG -->
+	<variable name="ColorDiffuseSettingsRightPanel">		
+		<!-- SETTINGS RIGHT PANEL BG - DEFAULT THEME -->
+		<value condition="[Skin.HasTheme(skindefault)]">T00-C06</value>
+	</variable>
+	
+	<!-- COLOR DIFFUSE - SETTINGS SELECTION -->
+	<variable name="ColorDiffuseSettingsSelection">		
+		<!-- SETTINGS SELECTION - DEFAULT THEME -->
+		<value condition="[Skin.HasTheme(skindefault)]">T00-C03</value>
+	</variable>
+	
+<!-- VIDEO NAVIGATION VARIABLES -->	
+	<!-- COLOR DIFFUSE - NAVIGATION BG -->
+	<variable name="ColorDiffuseNavigationPanel">		
+		<!-- NAVIGATION PANEL BG - DEFAULT THEME -->
+		<value condition="[Skin.HasTheme(skindefault)]">T00-C06</value>
+	</variable>
+	
+<!-- POSTERLIST VIEW VARIABLES -->	
+	<!-- COLOR DIFFUSE - POSTERLIST CONTENT PANEL BG -->
+	<variable name="ColorDiffusePosterListContentPanel">		
+		<!-- CONTENT PANEL BG - DEFAULT THEME -->
+		<value condition="[Skin.HasTheme(skindefault)]">T00-C06</value>
+	</variable>
+	
+	<!-- COLOR DIFFUSE - POSTERLIST POSTER BORDER -->
+	<variable name="ColorDiffusePosterListPosterBorder">		
+		<!-- POSTER BORDER - DEFAULT THEME -->
+		<value condition="[Skin.HasTheme(skindefault)]">T00-C06</value>
+	</variable>
+	
+	<!-- COLOR DIFFUSE - POSTERLIST SELECTION -->
+	<variable name="ColorDiffusePosterListSelection">		
+		<!-- FOCUSED LAYOUT - DEFAULT THEME -->		
+		<value condition="[Skin.HasTheme(skindefault)]">T00-C06</value>
+	</variable>
+	
+	<!-- COLOR DIFFUSE - POSTERLIST FLAGS -->
+	<variable name="ColorDiffusePosterListFlags">		
+		<!-- FLAGS - DEFAULT THEME -->		
+		<value condition="[Skin.HasTheme(skindefault)]">T00-C01</value>
+	</variable>
+	
+	<!-- COLOR DIFFUSE - POSTERLIST PLOT BG -->
+	<variable name="ColorDiffusePosterListPlot">		
+		<!-- PLOT BG - DEFAULT THEME -->		
+		<value condition="[Skin.HasTheme(skindefault)]">T00-C05</value>
+	</variable>
+	
+	<!-- COLOR DIFFUSE - POSTERLIST WATCHED OVERLAY -->
+	<variable name="ColorDiffusePosterListOverlay">		
+		<!-- WATCHED OVERLAY - DEFAULT THEME -->		
+		<value condition="[Skin.HasTheme(skindefault)]">T00-C01</value>
+	</variable>
+	
+</includes>
