@@ -1,6 +1,79 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <includes>
+<!-- GLOBAL VARIABLES -->
+	<!-- COLOR DIFFUSE - GLOBAL OVERLAY -->
+	<variable name="ColorDiffuseGlobalOverlay">		
+		<!-- GLOBAL OVERLAY - DEFAULT THEME -->
+		<value condition="[Skin.HasTheme(skindefault)]">T00-C05</value>
+		<!-- GLOBAL OVERLAY - AUTUMN THEME -->
+		<value condition="[Skin.HasTheme(autumn)]">T01-C02</value>
+	</variable>
+	
+	<!-- COLOR DIFFUSE - GLOBAL BACKGROUND -->
+	<variable name="ColorDiffuseGlobalBackground">		
+		<!-- GLOBAL BACKGROUND - DEFAULT THEME -->
+		<value condition="[Skin.HasTheme(skindefault)]">T00-C05</value>
+		<!-- GLOBAL BACKGROUND - AUTUMN THEME -->
+		<value condition="[Skin.HasTheme(autumn)]">T01-C02</value>
+	</variable>
+	
+	<!-- COLOR DIFFUSE - GLOBAL DATE CLOCK -->
+	<variable name="ColorDiffuseGlobalDateClock">		
+		<!-- GLOBAL DATE CLOCK - DEFAULT THEME -->
+		<value condition="[Skin.HasTheme(skindefault)]">T00-C04</value>
+		<!-- GLOBAL DATE CLOCK - AUTUMN THEME -->
+		<value condition="[Skin.HasTheme(autumn)]">T01-C03</value>
+	</variable>
+	
+	<!-- COLOR DIFFUSE - GLOBAL DATE CLOCK HOME/SETTINGS TEXT -->
+	<variable name="ColorDiffuseGlobalDateClockHomeSettingsText">		
+		<!-- GLOBAL DATE CLOCK HOME/SETTINGS TEXT - DEFAULT THEME -->
+		<value condition="[Skin.HasTheme(skindefault)]">T00-C06</value>
+		<!-- GLOBAL DATE CLOCK HOME/SETTINGS TEXT - AUTUMN THEME -->
+		<value condition="[Skin.HasTheme(autumn)]">T01-C02</value>
+	</variable>
+	
+	<!-- COLOR DIFFUSE - GLOBAL DATE CLOCK HOME/SETTINGS ALT TEXT -->
+	<variable name="ColorDiffuseGlobalDateClockHomeSettingsAltText">		
+		<!-- GLOBAL DATE CLOCK HOME/SETTINGS ALT TEXT - DEFAULT THEME -->
+		<value condition="[Skin.HasTheme(skindefault)]">T00-C05</value>
+		<!-- GLOBAL DATE CLOCK HOME/SETTINGS ALT TEXT - AUTUMN THEME -->
+		<value condition="[Skin.HasTheme(autumn)]">T01-C02</value>
+	</variable>
+	
+	<!-- COLOR DIFFUSE - GLOBAL DATE CLOCK TEXT -->
+	<variable name="ColorDiffuseGlobalDateClockText">		
+		<!-- GLOBAL DATE CLOCK TEXT - DEFAULT THEME -->
+		<value condition="[Skin.HasTheme(skindefault)]">T00-C01</value>
+		<!-- GLOBAL DATE CLOCK TEXT - AUTUMN THEME -->
+		<value condition="[Skin.HasTheme(autumn)]">T01-C02</value>
+	</variable>
+	
+	<!-- COLOR DIFFUSE - GLOBAL DATE CLOCK ALT TEXT -->
+	<variable name="ColorDiffuseGlobalDateClockAltText">		
+		<!-- GLOBAL DATE CLOCK ALT TEXT - DEFAULT THEME -->
+		<value condition="[Skin.HasTheme(skindefault)]">T00-C06</value>
+		<!-- GLOBAL DATE CLOCK ALT TEXT - AUTUMN THEME -->
+		<value condition="[Skin.HasTheme(autumn)]">T01-C02</value>
+	</variable>
+	
+	<!-- COLOR DIFFUSE - BREADCRUMBS TEXT -->
+	<variable name="ColorDiffuseBreadcrumbsText">		
+		<!-- BREADCRUMBS TEXT - DEFAULT THEME -->
+		<value condition="[Skin.HasTheme(skindefault)]">T00-C01</value>
+		<!-- BREADCRUMBS TEXT - AUTUMN THEME -->
+		<value condition="[Skin.HasTheme(autumn)]">T01-C02</value>
+	</variable>
 
+<!-- HOME VARIABLES -->
+	<!-- COLOR DIFFUSE - HOME ICONS -->
+	<variable name="ColorDiffuseHomeIcons">		
+		<!-- HOME ICONS - DEFAULT THEME -->
+		<value condition="[Skin.HasTheme(skindefault)]">T00-C02</value>
+		<!-- HOME ICONS - AUTUMN THEME -->
+		<value condition="[Skin.HasTheme(autumn)]">T01-C01</value>
+	</variable>
+	
 <!-- SETTINGS VARIABLES -->
 	<!-- COLOR DIFFUSE - SETTINGS ICONS -->
 	<variable name="ColorDiffuseSettingsIcons">		
@@ -18,6 +91,8 @@
 	<variable name="ColorDiffuseSettingsRightPanel">		
 		<!-- SETTINGS RIGHT PANEL BG - DEFAULT THEME -->
 		<value condition="[Skin.HasTheme(skindefault)]">T00-C06</value>
+		<!-- SETTINGS RIGHT PANEL BG - AUTUMN THEME -->
+		<value condition="[Skin.HasTheme(autumn)]">T01-C03</value>
 	</variable>
 	
 	<!-- COLOR DIFFUSE - SETTINGS SELECTION -->
@@ -31,6 +106,8 @@
 	<variable name="ColorDiffuseNavigationPanel">		
 		<!-- NAVIGATION PANEL BG - DEFAULT THEME -->
 		<value condition="[Skin.HasTheme(skindefault)]">T00-C06</value>
+		<!-- NAVIGATION PANEL BG - AUTUMN THEME -->
+		<value condition="[Skin.HasTheme(autumn)]">T01-C03</value>
 	</variable>
 	
 <!-- POSTERLIST VIEW VARIABLES -->	
@@ -38,24 +115,56 @@
 	<variable name="ColorDiffusePosterListContentPanel">		
 		<!-- CONTENT PANEL BG - DEFAULT THEME -->
 		<value condition="[Skin.HasTheme(skindefault)]">T00-C06</value>
+		<!-- CONTENT PANEL BG - AUTUMN THEME -->
+		<value condition="[Skin.HasTheme(autumn)]">T01-C03</value>
 	</variable>
 	
 	<!-- COLOR DIFFUSE - POSTERLIST POSTER BORDER -->
 	<variable name="ColorDiffusePosterListPosterBorder">		
 		<!-- POSTER BORDER - DEFAULT THEME -->
 		<value condition="[Skin.HasTheme(skindefault)]">T00-C06</value>
+		<!-- POSTER BORDER - AUTUMN THEME -->
+		<value condition="[Skin.HasTheme(autumn)]">T01-C03</value>
+	</variable>
+	
+	<!-- COLOR DIFFUSE - POSTERLIST SELECTION LABEL TEXT -->
+	<variable name="ColorDiffusePosterListSelectionLabelText">		
+		<!-- SELECTION LABEL TEXT - DEFAULT THEME -->		
+		<value condition="[Skin.HasTheme(skindefault)]">T00-C03</value>
+		<!-- SELECTION LABEL TEXT - AUTUMN THEME -->
+		<value condition="[Skin.HasTheme(autumn)]">T01-C01</value>
 	</variable>
 	
 	<!-- COLOR DIFFUSE - POSTERLIST SELECTION -->
 	<variable name="ColorDiffusePosterListSelection">		
 		<!-- FOCUSED LAYOUT - DEFAULT THEME -->		
 		<value condition="[Skin.HasTheme(skindefault)]">T00-C06</value>
+		<!-- FOCUSED LAYOUT - AUTUMN THEME -->	
+		<value condition="[Skin.HasTheme(autumn)]">T01-C01</value>
+	</variable>
+	
+	<!-- COLOR DIFFUSE - POSTERLIST SELECTION LABEL TEXT FOCUSED -->
+	<variable name="ColorDiffusePosterListSelectionLabelTextFocused">		
+		<!-- SELECTION LABEL TEXT FOCUSED - DEFAULT THEME -->		
+		<value condition="[Skin.HasTheme(skindefault)]">T00-C02</value>
+		<!-- SELECTION LABEL TEXT FOCUSED - AUTUMN THEME -->
+		<value condition="[Skin.HasTheme(autumn)]">T01-C04</value>
+	</variable>
+	
+	<!-- COLOR DIFFUSE - POSTERLIST SELECTION LABEL2 TEXT FOCUSED -->
+	<variable name="ColorDiffusePosterListSelectionLabel2TextFocused">		
+		<!-- SELECTION LABEL2 TEXT FOCUSED - DEFAULT THEME -->		
+		<value condition="[Skin.HasTheme(skindefault)]">T00-C01</value>
+		<!-- SELECTION LABEL2 TEXT FOCUSED - AUTUMN THEME -->		
+		<value condition="[Skin.HasTheme(autumn)]">T01-C03</value>
 	</variable>
 	
 	<!-- COLOR DIFFUSE - POSTERLIST FLAGS -->
 	<variable name="ColorDiffusePosterListFlags">		
 		<!-- FLAGS - DEFAULT THEME -->		
 		<value condition="[Skin.HasTheme(skindefault)]">T00-C01</value>
+		<!-- FLAGS - AUTUMN THEME -->		
+		<value condition="[Skin.HasTheme(autumn)]">T01-C04</value>
 	</variable>
 	
 	<!-- COLOR DIFFUSE - POSTERLIST PLOT BG -->
@@ -64,10 +173,34 @@
 		<value condition="[Skin.HasTheme(skindefault)]">T00-C05</value>
 	</variable>
 	
+	<!-- COLOR DIFFUSE - POSTERLIST PLOT TEXT -->
+	<variable name="ColorDiffusePosterListPlotText">		
+		<!-- PLOT TEXT - DEFAULT THEME -->		
+		<value condition="[Skin.HasTheme(skindefault)]">T00-C03</value>
+	</variable>
+	
 	<!-- COLOR DIFFUSE - POSTERLIST WATCHED OVERLAY -->
 	<variable name="ColorDiffusePosterListOverlay">		
 		<!-- WATCHED OVERLAY - DEFAULT THEME -->		
 		<value condition="[Skin.HasTheme(skindefault)]">T00-C01</value>
+		<!-- WATCHED OVERLAY - AUTUMN THEME -->		
+		<value condition="[Skin.HasTheme(autumn)]">T01-C04</value>
+	</variable>
+	
+	<!-- COLOR DIFFUSE - POSTERLIST ITEM COUNTS -->
+	<variable name="ColorDiffusePosterListItemCounts">		
+		<!-- ITEM COUNTS BG - DEFAULT THEME -->
+		<value condition="[Skin.HasTheme(skindefault)]">T00-C04</value>
+		<!-- ITEM COUNTS BG - AUTUMN THEME -->
+		<value condition="[Skin.HasTheme(autumn)]">T01-C03</value>
+	</variable>
+	
+	<!-- COLOR DIFFUSE - POSTERLIST ITEM COUNTS TEXT -->
+	<variable name="ColorDiffusePosterListItemCountsText">		
+		<!-- ITEM COUNTS TEXT - DEFAULT THEME -->
+		<value condition="[Skin.HasTheme(skindefault)]">T00-C06</value>
+		<!-- ITEM COUNTS TEXT - AUTUMN THEME -->
+		<value condition="[Skin.HasTheme(autumn)]">T01-C02</value>
 	</variable>
 	
 </includes>

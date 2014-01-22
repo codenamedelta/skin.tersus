@@ -15,20 +15,13 @@
 			<texture colordiffuse="$VAR[ColorDiffusePosterListContentPanel]">skindefault/colordiffuse/white60.png</texture>
 		</control>
 		
-		<!-- HIDDEN CONTROL FOR PLOT -->
-		<control type="button" id="9050">
-			<onleft>50</onleft>
-			<onright>50</onright>
-			<visible allowhiddenfocus="true">false</visible>
-		</control>
-		
 		<control type="list" id="50">
 			<left>558</left>
 			<top>108</top>
 			<width>1314</width>
 			<height>864</height>
-			<onleft>9000</onleft>
-			<onright>9050</onright>
+			<onleft>9050</onleft>
+			<onright>9000</onright>
 			<onup>50</onup>
 			<ondown>50</ondown>
 			<pagecontrol>60</pagecontrol>
@@ -50,7 +43,7 @@
 					<top>-8</top>
 					<width>735</width>
 					<font>ViewFontMedium</font>
-					<textcolor>T00-C03</textcolor>
+					<textcolor>$VAR[ColorDiffusePosterListSelectionLabelText]</textcolor>
 					<label>$INFO[ListItem.Label]</label>
 					<visible>![Container.Content(episodes)]</visible>
 				</control>
@@ -60,7 +53,7 @@
 					<top>-8</top>
 					<width>735</width>
 					<font>ViewFontMedium</font>
-					<textcolor>T00-C03</textcolor>
+					<textcolor>$VAR[ColorDiffusePosterListSelectionLabelText]</textcolor>
 					<label>$INFO[ListItem.Title]</label>
 					<visible>[Container.Content(episodes)]</visible>
 				</control>
@@ -81,7 +74,7 @@
 					<top>-8</top>
 					<width>730</width>
 					<font>ViewFontMedium</font>
-					<textcolor>T00-C02</textcolor>
+					<textcolor>$VAR[ColorDiffusePosterListSelectionLabelTextFocused]</textcolor>
 					<label>$INFO[ListItem.Label]</label>
 					<include>PosterListSelectionAnimation</include>		
 					<include>PosterListSelectionEpisodeWatchedAnimation</include>					
@@ -92,7 +85,7 @@
 					<top>25</top>
 					<width>730</width>
 					<font>ViewFontSmall</font>
-					<textcolor>T00-C01</textcolor>
+					<textcolor>$VAR[ColorDiffusePosterListSelectionLabel2TextFocused]</textcolor>
 					<label>$INFO[ListItem.Year]$INFO[ListItem.Genre, - ]</label>
 					<scrollsuffix>   |   </scrollsuffix>
 					<include>PosterListSelectionAnimation</include>
@@ -115,7 +108,7 @@
 					<height>80</height>
 					<aspectratio>keep</aspectratio>
 					<visible>!IsEmpty(ListItem.Thumb)</visible>
-					<texture colordiffuse="$VAR[ColorDiffusePosterListFlags]">$VAR[RatingFlagVar,flags/rating/,.png]</texture>
+					<texture colordiffuse="$VAR[ColorDiffusePosterListFlags]">$VAR[RatingFlagVar,skindefault/flags/rating/,.png]</texture>
 					<include>PosterListSelectionAnimation</include>
 				</control>
 				
@@ -125,7 +118,7 @@
 					<height>80</height>
 					<aspectratio>keep</aspectratio>
 					<visible>!IsEmpty(ListItem.Thumb)</visible>
-					<texture colordiffuse="$VAR[ColorDiffusePosterListFlags]">$INFO[ListItem.Studio,flags/studios/,.png]</texture>
+					<texture colordiffuse="$VAR[ColorDiffusePosterListFlags]">$INFO[ListItem.Studio,skindefault/flags/studios/,.png]</texture>
 					<include>PosterListSelectionAnimation</include>
 				</control>			
 
@@ -147,7 +140,7 @@
 					<height>80</height>
 					<font>ViewFontMedium</font>
 					<align>center</align>
-					<textcolor>T00-C02</textcolor>
+					<textcolor>$VAR[ColorDiffusePosterListSelectionLabelTextFocused]</textcolor>
 					<label>$INFO[ListItem.Episode]</label>	
 					<include>PosterListSelectionAnimation</include>
 				</control>
@@ -157,7 +150,7 @@
 					<top>-8</top>
 					<width>725</width>
 					<font>ViewFontMedium</font>
-					<textcolor>T00-C02</textcolor>
+					<textcolor>$VAR[ColorDiffusePosterListSelectionLabelTextFocused]</textcolor>
 					<label>$INFO[ListItem.Title]</label>
 					<include>PosterListSelectionAnimation</include>
 					<include>PosterListSelectionEpisodeWatchedAnimation</include>
@@ -168,7 +161,7 @@
 					<top>25</top>
 					<width>725</width>
 					<font>ViewFontSmall</font>
-					<textcolor>T00-C01</textcolor>
+					<textcolor>$VAR[ColorDiffusePosterListSelectionLabel2TextFocused]</textcolor>
 					<label>$INFO[ListItem.Year]$INFO[ListItem.Genre, - ]</label>
 					<scrollsuffix>   |   </scrollsuffix>
 					<include>PosterListSelectionAnimation</include>
@@ -190,7 +183,7 @@
 					<width>120</width>
 					<height>80</height>
 					<aspectratio>keep</aspectratio>
-					<texture colordiffuse="$VAR[ColorDiffusePosterListFlags]">$INFO[ListItem.VideoResolution,flags/resolution/,.png]</texture>
+					<texture colordiffuse="$VAR[ColorDiffusePosterListFlags]">$INFO[ListItem.VideoResolution,skindefault/flags/resolution/,.png]</texture>
 					<include>PosterListSelectionAnimation</include>
 				</control>
 				
@@ -199,7 +192,7 @@
 					<width>120</width>
 					<height>80</height>
 					<aspectratio>keep</aspectratio>			
-					<texture colordiffuse="$VAR[ColorDiffusePosterListFlags]">$VAR[SourceFlagVar,flags/source/,.png]</texture>
+					<texture colordiffuse="$VAR[ColorDiffusePosterListFlags]">$VAR[SourceFlagVar,skindefault/flags/source/,.png]</texture>
 					<include>PosterListSelectionAnimation</include>
 				</control>
 				
@@ -208,12 +201,19 @@
 					<width>120</width>
 					<height>80</height>
 					<aspectratio>keep</aspectratio>
-					<texture colordiffuse="$VAR[ColorDiffusePosterListFlags]">$VAR[AudioFlagVar,flags/audio/,.png]</texture>
+					<texture colordiffuse="$VAR[ColorDiffusePosterListFlags]">$VAR[AudioFlagVar,skindefault/flags/audio/,.png]</texture>
 					<include>PosterListSelectionAnimation</include>
 				</control>				
 
 			</focusedlayout>
 
+		</control>
+		
+		<!-- HIDDEN CONTROL FOR PLOT -->
+		<control type="button" id="9050">
+			<include>HiddenButton</include>
+			<onright>50</onright>
+			<visible>!IsEmpty(ListItem.Plot)</visible>
 		</control>
 		
 		<!-- PLOT GROUP - TV, TV SEASONS, MOVIES -->
@@ -228,7 +228,7 @@
 			<control type="image">
 				<width>1310</width>
 				<height>270</height>
-				<texture colordiffuse="$VAR[ColorDiffusePosterListPlot]">$INFO[Skin.CurrentTheme]/colordiffuse/white100solid.png</texture>
+				<texture colordiffuse="$VAR[ColorDiffusePosterListPlot]">skindefault/colordiffuse/white100solid.png</texture>
 			</control>
 			
 			<control type="textbox" id="9050">
@@ -238,7 +238,7 @@
 				<height>258</height>
 				<scroll>true</scroll>
 				<font>Small</font>
-				<textcolor>T00-C03</textcolor>
+				<textcolor>$VAR[ColorDiffusePosterListPlotText]</textcolor>
 				<align>justify</align>
 				<shadowcolor></shadowcolor>
 				<label>$INFO[ListItem.Plot]</label>
@@ -280,6 +280,61 @@
 			<onright>9000</onright>
 			<visible allowhiddenfocus="true">Control.HasFocus(60) | Container.Scrolling</visible>
 			<animation effect="fade" start="0" end="100" time="400" condition="Control.HasFocus(60) | Container.Scrolling">Conditional</animation>
+		</control>
+		
+			
+			<control type="image">
+				<top>1010</top>
+				<width>1920</width>
+				<height>70</height>
+				<texture colordiffuse="$VAR[ColorDiffusePosterListItemCounts]">skindefault/colordiffuse/white75.png</texture>
+			</control>
+			
+		<control type="group">
+					
+			<control type="grouplist">
+				<top>1010</top>
+				<align>center</align>
+				<aligny>center</aligny>
+				<orientation>horizontal</orientation>
+					
+					<control type="label">
+						<height>40</height>
+						<width min="15" max="1920">auto</width>
+						<label>$VAR[PosterListSeasonCount]</label>
+						<font>MediumCAP</font>
+						<textcolor>$VAR[ColorDiffuseBreadcrumbsText]</textcolor>
+						<scroll>false</scroll>
+					</control>
+					<control type="label">
+						<height>40</height>
+						<width min="15" max="1920">auto</width>
+						<label>$VAR[PosterListEpisodeCount]</label>
+						<visible>!Window.IsActive(PVR)</visible>
+						<font>MediumCAP</font>
+						<textcolor>$VAR[ColorDiffuseBreadcrumbsText]</textcolor>
+						<scroll>false</scroll>
+					</control>
+					<control type="label">
+						<height>40</height>
+						<width min="15" max="1920">auto</width>
+						<label>$VAR[PosterListWatchedCount]</label>
+						<visible>!Window.IsActive(PVR)</visible>
+						<font>MediumCAP</font>
+						<textcolor>$VAR[ColorDiffuseBreadcrumbsText]</textcolor>
+						<scroll>false</scroll>
+					</control>
+					<control type="label">
+						<height>40</height>
+						<width min="15" max="1920">auto</width>
+						<label>$VAR[PosterListUnWatchedCount]</label>
+						<visible>!Window.IsActive(PVR)</visible>
+						<font>MediumCAP</font>
+						<textcolor>$VAR[ColorDiffuseBreadcrumbsText]</textcolor>
+						<scroll>false</scroll>
+					</control>
+				
+			</control>
 		</control>
 
 	</include>

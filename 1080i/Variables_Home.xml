@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<includes>
+
+	<!-- HOME SCREEN ICONS -->
+	<variable name="HomeIcons">		
+		<!-- PROGRAMS ICON -->
+		<value condition="Window.IsActive(home.xml) + Container(300).HasFocus(7)">skindefault/icons/home/programs.png</value>
+		<!-- VIDEOS ICON -->
+		<value condition="Window.IsActive(home.xml) + Container(300).HasFocus(3)">skindefault/icons/home/videos.png</value>		
+		<!-- MUSIC ICON -->
+		<value condition="Window.IsActive(home.xml) + Container(300).HasFocus(6)">skindefault/icons/home/music.png</value>
+		<!-- PICTURES ICON -->
+		<value condition="Window.IsActive(home.xml) + Container(300).HasFocus(2)">skindefault/icons/home/pictures.png</value>
+		<!-- MOVIES ICON -->
+		<value condition="Window.IsActive(home.xml) + Container(300).HasFocus(4)">skindefault/icons/home/movies.png</value>
+		<!-- TVSHOWS ICON -->
+		<value condition="Window.IsActive(home.xml) + Container(300).HasFocus(5)">skindefault/icons/home/tvshows.png</value>
+		<!-- FAVORITES ICON -->
+		<value condition="Window.IsActive(home.xml) + Container(300).HasFocus(9)">skindefault/icons/home/favorite.png</value>
+		<!-- WEATHER ICON -->
+		<value condition="Window.IsActive(home.xml) + Container(300).HasFocus(1)">skindefault/icons/home/weather.png</value>
+		<!-- SETTINGS ICON -->
+		<value condition="Window.IsActive(home.xml) + Container(300).HasFocus(8)">skindefault/icons/home/settings.png</value>
+		<!-- SHUTDOWN ICON -->
+		<value condition="Window.IsActive(home.xml) + Container(300).HasFocus(10)">skindefault/icons/home/shutdown.png</value>
+		<!-- PLAY DISC ICON -->
+		<value condition="Window.IsActive(home.xml) + Container(300).HasFocus(11)">home_textures/playdisc.png</value>
+	</variable>	
+	
+</includes>

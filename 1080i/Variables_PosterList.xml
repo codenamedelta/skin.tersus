@@ -7,4 +7,25 @@
 		<value condition="Container.Content(episodes)">skindefault/ui/views/buttonhoverposterlistepisodes.png</value>
 	</variable>	
 	
+	<variable name="PosterListSeasonCount">
+		<value condition="Container.Content(tvshows) | Container.Content(seasons) | [Container.Content(episodes)]">
+		$LOCALIZE[33054]: [COLOR $VAR[ColorDiffusePosterListItemCountsText]]$INFO[ListItem.Property(TotalSeasons)][/COLOR]</value>
+	</variable>
+	
+	<variable name="PosterListEpisodeCount">
+		<value condition="Container.Content(tvshows) | Container.Content(seasons) | [Container.Content(episodes)]">
+		$LOCALIZE[20360]: [COLOR $VAR[ColorDiffusePosterListItemCountsText]]$INFO[ListItem.Property(TotalEpisodes)][/COLOR]</value>
+	</variable>
+	
+	<variable name="PosterListWatchedCount">
+		<value condition="Container.Content(tvshows) | Container.Content(seasons) | [Container.Content(episodes)]">
+		$LOCALIZE[16102]: [COLOR $VAR[ColorDiffusePosterListItemCountsText]]$INFO[ListItem.Property(WatchedEpisodes)][/COLOR]</value>
+	</variable>
+	
+	<variable name="PosterListUnWatchedCount">
+		<value condition="Container.Content(tvshows) | Container.Content(seasons) | [Container.Content(episodes)]">
+		$LOCALIZE[16101]: [COLOR $VAR[ColorDiffusePosterListItemCountsText]]$INFO[ListItem.Property(UnWatchedEpisodes)][/COLOR]</value>
+	</variable>
+	
+	
 </includes>

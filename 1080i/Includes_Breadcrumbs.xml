@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<includes>
+	
+	<!-- Home Icons -->
+	<include name="BreadcrumbsVideo">
+		
+		<control type="group">
+			<control type="grouplist">
+				<right>30</right>
+				<align>right</align>
+				<aligny>center</aligny>
+				<orientation>horizontal</orientation>
+				<visible>Skin.HasSetting(ShowBreadcrumbs)</visible>
+					
+					<control type="label">
+						<height>70</height>
+						<width min="15" max="1550">auto</width>
+						<label>$VAR[BreadcrumbsLabelVariable]</label>
+						<font>MediumCAP</font>
+						<textcolor>$VAR[ColorDiffuseBreadcrumbsText]</textcolor>
+						<scroll>false</scroll>
+					</control>
+					<control type="label">
+						<height>70</height>
+						<width min="15" max="1550">auto</width>
+						<label>$INFO[Container.FolderName, / ]</label>
+						<visible>!Window.IsActive(PVR)</visible>
+						<font>MediumCAP</font>
+						<textcolor>$VAR[ColorDiffuseBreadcrumbsText]</textcolor>
+						<scroll>false</scroll>
+					</control>
+				
+			</control>
+		
+		</control>		
+	
+	</include>	
+
+</includes>

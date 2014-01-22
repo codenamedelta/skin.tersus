@@ -136,31 +136,6 @@
 		<!-- LOGO SPLASHSCREEN -->
 		<value condition="Window.IsActive(Startup.xml) + !System.Date(12-17,12-31)">other_textures/splashscreen/startup.png</value>
 	</variable>
-	<!-- HOME SCREEN ICONS -->
-	<variable name="HomeMenuIcons">		
-		<!-- PROGRAMS ICON -->
-		<value condition="Window.IsActive(home.xml) + Container(300).HasFocus(7)">$INFO[Skin.CurrentTheme]/icons/home/programs.png</value>
-		<!-- VIDEOS ICON -->
-		<value condition="Window.IsActive(home.xml) + Container(300).HasFocus(3)">$INFO[Skin.CurrentTheme]/icons/home/videos.png</value>		
-		<!-- MUSIC ICON -->
-		<value condition="Window.IsActive(home.xml) + Container(300).HasFocus(6)">$INFO[Skin.CurrentTheme]/icons/home/music.png</value>
-		<!-- PICTURES ICON -->
-		<value condition="Window.IsActive(home.xml) + Container(300).HasFocus(2)">$INFO[Skin.CurrentTheme]/icons/home/pictures.png</value>
-		<!-- MOVIES ICON -->
-		<value condition="Window.IsActive(home.xml) + Container(300).HasFocus(4)">$INFO[Skin.CurrentTheme]/icons/home/movies.png</value>
-		<!-- TVSHOWS ICON -->
-		<value condition="Window.IsActive(home.xml) + Container(300).HasFocus(5)">$INFO[Skin.CurrentTheme]/icons/home/tvshows.png</value>
-		<!-- FAVORITES ICON -->
-		<value condition="Window.IsActive(home.xml) + Container(300).HasFocus(9)">$INFO[Skin.CurrentTheme]/icons/home/favorite.png</value>
-		<!-- WEATHER ICON -->
-		<value condition="Window.IsActive(home.xml) + Container(300).HasFocus(1)">$INFO[Skin.CurrentTheme]/icons/home/weather.png</value>
-		<!-- SETTINGS ICON -->
-		<value condition="Window.IsActive(home.xml) + Container(300).HasFocus(8)">$INFO[Skin.CurrentTheme]/icons/home/settings.png</value>
-		<!-- SHUTDOWN ICON -->
-		<value condition="Window.IsActive(home.xml) + Container(300).HasFocus(10)">$INFO[Skin.CurrentTheme]/icons/home/shutdown.png</value>
-		<!-- PLAY DISC ICON -->
-		<value condition="Window.IsActive(home.xml) + Container(300).HasFocus(11)">home_textures/playdisc.png</value>
-	</variable>
 	<!-- SETTINGS ICONS -->
 	<variable name="SettingsIcons">
 		<!-- APPEARANCE ICON -->

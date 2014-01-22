@@ -18,4 +18,14 @@
 	<color name="T00-C05">FF688586</color>
 	<!-- LightGreen -->
 	<color name="T00-C06">FFA7BAA8</color>
+	<!-- MediumRed -->
+	<color name="T01-C01">FF83161B</color>
+	<!-- OffTan -->
+	<color name="T01-C02">FFA17F59</color>
+	<!-- Gold -->
+	<color name="T01-C03">FFBD8D46</color>
+	<!-- LightYellow -->
+	<color name="T01-C04">FFF6E497</color>
+
+
 </colors>
