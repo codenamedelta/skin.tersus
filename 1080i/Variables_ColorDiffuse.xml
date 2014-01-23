@@ -36,7 +36,7 @@
 	<!-- COLOR DIFFUSE - GLOBAL DATE CLOCK HOME/SETTINGS ALT TEXT -->
 	<variable name="ColorDiffuseGlobalDateClockHomeSettingsAltText">		
 		<!-- GLOBAL DATE CLOCK HOME/SETTINGS ALT TEXT - DEFAULT THEME -->
-		<value condition="[Skin.HasTheme(skindefault)]">T00-C05</value>
+		<value condition="[Skin.HasTheme(skindefault)]">T00-C07</value>
 		<!-- GLOBAL DATE CLOCK HOME/SETTINGS ALT TEXT - AUTUMN THEME -->
 		<value condition="[Skin.HasTheme(autumn)]">T01-C02</value>
 	</variable>
@@ -52,15 +52,16 @@
 	<!-- COLOR DIFFUSE - GLOBAL DATE CLOCK ALT TEXT -->
 	<variable name="ColorDiffuseGlobalDateClockAltText">		
 		<!-- GLOBAL DATE CLOCK ALT TEXT - DEFAULT THEME -->
-		<value condition="[Skin.HasTheme(skindefault)]">T00-C06</value>
+		<value condition="[Skin.HasTheme(skindefault)]">T00-C05</value>
 		<!-- GLOBAL DATE CLOCK ALT TEXT - AUTUMN THEME -->
 		<value condition="[Skin.HasTheme(autumn)]">T01-C02</value>
 	</variable>
 	
+<!-- BREADCRUMBS VARIABLES -->
 	<!-- COLOR DIFFUSE - BREADCRUMBS TEXT -->
 	<variable name="ColorDiffuseBreadcrumbsText">		
 		<!-- BREADCRUMBS TEXT - DEFAULT THEME -->
-		<value condition="[Skin.HasTheme(skindefault)]">T00-C01</value>
+		<value condition="[Skin.HasTheme(skindefault)]">T00-C07</value>
 		<!-- BREADCRUMBS TEXT - AUTUMN THEME -->
 		<value condition="[Skin.HasTheme(autumn)]">T01-C02</value>
 	</variable>
@@ -198,7 +199,7 @@
 	<!-- COLOR DIFFUSE - POSTERLIST ITEM COUNTS TEXT -->
 	<variable name="ColorDiffusePosterListItemCountsText">		
 		<!-- ITEM COUNTS TEXT - DEFAULT THEME -->
-		<value condition="[Skin.HasTheme(skindefault)]">T00-C06</value>
+		<value condition="[Skin.HasTheme(skindefault)]">T00-C02</value>
 		<!-- ITEM COUNTS TEXT - AUTUMN THEME -->
 		<value condition="[Skin.HasTheme(autumn)]">T01-C02</value>
 	</variable>

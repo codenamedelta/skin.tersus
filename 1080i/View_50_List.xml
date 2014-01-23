@@ -272,7 +272,7 @@
 		</control>
 		-->
 		
-		<control type="scrollbar" id="60">
+		<!--<control type="scrollbar" id="60">
 			<left>1317</left>
 			<top>51</top>
 			<height>978</height>
@@ -280,12 +280,13 @@
 			<onright>9000</onright>
 			<visible allowhiddenfocus="true">Control.HasFocus(60) | Container.Scrolling</visible>
 			<animation effect="fade" start="0" end="100" time="400" condition="Control.HasFocus(60) | Container.Scrolling">Conditional</animation>
-		</control>
+		</control>-->
 		
 			
 			<control type="image">
+				<left>558</left>
 				<top>1010</top>
-				<width>1920</width>
+				<width>1314</width>
 				<height>70</height>
 				<texture colordiffuse="$VAR[ColorDiffusePosterListItemCounts]">skindefault/colordiffuse/white75.png</texture>
 			</control>
@@ -293,6 +294,7 @@
 		<control type="group">
 					
 			<control type="grouplist">
+				<left>558</left>
 				<top>1010</top>
 				<align>center</align>
 				<aligny>center</aligny>
@@ -300,7 +302,7 @@
 					
 					<control type="label">
 						<height>40</height>
-						<width min="15" max="1920">auto</width>
+						<width min="15" max="1314">auto</width>
 						<label>$VAR[PosterListSeasonCount]</label>
 						<font>MediumCAP</font>
 						<textcolor>$VAR[ColorDiffuseBreadcrumbsText]</textcolor>
@@ -308,27 +310,16 @@
 					</control>
 					<control type="label">
 						<height>40</height>
-						<width min="15" max="1920">auto</width>
+						<width min="15" max="1314">auto</width>
 						<label>$VAR[PosterListEpisodeCount]</label>
-						<visible>!Window.IsActive(PVR)</visible>
 						<font>MediumCAP</font>
 						<textcolor>$VAR[ColorDiffuseBreadcrumbsText]</textcolor>
 						<scroll>false</scroll>
 					</control>
 					<control type="label">
 						<height>40</height>
-						<width min="15" max="1920">auto</width>
-						<label>$VAR[PosterListWatchedCount]</label>
-						<visible>!Window.IsActive(PVR)</visible>
-						<font>MediumCAP</font>
-						<textcolor>$VAR[ColorDiffuseBreadcrumbsText]</textcolor>
-						<scroll>false</scroll>
-					</control>
-					<control type="label">
-						<height>40</height>
-						<width min="15" max="1920">auto</width>
+						<width min="15" max="1314">auto</width>
 						<label>$VAR[PosterListUnWatchedCount]</label>
-						<visible>!Window.IsActive(PVR)</visible>
 						<font>MediumCAP</font>
 						<textcolor>$VAR[ColorDiffuseBreadcrumbsText]</textcolor>
 						<scroll>false</scroll>
