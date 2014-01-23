@@ -12,7 +12,7 @@
 	<!-- COLOR DIFFUSE - GLOBAL BACKGROUND -->
 	<variable name="ColorDiffuseGlobalBackground">		
 		<!-- GLOBAL BACKGROUND - DEFAULT THEME -->
-		<value condition="[Skin.HasTheme(skindefault)]">T00-C05</value>
+		<value condition="[Skin.HasTheme(skindefault)]">T00-C01</value>
 		<!-- GLOBAL BACKGROUND - AUTUMN THEME -->
 		<value condition="[Skin.HasTheme(autumn)]">T01-C02</value>
 	</variable>
@@ -36,7 +36,23 @@
 	<!-- COLOR DIFFUSE - GLOBAL DATE CLOCK HOME/SETTINGS ALT TEXT -->
 	<variable name="ColorDiffuseGlobalDateClockHomeSettingsAltText">		
 		<!-- GLOBAL DATE CLOCK HOME/SETTINGS ALT TEXT - DEFAULT THEME -->
-		<value condition="[Skin.HasTheme(skindefault)]">T00-C07</value>
+		<value condition="[Skin.HasTheme(skindefault)]">T00-C05</value>
+		<!-- GLOBAL DATE CLOCK HOME/SETTINGS ALT TEXT - AUTUMN THEME -->
+		<value condition="[Skin.HasTheme(autumn)]">T01-C02</value>
+	</variable>
+	
+	<!-- COLOR DIFFUSE - GLOBAL DATE CLOCK SEEKBAR TEXT -->
+	<variable name="ColorDiffuseGlobalDateClockSeekbarText">		
+		<!-- GLOBAL DATE CLOCK HOME/SETTINGS TEXT - DEFAULT THEME -->
+		<value condition="[Skin.HasTheme(skindefault)]">T00-C06</value>
+		<!-- GLOBAL DATE CLOCK HOME/SETTINGS TEXT - AUTUMN THEME -->
+		<value condition="[Skin.HasTheme(autumn)]">T01-C02</value>
+	</variable>
+	
+	<!-- COLOR DIFFUSE - GLOBAL DATE SEEKBAR ALT TEXT -->
+	<variable name="ColorDiffuseGlobalDateClockSeekbarAltText">		
+		<!-- GLOBAL DATE CLOCK HOME/SETTINGS ALT TEXT - DEFAULT THEME -->
+		<value condition="[Skin.HasTheme(skindefault)]">T00-C04</value>
 		<!-- GLOBAL DATE CLOCK HOME/SETTINGS ALT TEXT - AUTUMN THEME -->
 		<value condition="[Skin.HasTheme(autumn)]">T01-C02</value>
 	</variable>
@@ -52,7 +68,7 @@
 	<!-- COLOR DIFFUSE - GLOBAL DATE CLOCK ALT TEXT -->
 	<variable name="ColorDiffuseGlobalDateClockAltText">		
 		<!-- GLOBAL DATE CLOCK ALT TEXT - DEFAULT THEME -->
-		<value condition="[Skin.HasTheme(skindefault)]">T00-C05</value>
+		<value condition="[Skin.HasTheme(skindefault)]">T00-C06</value>
 		<!-- GLOBAL DATE CLOCK ALT TEXT - AUTUMN THEME -->
 		<value condition="[Skin.HasTheme(autumn)]">T01-C02</value>
 	</variable>
@@ -200,6 +216,23 @@
 	<variable name="ColorDiffusePosterListItemCountsText">		
 		<!-- ITEM COUNTS TEXT - DEFAULT THEME -->
 		<value condition="[Skin.HasTheme(skindefault)]">T00-C02</value>
+		<!-- ITEM COUNTS TEXT - AUTUMN THEME -->
+		<value condition="[Skin.HasTheme(autumn)]">T01-C02</value>
+	</variable>
+	
+<!-- SEEKBAR VARIABLES -->	
+	<!-- COLOR DIFFUSE - SEEKBAR BACKGROUND -->
+	<variable name="ColorDiffuseSeekbarBackground">		
+		<!-- SEEKBAR BG - DEFAULT THEME -->
+		<value condition="[Skin.HasTheme(skindefault)]">T00-C05</value>
+		<!-- ITEM COUNTS TEXT - AUTUMN THEME -->
+		<value condition="[Skin.HasTheme(autumn)]">T01-C02</value>
+	</variable>
+	
+	<!-- COLOR DIFFUSE - SEEKBAR BORDER -->
+	<variable name="ColorDiffuseSeekbarBorder">		
+		<!-- SEEKBAR BG - DEFAULT THEME -->
+		<value condition="[Skin.HasTheme(skindefault)]">T00-C04</value>
 		<!-- ITEM COUNTS TEXT - AUTUMN THEME -->
 		<value condition="[Skin.HasTheme(autumn)]">T01-C02</value>
 	</variable>

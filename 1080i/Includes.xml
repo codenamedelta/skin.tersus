@@ -100,7 +100,32 @@
 			</control>
 		</control>
 		<control type="group">
-			<visible>!Window.IsActive(home) + !Window.IsActive(settings) + !Window.IsActive(settingscategory.xml) + !Skin.HasSetting(ShowBreadcrumbs)</visible>
+			<visible>![Window.IsActive(home) | Window.IsActive(settings) | Window.IsActive(settingscategory.xml)] + Window.IsActive(seekbar)</visible>
+			<control type="label">
+				<left>5</left>
+				<top>5</top>
+				<width>500</width>
+				<height>30</height>
+				<label>$INFO[System.Date(DDD)], $INFO[System.Date(MMM d)], $INFO[System.Date(yyyy)]</label>
+				<font>MediumCAP</font>
+				<textcolor>$VAR[ColorDiffuseGlobalDateClockSeekbarText]</textcolor>
+				<align>left</align>
+				<scroll>false</scroll>
+			</control>
+			<control type="label">
+				<left>5</left>
+				<top>50</top>
+				<width>400</width>
+				<height>30</height>
+				<label>$INFO[System.Time(hh:mm:xx)] [COLOR $VAR[ColorDiffuseGlobalDateClockSeekbarAltText]]$INFO[Window(Weather).Property(Current.Temperature)]$INFO[System.TemperatureUnits][/COLOR]</label>
+				<font>XLargeCAP</font>
+				<textcolor>$VAR[ColorDiffuseGlobalDateClockSeekbarText]</textcolor>
+				<align>left</align>
+				<scroll>false</scroll>
+			</control>
+		</control>
+		<control type="group">
+			<visible>![Window.IsActive(home) | Window.IsActive(settings) | Window.IsActive(settingscategory.xml) | Window.IsActive(seekbar)] + !Skin.HasSetting(ShowBreadcrumbs)</visible>
 			<control type="image">
 				<left>0</left>
 				<top>0</top>
@@ -121,7 +146,7 @@
 			</control>
 		</control>
 		<control type="group">
-			<visible>!Window.IsActive(home) + !Window.IsActive(settings) + !Window.IsActive(settingscategory.xml) + Skin.HasSetting(ShowBreadcrumbs)</visible>
+			<visible>![Window.IsActive(home) | Window.IsActive(settings) | Window.IsActive(settingscategory.xml) | Window.IsActive(seekbar)] + Skin.HasSetting(ShowBreadcrumbs)</visible>
 			<control type="image">
 				<left>0</left>
 				<top>0</top>
