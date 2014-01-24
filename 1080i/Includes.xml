@@ -92,7 +92,7 @@
 				<top>50</top>
 				<width>400</width>
 				<height>30</height>
-				<label>$INFO[System.Time(hh:mm:xx)] [COLOR $VAR[ColorDiffuseGlobalDateClockHomeSettingsAltText]]$INFO[Window(Weather).Property(Current.Temperature)]$INFO[System.TemperatureUnits][/COLOR]</label>
+				<label>$INFO[System.Time(hh:mm:xx)] [COLOR $VAR[ColorDiffuseGlobalDateClockHomeSettingsAltText]]$INFO[Weather.Temperature][/COLOR]</label>
 				<font>XLargeCAP</font>
 				<textcolor>$VAR[ColorDiffuseGlobalDateClockHomeSettingsText]</textcolor>
 				<align>left</align>
@@ -117,7 +117,7 @@
 				<top>50</top>
 				<width>400</width>
 				<height>30</height>
-				<label>$INFO[System.Time(hh:mm:xx)] [COLOR $VAR[ColorDiffuseGlobalDateClockSeekbarAltText]]$INFO[Window(Weather).Property(Current.Temperature)]$INFO[System.TemperatureUnits][/COLOR]</label>
+				<label>$INFO[System.Time(hh:mm:xx)] [COLOR $VAR[ColorDiffuseGlobalDateClockSeekbarAltText]]$INFO[Weather.Temperature][/COLOR]</label>
 				<font>XLargeCAP</font>
 				<textcolor>$VAR[ColorDiffuseGlobalDateClockSeekbarText]</textcolor>
 				<align>left</align>
@@ -138,7 +138,7 @@
 				<top>5</top>
 				<width>350</width>
 				<height>60</height>
-				<label>$INFO[System.Time(hh:mm:xx)] [COLOR $VAR[ColorDiffuseGlobalDateClockAltText]]$INFO[Window(Weather).Property(Current.Temperature)]$INFO[System.TemperatureUnits][/COLOR]</label>
+				<label>$INFO[System.Time(hh:mm:xx)] [COLOR $VAR[ColorDiffuseGlobalDateClockAltText]]$INFO[Weather.Temperature][/COLOR]</label>
 				<font>XLargeCAP</font>
 				<textcolor>$VAR[ColorDiffuseGlobalDateClockText]</textcolor>
 				<align>center</align>
@@ -159,7 +159,7 @@
 				<top>5</top>
 				<width>350</width>
 				<height>60</height>
-				<label>$INFO[System.Time(hh:mm:xx)] [COLOR $VAR[ColorDiffuseGlobalDateClockAltText]]$INFO[Window(Weather).Property(Current.Temperature)]$INFO[System.TemperatureUnits][/COLOR]</label>
+				<label>$INFO[System.Time(hh:mm:xx)] [COLOR $VAR[ColorDiffuseGlobalDateClockAltText]]$INFO[Weather.Temperature][/COLOR]</label>
 				<font>XLargeCAP</font>
 				<textcolor>$VAR[ColorDiffuseGlobalDateClockText]</textcolor>
 				<align>center</align>

@@ -225,15 +225,39 @@
 	<variable name="ColorDiffuseSeekbarBackground">		
 		<!-- SEEKBAR BG - DEFAULT THEME -->
 		<value condition="[Skin.HasTheme(skindefault)]">T00-C05</value>
-		<!-- ITEM COUNTS TEXT - AUTUMN THEME -->
+		<!-- SEEKBAR BG - AUTUMN THEME -->
 		<value condition="[Skin.HasTheme(autumn)]">T01-C02</value>
 	</variable>
 	
 	<!-- COLOR DIFFUSE - SEEKBAR BORDER -->
 	<variable name="ColorDiffuseSeekbarBorder">		
-		<!-- SEEKBAR BG - DEFAULT THEME -->
+		<!-- SEEKBAR BORDER - DEFAULT THEME -->
 		<value condition="[Skin.HasTheme(skindefault)]">T00-C04</value>
-		<!-- ITEM COUNTS TEXT - AUTUMN THEME -->
+		<!-- SEEKBAR BORDER - AUTUMN THEME -->
+		<value condition="[Skin.HasTheme(autumn)]">T01-C02</value>
+	</variable>
+	
+	<!-- COLOR DIFFUSE - SEEKBAR PROGRESS -->
+	<variable name="ColorDiffuseSeekbarProgress">		
+		<!-- SEEKBAR PROGRESS - DEFAULT THEME -->
+		<value condition="[Skin.HasTheme(skindefault)]">T00-C06</value>
+		<!-- SEEKBAR PROGRESS - AUTUMN THEME -->
+		<value condition="[Skin.HasTheme(autumn)]">T01-C02</value>
+	</variable>
+	
+	<!-- COLOR DIFFUSE - SEEKBAR TEXT -->
+	<variable name="ColorDiffuseSeekbarText">		
+		<!-- SEEKBAR TEXT - DEFAULT THEME -->
+		<value condition="[Skin.HasTheme(skindefault)]">T00-C06</value>
+		<!-- SEEKBAR TEXT - AUTUMN THEME -->
+		<value condition="[Skin.HasTheme(autumn)]">T01-C02</value>
+	</variable>
+	
+	<!-- COLOR DIFFUSE - SEEKBAR ALT TEXT -->
+	<variable name="ColorDiffuseSeekbarAltText">		
+		<!-- SEEKBAR ALT TEXT - DEFAULT THEME -->
+		<value condition="[Skin.HasTheme(skindefault)]">T00-C06</value>
+		<!-- SEEKBAR ALT TEXT - AUTUMN THEME -->
 		<value condition="[Skin.HasTheme(autumn)]">T01-C02</value>
 	</variable>
 	

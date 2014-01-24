@@ -1,6 +1,14 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <!-- Foundation -->
 <window>
+	
 	<onload>ReplaceWindow(Home)</onload>
+	
+	<animation type="WindowClose" reversible="false">
+        <effect type="fade" start="100" end="0" time="800" />
+    </animation>
+    <animation type="WindowOpen" reversible="false">
+        <effect type="fade" end="100" delay="1000" time="800" />
+    </animation>
 
 </window>

@@ -74,7 +74,6 @@
 					<width>120</width>
 					<height>80</height>
 					<aspectratio>keep</aspectratio>
-                	<include>OSDFlagVars</include>
                 	<texture fallback="flags/studios/default-studio.png">$INFO[VideoPlayer.Studio,skindefault/flags/studios/,.png]</texture>
                     <visible>!VideoPlayer.Content(files)</visible>
             	</control>
@@ -84,7 +83,6 @@
 					<width>120</width>
 					<height>80</height>
 					<aspectratio>keep</aspectratio>
-                	<include>OSDFlagVars</include>
                 	<texture fallback="flags/aspectratio/defaultaspect.png">$INFO[VideoPlayer.VideoAspect,skindefault/flags/aspectratio/,.png]</texture>
             	</control>
 				
@@ -93,7 +91,6 @@
 					<width>120</width>
 					<height>80</height>
 					<aspectratio>keep</aspectratio>
-                	<include>OSDFlagVars</include>
                 	<texture fallback="flags/resolution/defaultscreen.png">$INFO[VideoPlayer.VideoResolution,skindefault/flags/resolution/,.png]</texture>
             	</control>
 				
@@ -102,7 +99,6 @@
 					<width>120</width>
 					<height>80</height>
 					<aspectratio>keep</aspectratio>
-                	<include>OSDFlagVars</include>
                 	<texture fallback="flags/source/defaultsource.png">$VAR[VideoSourceFlagVar,skindefault/flags/source/,.png]</texture>
             	</control>
 				
@@ -111,7 +107,6 @@
 					<width>120</width>
 					<height>80</height>
 					<aspectratio>keep</aspectratio>
-                	<include>OSDFlagVars</include>
                 	<texture fallback="flags/audio/defaultsound.png">$INFO[VideoPlayer.AudioCodec,skindefault/flags/info/]$INFO[VideoPlayer.AudioChannels,,.png]</texture>
             	</control>
 				
@@ -150,11 +145,11 @@
 			</control>
 			
 			<control type="label">
-				<left>1905</left>
+				<left>1608</left>
 				<top>90</top>
-				<width>1920</width>
+				<width>300</width>
 				<font>Large</font>
-				<textcolor>Cyan</textcolor>
+				<textcolor>$VAR[ColorDiffuseSeekbarAltText]</textcolor>
 				<align>right</align>
 				<label>$INFO[Player.Time]$INFO[Player.Duration, / ]</label>
 			</control>
@@ -164,7 +159,7 @@
 				<top>90</top>
 				<width>1920</width>
 				<font>Large</font>
-				<textcolor>Cyan</textcolor>
+				<textcolor>$VAR[ColorDiffuseSeekbarAltText]</textcolor>
 				<align>center</align>
 				<label>$LOCALIZE[31000] $INFO[Player.FinishTime]</label>
 				<visible>!Player.Forwarding + !Player.Rewinding + !Player.Paused</visible>
@@ -175,7 +170,7 @@
 				<top>90</top>
 				<width>1920</width>
 				<font>Large</font>
-				<textcolor>Cyan</textcolor>
+				<textcolor>$VAR[ColorDiffuseSeekbarText]</textcolor>
 				<align>center</align>
 				<label>[UPPERCASE]$LOCALIZE[112][/UPPERCASE]</label>
 				<visible>player.paused</visible>
@@ -186,7 +181,7 @@
 				<top>90</top>
 				<width>1920</width>
 				<font>Large</font>
-				<textcolor>Cyan</textcolor>
+				<textcolor>$VAR[ColorDiffuseSeekbarText]</textcolor>
 				<align>center</align>
 				<label>FFx2</label>
 				<visible>player.forwarding2x</visible>
@@ -197,7 +192,7 @@
 				<top>90</top>
 				<width>1920</width>
 				<font>Large</font>
-				<textcolor>Cyan</textcolor>
+				<textcolor>$VAR[ColorDiffuseSeekbarText]</textcolor>
 				<align>center</align>
 				<label>FFx4</label>
 				<visible>player.forwarding4x</visible>
@@ -208,7 +203,7 @@
 				<top>90</top>
 				<width>1920</width>
 				<font>Large</font>
-				<textcolor>Cyan</textcolor>
+				<textcolor>$VAR[ColorDiffuseSeekbarText]</textcolor>
 				<align>center</align>
 				<label>FFx8</label>
 				<visible>player.forwarding8x</visible>
@@ -219,7 +214,7 @@
 				<top>90</top>
 				<width>1920</width>
 				<font>Large</font>
-				<textcolor>Cyan</textcolor>
+				<textcolor>$VAR[ColorDiffuseSeekbarText]</textcolor>
 				<align>center</align>
 				<label>FFx16</label>
 				<visible>player.forwarding16x</visible>
@@ -230,7 +225,7 @@
 				<top>90</top>
 				<width>1920</width>
 				<font>Large</font>
-				<textcolor>Cyan</textcolor>
+				<textcolor>$VAR[ColorDiffuseSeekbarText]</textcolor>
 				<align>center</align>
 				<label>FFx32</label>
 				<visible>player.forwarding32x</visible>
@@ -241,7 +236,7 @@
 				<top>90</top>
 				<width>1920</width>
 				<font>Large</font>
-				<textcolor>Cyan</textcolor>
+				<textcolor>$VAR[ColorDiffuseSeekbarText]</textcolor>
 				<align>center</align>
 				<label>RWx2</label>
 				<visible>player.rewinding2x</visible>
@@ -252,7 +247,7 @@
 				<top>90</top>
 				<width>1920</width>
 				<font>Large</font>
-				<textcolor>Cyan</textcolor>
+				<textcolor>$VAR[ColorDiffuseSeekbarText]</textcolor>
 				<align>center</align>
 				<label>RWx7</label>
 				<visible>player.rewinding4x</visible>
@@ -263,7 +258,7 @@
 				<top>90</top>
 				<width>1920</width>
 				<font>Large</font>
-				<textcolor>Cyan</textcolor>
+				<textcolor>$VAR[ColorDiffuseSeekbarText]</textcolor>
 				<align>center</align>
 				<label>RWx8</label>
 				<visible>player.rewinding8x</visible>
@@ -274,7 +269,7 @@
 				<top>90</top>
 				<width>1920</width>
 				<font>Large</font>
-				<textcolor>Cyan</textcolor>
+				<textcolor>$VAR[ColorDiffuseSeekbarText]</textcolor>
 				<align>center</align>
 				<label>RWx16</label>
 				<visible>player.rewinding16x</visible>
@@ -285,7 +280,7 @@
 				<top>90</top>
 				<width>1920</width>
 				<font>Large</font>
-				<textcolor>Cyan</textcolor>
+				<textcolor>$VAR[ColorDiffuseSeekbarText]</textcolor>
 				<align>center</align>
 				<label>RWx32</label>
 				<visible>player.rewinding32x</visible>
@@ -296,8 +291,8 @@
 				<top>15</top>
 				<width>1920</width>
 				<align>right</align>
-				<font>XXLarge</font>
-				<textcolor>White</textcolor>
+				<font>XLargeCAP</font>
+				<textcolor>$VAR[ColorDiffuseSeekbarAltText]</textcolor>
 				<label>[UPPERCASE]$INFO[Player.Title][/UPPERCASE]</label>
 			</control>
 			
@@ -306,8 +301,8 @@
 				<top>15</top>
 				<width>1680</width>
 				<align>left</align>
-				<font>XXLarge</font>
-				<textcolor>White</textcolor>
+				<font>XLargeCAP</font>
+				<textcolor>$VAR[ColorDiffuseSeekbarAltText]</textcolor>
 				<label>[UPPERCASE]$INFO[VideoPlayer.TVShowTitle][/UPPERCASE]</label>
 			</control>			
 
@@ -319,7 +314,7 @@
 				<height>16</height>
 				<info>Player.Progress</info>
 				<texturebg colordiffuse="$VAR[ColorDiffuseSeekbarBorder]" border="1">skindefault/colordiffuse/white100solid.png</texturebg>
-				<midtexture border="1">other_textures/OSD/ProgressMid.png</midtexture>
+				<midtexture colordiffuse="$VAR[ColorDiffuseSeekbarProgress]" border="1">skindefault/colordiffuse/white100solid.png</midtexture>
 				<visible>true</visible>
 			</control>
 
