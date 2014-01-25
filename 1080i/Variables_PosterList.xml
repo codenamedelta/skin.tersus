@@ -24,5 +24,4 @@
 		$LOCALIZE[16101]: [COLOR $VAR[ColorDiffusePosterListItemCountsText]]$INFO[ListItem.Property(UnWatchedEpisodes)][/COLOR]</value>
 	</variable>
 	
-	
 </includes>

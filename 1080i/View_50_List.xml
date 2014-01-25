@@ -296,7 +296,42 @@
 			<control type="grouplist">
 				<left>558</left>
 				<top>1010</top>
-				<align>center</align>
+				<align>left</align>
+				<aligny>center</aligny>
+				<orientation>horizontal</orientation>
+					
+					<control type="label">
+						<height>40</height>
+						<width min="15" max="1314">auto</width>
+						<label>$VAR[PosterListSeasonCount]</label>
+						<font>MediumCAP</font>
+						<textcolor>$VAR[ColorDiffuseBreadcrumbsText]</textcolor>
+						<scroll>false</scroll>
+					</control>
+					<control type="label">
+						<height>40</height>
+						<width min="15" max="1314">auto</width>
+						<label>$VAR[PosterListEpisodeCount]</label>
+						<font>MediumCAP</font>
+						<textcolor>$VAR[ColorDiffuseBreadcrumbsText]</textcolor>
+						<scroll>false</scroll>
+					</control>
+					<control type="label">
+						<height>40</height>
+						<width min="15" max="1314">auto</width>
+						<label>$VAR[PosterListUnWatchedCount]</label>
+						<font>MediumCAP</font>
+						<textcolor>$VAR[ColorDiffuseBreadcrumbsText]</textcolor>
+						<scroll>false</scroll>
+					</control>
+					
+			</control>		
+			
+			<!-- PAGE COUNT & TOTAL ITEM COUNT FUTURE ADDITION 
+				<control type="grouplist">
+				<left>558</left>
+				<top>1010</top>
+				<align>right</align>
 				<aligny>center</aligny>
 				<orientation>horizontal</orientation>
 					
@@ -325,7 +360,8 @@
 						<scroll>false</scroll>
 					</control>
 				
-			</control>
+			</control>	-->		
+			
 		</control>
 
 	</include>

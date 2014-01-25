@@ -294,4 +294,12 @@
 		<value condition="[Skin.HasTheme(autumn)]">T01-C02</value>
 	</variable>
 	
+	<!-- COLOR DIFFUSE - OSD BG -->
+	<variable name="ColorDiffuseVideoOSDBackground">		
+		<!-- OSD NO FOCUS - DEFAULT THEME -->
+		<value condition="[Skin.HasTheme(skindefault)]">T00-C05</value>
+		<!-- OSD NO FOCUS - AUTUMN THEME -->
+		<value condition="[Skin.HasTheme(autumn)]">T01-C02</value>
+	</variable>
+	
 </includes>
