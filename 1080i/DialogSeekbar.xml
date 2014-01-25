@@ -45,7 +45,7 @@
                 <top>375</top>
 				<width>255</width>
 				<height>30</height>
-                <texture>other_textures/white-back.png</texture>
+                <texture colordiffuse="$VAR[ColorDiffuseSeekbarRatingBackground]">skindefault/colordiffuse/white100solid.png</texture>
 				<animation effect="slide" start="500,0" time="1250">WindowOpen</animation>
 				<animation effect="slide" end="0,-500" time="1250">WindowClose</animation>
             </control>
@@ -53,8 +53,7 @@
 			<control type="image">
             	<left>1682</left>
                 <top>375</top>
-				<align>center</align>
-                <texture background="true">$INFO[Player.StarRating]</texture>
+                <texture colordiffuse="$VAR[ColorDiffuseSeekbarFlags]">$INFO[Player.StarRating,skindefault/ratings/]</texture>
 				<animation effect="slide" start="500,0" time="1250">WindowOpen</animation>
 				<animation effect="slide" end="0,-500" time="1250">WindowClose</animation>
             </control>	
@@ -74,7 +73,7 @@
 					<width>120</width>
 					<height>80</height>
 					<aspectratio>keep</aspectratio>
-                	<texture fallback="flags/studios/default-studio.png">$INFO[VideoPlayer.Studio,skindefault/flags/studios/,.png]</texture>
+                	<texture colordiffuse="$VAR[ColorDiffuseSeekbarFlags]">$INFO[VideoPlayer.Studio,skindefault/flags/studios/,.png]</texture>
                     <visible>!VideoPlayer.Content(files)</visible>
             	</control>
             	
@@ -83,7 +82,7 @@
 					<width>120</width>
 					<height>80</height>
 					<aspectratio>keep</aspectratio>
-                	<texture fallback="flags/aspectratio/defaultaspect.png">$INFO[VideoPlayer.VideoAspect,skindefault/flags/aspectratio/,.png]</texture>
+                	<texture colordiffuse="$VAR[ColorDiffuseSeekbarFlags]">$INFO[VideoPlayer.VideoAspect,skindefault/flags/aspectratio/,.png]</texture>
             	</control>
 				
 				<control type="image">
@@ -91,7 +90,7 @@
 					<width>120</width>
 					<height>80</height>
 					<aspectratio>keep</aspectratio>
-                	<texture fallback="flags/resolution/defaultscreen.png">$INFO[VideoPlayer.VideoResolution,skindefault/flags/resolution/,.png]</texture>
+                	<texture colordiffuse="$VAR[ColorDiffuseSeekbarFlags]">$INFO[VideoPlayer.VideoResolution,skindefault/flags/resolution/,.png]</texture>
             	</control>
 				
 				<control type="image">
@@ -99,7 +98,7 @@
 					<width>120</width>
 					<height>80</height>
 					<aspectratio>keep</aspectratio>
-                	<texture fallback="flags/source/defaultsource.png">$VAR[VideoSourceFlagVar,skindefault/flags/source/,.png]</texture>
+                	<texture colordiffuse="$VAR[ColorDiffuseSeekbarFlags]">$VAR[VideoSourceFlagVar,skindefault/flags/source/,.png]</texture>
             	</control>
 				
             	<control type="image">
@@ -107,7 +106,7 @@
 					<width>120</width>
 					<height>80</height>
 					<aspectratio>keep</aspectratio>
-                	<texture fallback="flags/audio/defaultsound.png">$INFO[VideoPlayer.AudioCodec,skindefault/flags/info/]$INFO[VideoPlayer.AudioChannels,,.png]</texture>
+                	<texture colordiffuse="$VAR[ColorDiffuseSeekbarFlags]">$INFO[VideoPlayer.AudioCodec,skindefault/flags/info/]$INFO[VideoPlayer.AudioChannels,,.png]</texture>
             	</control>
 				
 			</control>
@@ -145,34 +144,33 @@
 			</control>
 			
 			<control type="label">
-				<left>1608</left>
+				<left>-15</left>
 				<top>90</top>
-				<width>300</width>
-				<font>Large</font>
+				<width>1920</width>
+				<font>LargeCAP</font>
 				<textcolor>$VAR[ColorDiffuseSeekbarAltText]</textcolor>
 				<align>right</align>
 				<label>$INFO[Player.Time]$INFO[Player.Duration, / ]</label>
 			</control>
 
 			<control type="label">
-				<left>0</left> 
-				<top>90</top>
+				<left>-15</left> 
+				<top>15</top>
 				<width>1920</width>
-				<font>Large</font>
+				<font>LargeCAP</font>
 				<textcolor>$VAR[ColorDiffuseSeekbarAltText]</textcolor>
-				<align>center</align>
-				<label>$LOCALIZE[31000] $INFO[Player.FinishTime]</label>
-				<visible>!Player.Forwarding + !Player.Rewinding + !Player.Paused</visible>
+				<align>right</align>
+				<label>$LOCALIZE[19081] $INFO[Player.FinishTime]</label>
 			</control>
 
 			<control type="label">
 				<left>0</left>
 				<top>90</top>
 				<width>1920</width>
-				<font>Large</font>
+				<font>LargeCAP</font>
 				<textcolor>$VAR[ColorDiffuseSeekbarText]</textcolor>
 				<align>center</align>
-				<label>[UPPERCASE]$LOCALIZE[112][/UPPERCASE]</label>
+				<label>$LOCALIZE[112]</label>
 				<visible>player.paused</visible>
 			</control>
 

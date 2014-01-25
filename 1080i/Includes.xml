@@ -75,7 +75,7 @@
 	<!-- Global Date/Clock/Temperature -->
 	<include name="GlobalDateClock">
 		<control type="group">
-			<visible>Window.IsActive(home) | Window.IsActive(settings) | Window.IsActive(settingscategory.xml)</visible>
+			<visible>[Window.IsActive(home) | Window.IsActive(settings) | Window.IsActive(settingscategory.xml)] + ![SubString(Weather.Temperature,BUSY,left) | SubString(Weather.Temperature,°F,left) | SubString(Weather.Temperature,°C,left)]</visible>
 			<control type="label">
 				<left>5</left>
 				<top>5</top>
@@ -93,6 +93,31 @@
 				<width>400</width>
 				<height>30</height>
 				<label>$INFO[System.Time(hh:mm:xx)] [COLOR $VAR[ColorDiffuseGlobalDateClockHomeSettingsAltText]]$INFO[Weather.Temperature][/COLOR]</label>
+				<font>XLargeCAP</font>
+				<textcolor>$VAR[ColorDiffuseGlobalDateClockHomeSettingsText]</textcolor>
+				<align>left</align>
+				<scroll>false</scroll>
+			</control>
+		</control>
+		<control type="group">
+			<visible>[Window.IsActive(home) | Window.IsActive(settings) | Window.IsActive(settingscategory.xml)] + [SubString(Weather.Temperature,BUSY,left) | SubString(Weather.Temperature,°F,left) | SubString(Weather.Temperature,°C,left)]</visible>
+			<control type="label">
+				<left>5</left>
+				<top>5</top>
+				<width>500</width>
+				<height>30</height>
+				<label>$INFO[System.Date(DDD)], $INFO[System.Date(MMM d)], $INFO[System.Date(yyyy)]</label>
+				<font>MediumCAP</font>
+				<textcolor>$VAR[ColorDiffuseGlobalDateClockHomeSettingsText]</textcolor>
+				<align>left</align>
+				<scroll>false</scroll>
+			</control>
+			<control type="label">
+				<left>5</left>
+				<top>50</top>
+				<width>400</width>
+				<height>30</height>
+				<label>$INFO[System.Time(hh:mm:xx)]</label>
 				<font>XLargeCAP</font>
 				<textcolor>$VAR[ColorDiffuseGlobalDateClockHomeSettingsText]</textcolor>
 				<align>left</align>

@@ -86,7 +86,7 @@
 	<!-- COLOR DIFFUSE - HOME ICONS -->
 	<variable name="ColorDiffuseHomeIcons">		
 		<!-- HOME ICONS - DEFAULT THEME -->
-		<value condition="[Skin.HasTheme(skindefault)]">T00-C02</value>
+		<value condition="[Skin.HasTheme(skindefault)]">T00-C06</value>
 		<!-- HOME ICONS - AUTUMN THEME -->
 		<value condition="[Skin.HasTheme(autumn)]">T01-C01</value>
 	</variable>
@@ -258,6 +258,39 @@
 		<!-- SEEKBAR ALT TEXT - DEFAULT THEME -->
 		<value condition="[Skin.HasTheme(skindefault)]">T00-C06</value>
 		<!-- SEEKBAR ALT TEXT - AUTUMN THEME -->
+		<value condition="[Skin.HasTheme(autumn)]">T01-C02</value>
+	</variable>
+	
+	<!-- COLOR DIFFUSE - SEEKBAR FLAGS -->
+	<variable name="ColorDiffuseSeekbarFlags">		
+		<!-- SEEKBAR FLAGS - DEFAULT THEME -->
+		<value condition="[Skin.HasTheme(skindefault)]">T00-C03</value>
+		<!-- SEEKBAR FLAGS - AUTUMN THEME -->
+		<value condition="[Skin.HasTheme(autumn)]">T01-C02</value>
+	</variable>
+	
+	<!-- COLOR DIFFUSE - SEEKBAR RATING BG -->
+	<variable name="ColorDiffuseSeekbarRatingBackground">		
+		<!-- SEEKBAR RATING BG - DEFAULT THEME -->
+		<value condition="[Skin.HasTheme(skindefault)]">T00-C05</value>
+		<!-- SEEKBAR RATING BG - AUTUMN THEME -->
+		<value condition="[Skin.HasTheme(autumn)]">T01-C02</value>
+	</variable>
+	
+<!-- VIDEO OSD VARIABLES -->	
+	<!-- COLOR DIFFUSE - OSD FOCUS -->
+	<variable name="ColorDiffuseVideoOSDFocus">		
+		<!-- OSD FOCUS - DEFAULT THEME -->
+		<value condition="[Skin.HasTheme(skindefault)]">T00-C03</value>
+		<!-- OSD FOCUS - AUTUMN THEME -->
+		<value condition="[Skin.HasTheme(autumn)]">T01-C02</value>
+	</variable>
+	
+	<!-- COLOR DIFFUSE - OSD NO FOCUS -->
+	<variable name="ColorDiffuseVideoOSDNoFocus">		
+		<!-- OSD NO FOCUS - DEFAULT THEME -->
+		<value condition="[Skin.HasTheme(skindefault)]">T00-C04</value>
+		<!-- OSD NO FOCUS - AUTUMN THEME -->
 		<value condition="[Skin.HasTheme(autumn)]">T01-C02</value>
 	</variable>
 	

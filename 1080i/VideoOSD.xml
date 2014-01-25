@@ -102,8 +102,8 @@
 						<height>50</height>
 						<label>210</label>
 						<font>-</font>
-						<texturefocus>other_textures/OSD/PrevTrackFO.png</texturefocus>
-						<texturenofocus>other_textures/OSD/PrevTrackNF.png</texturenofocus>
+						<texturefocus colordiffuse="$VAR[ColorDiffuseVideoOSDFocus]">skindefault/ui/osd/back.png</texturefocus>
+						<texturenofocus colordiffuse="$VAR[ColorDiffuseVideoOSDNoFocus]">skindefault/ui/osd/back.png</texturenofocus>
 						<onclick>PlayerControl(Previous)</onclick>
 					</control>
 
@@ -113,8 +113,8 @@
 						<height>50</height>
 						<label>31036</label>
 						<font>-</font>
-						<texturefocus>other_textures/OSD/RewindFO.png</texturefocus>
-						<texturenofocus>other_textures/OSD/RewindNF.png</texturenofocus>
+						<texturefocus colordiffuse="$VAR[ColorDiffuseVideoOSDFocus]">skindefault/ui/osd/rewind.png</texturefocus>
+						<texturenofocus colordiffuse="$VAR[ColorDiffuseVideoOSDNoFocus]">skindefault/ui/osd/rewind.png</texturenofocus>
 						<onclick>PlayerControl(Rewind)</onclick>
 					</control>
 
@@ -125,11 +125,11 @@
 						<label>31037</label>
 						<altlabel>208</altlabel>
 						<font>-</font>
-						<texturefocus>other_textures/OSD/PauseFO.png</texturefocus>
-						<texturenofocus>other_textures/OSD/PauseNF.png</texturenofocus>
+						<texturefocus colordiffuse="$VAR[ColorDiffuseVideoOSDFocus]">skindefault/ui/osd/pause.png</texturefocus>
+						<texturenofocus colordiffuse="$VAR[ColorDiffuseVideoOSDNoFocus]">skindefault/ui/osd/pause.png</texturenofocus>
 						<usealttexture>Player.Paused | Player.Forwarding | Player.Rewinding</usealttexture>
-						<alttexturefocus>other_textures/OSD/PlayFO.png</alttexturefocus>
-						<alttexturenofocus>other_textures/OSD/PlayNF.png</alttexturenofocus>
+						<alttexturefocus colordiffuse="$VAR[ColorDiffuseVideoOSDFocus]">skindefault/ui/osd/play.png</alttexturefocus>
+						<alttexturenofocus colordiffuse="$VAR[ColorDiffuseVideoOSDNoFocus]">skindefault/ui/osd/play.png</alttexturenofocus>
 						<onclick>PlayerControl(Play)</onclick>
 					</control>
 
@@ -139,8 +139,8 @@
 						<height>50</height>
 						<label>31038</label>
 						<font>-</font>
-						<texturefocus>other_textures/OSD/StopFO.png</texturefocus>
-						<texturenofocus>other_textures/OSD/StopNF.png</texturenofocus>
+						<texturefocus colordiffuse="$VAR[ColorDiffuseVideoOSDFocus]">skindefault/ui/osd/stop.png</texturefocus>
+						<texturenofocus colordiffuse="$VAR[ColorDiffuseVideoOSDNoFocus]">skindefault/ui/osd/stop.png</texturenofocus>
 						<onclick>PlayerControl(Stop)</onclick>
 					</control>
 
@@ -150,8 +150,8 @@
 						<height>50</height>
 						<label>31039</label>
 						<font>-</font>
-						<texturefocus>other_textures/OSD/ForwardFO.png</texturefocus>
-						<texturenofocus>other_textures/OSD/ForwardNF.png</texturenofocus>
+						<texturefocus colordiffuse="$VAR[ColorDiffuseVideoOSDFocus]">skindefault/ui/osd/fastforward.png</texturefocus>
+						<texturenofocus colordiffuse="$VAR[ColorDiffuseVideoOSDNoFocus]">skindefault/ui/osd/fastforward.png</texturenofocus>
 						<onclick>PlayerControl(Forward)</onclick>
 					</control>
 
@@ -161,8 +161,8 @@
 						<height>50</height>
 						<label>209</label>
 						<font>-</font>
-						<texturefocus>other_textures/OSD/NextTrackFO.png</texturefocus>
-						<texturenofocus>other_textures/OSD/NextTrackNF.png</texturenofocus>
+						<texturefocus colordiffuse="$VAR[ColorDiffuseVideoOSDFocus]">skindefault/ui/osd/forward.png</texturefocus>
+						<texturenofocus colordiffuse="$VAR[ColorDiffuseVideoOSDNoFocus]">skindefault/ui/osd/forward.png</texturenofocus>
 						<onclick>PlayerControl(Next)</onclick>
 					</control>
 
