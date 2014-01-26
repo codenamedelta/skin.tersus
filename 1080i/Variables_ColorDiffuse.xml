@@ -207,7 +207,7 @@
 	<!-- COLOR DIFFUSE - POSTERLIST ITEM COUNTS -->
 	<variable name="ColorDiffusePosterListItemCounts">		
 		<!-- ITEM COUNTS BG - DEFAULT THEME -->
-		<value condition="[Skin.HasTheme(skindefault)]">T00-C04</value>
+		<value condition="[Skin.HasTheme(skindefault)]">T00-C06</value>
 		<!-- ITEM COUNTS BG - AUTUMN THEME -->
 		<value condition="[Skin.HasTheme(autumn)]">T01-C03</value>
 	</variable>
@@ -217,6 +217,14 @@
 		<!-- ITEM COUNTS TEXT - DEFAULT THEME -->
 		<value condition="[Skin.HasTheme(skindefault)]">T00-C02</value>
 		<!-- ITEM COUNTS TEXT - AUTUMN THEME -->
+		<value condition="[Skin.HasTheme(autumn)]">T01-C02</value>
+	</variable>
+	
+	<!-- COLOR DIFFUSE - POSTERLIST SEPERATORS -->
+	<variable name="ColorDiffusePosterListSeperators">		
+		<!-- SEPERATORS - DEFAULT THEME -->
+		<value condition="[Skin.HasTheme(skindefault)]">T00-C02</value>
+		<!-- SEPERATORS - AUTUMN THEME -->
 		<value condition="[Skin.HasTheme(autumn)]">T01-C02</value>
 	</variable>
 	

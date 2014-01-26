@@ -288,7 +288,7 @@
 				<top>1010</top>
 				<width>1314</width>
 				<height>70</height>
-				<texture colordiffuse="$VAR[ColorDiffusePosterListItemCounts]">skindefault/colordiffuse/white75.png</texture>
+				<texture colordiffuse="$VAR[ColorDiffusePosterListItemCounts]">skindefault/colordiffuse/white100solid.png</texture>
 			</control>
 			
 		<control type="group">
@@ -338,7 +338,7 @@
 					<control type="label">
 						<height>75</height>
 						<width min="15" max="500">auto</width>
-						<label>$LOCALIZE[31028] ($INFO[Container.CurrentPage]$INFO[Container.NumPages,/])  </label>
+						<label>$LOCALIZE[31028] [COLOR $VAR[ColorDiffusePosterListSeperators]]([/COLOR]$INFO[Container.CurrentPage][COLOR $VAR[ColorDiffusePosterListSeperators]]/[/COLOR]$INFO[Container.NumPages][COLOR $VAR[ColorDiffusePosterListSeperators]])[/COLOR]  </label>
 						<font>SmallCAP</font>
 						<textcolor>$VAR[ColorDiffuseBreadcrumbsText]</textcolor>
 						<scroll>false</scroll>
@@ -346,7 +346,7 @@
 					<control type="label">
 						<height>75</height>
 						<width min="15" max="500">auto</width>
-						<label>$LOCALIZE[31027] ($INFO[Container.NumItems])</label>
+						<label>$LOCALIZE[31027] [COLOR $VAR[ColorDiffusePosterListSeperators]]([/COLOR]$INFO[Container.NumItems][COLOR $VAR[ColorDiffusePosterListSeperators]])[/COLOR]</label>
 						<font>SmallCAP</font>
 						<textcolor>$VAR[ColorDiffuseBreadcrumbsText]</textcolor>
 						<scroll>false</scroll>
