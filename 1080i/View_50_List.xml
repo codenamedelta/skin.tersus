@@ -327,40 +327,32 @@
 					
 			</control>		
 			
-			<!-- PAGE COUNT & TOTAL ITEM COUNT FUTURE ADDITION 
+			<!-- PAGE COUNT & TOTAL ITEM COUNT -->
 				<control type="grouplist">
-				<left>558</left>
+				<right>70</right>
 				<top>1010</top>
 				<align>right</align>
 				<aligny>center</aligny>
 				<orientation>horizontal</orientation>
 					
 					<control type="label">
-						<height>40</height>
-						<width min="15" max="1314">auto</width>
-						<label>$VAR[PosterListSeasonCount]</label>
-						<font>MediumCAP</font>
+						<height>75</height>
+						<width min="15" max="500">auto</width>
+						<label>$LOCALIZE[31028] ($INFO[Container.CurrentPage]$INFO[Container.NumPages,/])  </label>
+						<font>SmallCAP</font>
 						<textcolor>$VAR[ColorDiffuseBreadcrumbsText]</textcolor>
 						<scroll>false</scroll>
 					</control>
 					<control type="label">
-						<height>40</height>
-						<width min="15" max="1314">auto</width>
-						<label>$VAR[PosterListEpisodeCount]</label>
-						<font>MediumCAP</font>
+						<height>75</height>
+						<width min="15" max="500">auto</width>
+						<label>$LOCALIZE[31027] ($INFO[Container.NumItems])</label>
+						<font>SmallCAP</font>
 						<textcolor>$VAR[ColorDiffuseBreadcrumbsText]</textcolor>
 						<scroll>false</scroll>
 					</control>
-					<control type="label">
-						<height>40</height>
-						<width min="15" max="1314">auto</width>
-						<label>$VAR[PosterListUnWatchedCount]</label>
-						<font>MediumCAP</font>
-						<textcolor>$VAR[ColorDiffuseBreadcrumbsText]</textcolor>
-						<scroll>false</scroll>
-					</control>
-				
-			</control>	-->		
+									
+			</control>		
 			
 		</control>
 
