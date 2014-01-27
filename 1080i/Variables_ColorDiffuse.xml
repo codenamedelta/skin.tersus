@@ -12,7 +12,7 @@
 	<!-- COLOR DIFFUSE - GLOBAL BACKGROUND -->
 	<variable name="ColorDiffuseGlobalBackground">		
 		<!-- GLOBAL BACKGROUND - DEFAULT THEME -->
-		<value condition="[Skin.HasTheme(skindefault)]">T00-C01</value>
+		<value condition="[Skin.HasTheme(skindefault)]">T00-C08</value>
 		<!-- GLOBAL BACKGROUND - AUTUMN THEME -->
 		<value condition="[Skin.HasTheme(autumn)]">T01-C02</value>
 	</variable>
@@ -232,7 +232,7 @@
 	<!-- COLOR DIFFUSE - SEEKBAR BACKGROUND -->
 	<variable name="ColorDiffuseSeekbarBackground">		
 		<!-- SEEKBAR BG - DEFAULT THEME -->
-		<value condition="[Skin.HasTheme(skindefault)]">T00-C05</value>
+		<value condition="[Skin.HasTheme(skindefault)]">T00-C08</value>
 		<!-- SEEKBAR BG - AUTUMN THEME -->
 		<value condition="[Skin.HasTheme(autumn)]">T01-C02</value>
 	</variable>
@@ -248,7 +248,7 @@
 	<!-- COLOR DIFFUSE - SEEKBAR PROGRESS -->
 	<variable name="ColorDiffuseSeekbarProgress">		
 		<!-- SEEKBAR PROGRESS - DEFAULT THEME -->
-		<value condition="[Skin.HasTheme(skindefault)]">T00-C06</value>
+		<value condition="[Skin.HasTheme(skindefault)]">T00-C03</value>
 		<!-- SEEKBAR PROGRESS - AUTUMN THEME -->
 		<value condition="[Skin.HasTheme(autumn)]">T01-C02</value>
 	</variable>
@@ -280,7 +280,7 @@
 	<!-- COLOR DIFFUSE - SEEKBAR RATING BG -->
 	<variable name="ColorDiffuseSeekbarRatingBackground">		
 		<!-- SEEKBAR RATING BG - DEFAULT THEME -->
-		<value condition="[Skin.HasTheme(skindefault)]">T00-C05</value>
+		<value condition="[Skin.HasTheme(skindefault)]">T00-C08</value>
 		<!-- SEEKBAR RATING BG - AUTUMN THEME -->
 		<value condition="[Skin.HasTheme(autumn)]">T01-C02</value>
 	</variable>

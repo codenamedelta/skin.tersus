@@ -23,7 +23,7 @@
 				<height>150</height>
 				<texture colordiffuse="$VAR[ColorDiffuseSeekbarBackground]">skindefault/colordiffuse/white100solid.png</texture>
 				<bordertexture colordiffuse="$VAR[ColorDiffuseSeekbarBorder]">skindefault/colordiffuse/white100solid.png</bordertexture>
-				<bordersize>0,0,0,10</bordersize>
+				<bordersize>0,0,0,2</bordersize>
 			</control>
 			
 			<!-- TVSHOW POSTER -->
@@ -35,7 +35,7 @@
                 <texture background="true">$VAR[PlayerPosterVar]</texture>
                 <aspectratio aligny="bottom">stretch</aspectratio>
 				<bordertexture colordiffuse="$VAR[ColorDiffuseSeekbarBorder]">skindefault/colordiffuse/white100solid.png</bordertexture>
-				<bordersize>10</bordersize>
+				<bordersize>2</bordersize>
 				<animation effect="slide" start="500,0" time="1250">WindowOpen</animation>
 				<animation effect="slide" end="0,-500" time="1250">WindowClose</animation>
             </control>
@@ -140,14 +140,14 @@
 				<height>150</height>
 				<texture colordiffuse="$VAR[ColorDiffuseSeekbarBackground]">skindefault/colordiffuse/white100solid.png</texture>
 				<bordertexture colordiffuse="$VAR[ColorDiffuseSeekbarBorder]">skindefault/colordiffuse/white100solid.png</bordertexture>
-				<bordersize>0,10,0,0</bordersize>
+				<bordersize>0,2,0,0</bordersize>
 			</control>
 			
 			<control type="label">
 				<left>-15</left>
 				<top>90</top>
 				<width>1920</width>
-				<font>LargeCAP</font>
+				<font>XLargeCAP</font>
 				<textcolor>$VAR[ColorDiffuseSeekbarAltText]</textcolor>
 				<align>right</align>
 				<label>$INFO[Player.Time]$INFO[Player.Duration, / ]</label>
@@ -157,7 +157,7 @@
 				<left>-15</left> 
 				<top>15</top>
 				<width>1920</width>
-				<font>LargeCAP</font>
+				<font>XLargeCAP</font>
 				<textcolor>$VAR[ColorDiffuseSeekbarAltText]</textcolor>
 				<align>right</align>
 				<label>$LOCALIZE[19081] $INFO[Player.FinishTime]</label>
@@ -167,7 +167,7 @@
 				<left>0</left>
 				<top>90</top>
 				<width>1920</width>
-				<font>LargeCAP</font>
+				<font>XLargeCAP</font>
 				<textcolor>$VAR[ColorDiffuseSeekbarText]</textcolor>
 				<align>center</align>
 				<label>$LOCALIZE[112]</label>
@@ -307,7 +307,7 @@
 			<control type="progress" id="23">
 				<description>Progress Bar</description>
 				<left>15</left>
-				<top>80</top>
+				<top>78</top>
 				<width>1890</width>
 				<height>16</height>
 				<info>Player.Progress</info>

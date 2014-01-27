@@ -6,6 +6,8 @@
 	<color name="Blue">FF0000FF</color>
 	<color name="Green">FF00FF00</color>
 	<color name="FanartDiffuse">66FFFFFF</color>
+	
+<!-- SkinDefault Theme -->
 	<!-- DarkBlue -->
 	<color name="T00-C01">FF3E606F</color>
 	<!-- DarkerBlue -->
@@ -20,6 +22,10 @@
 	<color name="T00-C06">FFA7BAA8</color>
 	<!-- MediumBlue -->
 	<color name="T00-C07">FF52727A</color>
+	<!-- DarkCobalt -->
+	<color name="T00-C08">FF475E60</color>
+	
+<!-- Autumn Theme -->
 	<!-- MediumRed -->
 	<color name="T01-C01">FF83161B</color>
 	<!-- OffTan -->
