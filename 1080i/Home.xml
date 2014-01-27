@@ -31,6 +31,7 @@
 					<height>80</height>
 					<font>Home</font>
 					<info>ListItem.Label</info>
+					<textcolor>$VAR[ColorDiffuseHomeLabel]</textcolor>
 					<align>left</align>
 				</control>
 
@@ -44,7 +45,7 @@
 					<height>80</height>
 					<info>ListItem.Label</info>
 					<font>Home</font>
-					<textcolor>T00-C02</textcolor>
+					<textcolor>$VAR[ColorDiffuseHomeLabelFocused]</textcolor>
 					<align>left</align>
 				</control>
 

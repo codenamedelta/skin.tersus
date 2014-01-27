@@ -288,7 +288,7 @@
 				<top>1010</top>
 				<width>1314</width>
 				<height>70</height>
-				<texture colordiffuse="$VAR[ColorDiffusePosterListItemCounts]">skindefault/colordiffuse/white100solid.png</texture>
+				<texture colordiffuse="$VAR[ColorDiffusePosterListItemCounts]">skindefault/colordiffuse/white80.png</texture>
 			</control>
 			
 		<control type="group">
