@@ -107,7 +107,6 @@
 					<width>120</width>
 					<height>80</height>
 					<aspectratio>keep</aspectratio>
-					<visible>!IsEmpty(ListItem.Thumb)</visible>
 					<texture colordiffuse="$VAR[ColorDiffusePosterListFlags]">$VAR[RatingFlagVar,skindefault/flags/rating/,.png]</texture>
 					<include>PosterListSelectionAnimation</include>
 				</control>
@@ -117,7 +116,6 @@
 					<width>120</width>
 					<height>80</height>
 					<aspectratio>keep</aspectratio>
-					<visible>!IsEmpty(ListItem.Thumb)</visible>
 					<texture colordiffuse="$VAR[ColorDiffusePosterListFlags]">$INFO[ListItem.Studio,skindefault/flags/studios/,.png]</texture>
 					<include>PosterListSelectionAnimation</include>
 				</control>			
@@ -305,7 +303,7 @@
 						<width min="15" max="1314">auto</width>
 						<label>$VAR[PosterListSeasonCount]</label>
 						<font>MediumCAP</font>
-						<textcolor>$VAR[ColorDiffuseBreadcrumbsText]</textcolor>
+						<textcolor>$VAR[ColorDiffusePosterListItemCountsAltText]</textcolor>
 						<scroll>false</scroll>
 					</control>
 					<control type="label">
@@ -313,7 +311,7 @@
 						<width min="15" max="1314">auto</width>
 						<label>$VAR[PosterListEpisodeCount]</label>
 						<font>MediumCAP</font>
-						<textcolor>$VAR[ColorDiffuseBreadcrumbsText]</textcolor>
+						<textcolor>$VAR[ColorDiffusePosterListItemCountsAltText]</textcolor>
 						<scroll>false</scroll>
 					</control>
 					<control type="label">
@@ -321,7 +319,7 @@
 						<width min="15" max="1314">auto</width>
 						<label>$VAR[PosterListUnWatchedCount]</label>
 						<font>MediumCAP</font>
-						<textcolor>$VAR[ColorDiffuseBreadcrumbsText]</textcolor>
+						<textcolor>$VAR[ColorDiffusePosterListItemCountsAltText]</textcolor>
 						<scroll>false</scroll>
 					</control>
 					
@@ -340,7 +338,7 @@
 						<width min="15" max="500">auto</width>
 						<label>$LOCALIZE[31028] [COLOR $VAR[ColorDiffusePosterListSeperators]]([/COLOR]$INFO[Container.CurrentPage][COLOR $VAR[ColorDiffusePosterListSeperators]]/[/COLOR]$INFO[Container.NumPages][COLOR $VAR[ColorDiffusePosterListSeperators]])[/COLOR]  </label>
 						<font>SmallCAP</font>
-						<textcolor>$VAR[ColorDiffuseBreadcrumbsText]</textcolor>
+						<textcolor>$VAR[ColorDiffusePosterListItemCountsAltText]</textcolor>
 						<scroll>false</scroll>
 					</control>
 					<control type="label">
@@ -348,7 +346,7 @@
 						<width min="15" max="500">auto</width>
 						<label>$LOCALIZE[31027] [COLOR $VAR[ColorDiffusePosterListSeperators]]([/COLOR]$INFO[Container.NumItems][COLOR $VAR[ColorDiffusePosterListSeperators]])[/COLOR]</label>
 						<font>SmallCAP</font>
-						<textcolor>$VAR[ColorDiffuseBreadcrumbsText]</textcolor>
+						<textcolor>$VAR[ColorDiffusePosterListItemCountsAltText]</textcolor>
 						<scroll>false</scroll>
 					</control>
 									

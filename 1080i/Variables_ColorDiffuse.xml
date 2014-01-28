@@ -28,7 +28,7 @@
 	<!-- COLOR DIFFUSE - GLOBAL DATE CLOCK HOME/SETTINGS TEXT -->
 	<variable name="ColorDiffuseGlobalDateClockHomeSettingsText">		
 		<!-- DEFAULT THEME -->
-		<value condition="[Skin.HasTheme(skindefault)]">T00-C05</value>
+		<value condition="[Skin.HasTheme(skindefault)]">T00-C04</value>
 		<!-- AUTUMN THEME -->
 		<value condition="[Skin.HasTheme(autumn)]">T01-C02</value>
 	</variable>
@@ -36,7 +36,7 @@
 	<!-- COLOR DIFFUSE - GLOBAL DATE CLOCK HOME/SETTINGS ALT TEXT -->
 	<variable name="ColorDiffuseGlobalDateClockHomeSettingsAltText">		
 		<!-- DEFAULT THEME -->
-		<value condition="[Skin.HasTheme(skindefault)]">T00-C06</value>
+		<value condition="[Skin.HasTheme(skindefault)]">T00-C03</value>
 		<!-- AUTUMN THEME -->
 		<value condition="[Skin.HasTheme(autumn)]">T01-C02</value>
 	</variable>
@@ -44,7 +44,7 @@
 	<!-- COLOR DIFFUSE - GLOBAL DATE CLOCK SEEKBAR TEXT -->
 	<variable name="ColorDiffuseGlobalDateClockSeekbarText">		
 		<!-- DEFAULT THEME -->
-		<value condition="[Skin.HasTheme(skindefault)]">T00-C02</value>
+		<value condition="[Skin.HasTheme(skindefault)]">T00-C03</value>
 		<!-- AUTUMN THEME -->
 		<value condition="[Skin.HasTheme(autumn)]">T01-C02</value>
 	</variable>
@@ -60,7 +60,7 @@
 	<!-- COLOR DIFFUSE - GLOBAL DATE CLOCK TEXT -->
 	<variable name="ColorDiffuseGlobalDateClockText">		
 		<!-- DEFAULT THEME -->
-		<value condition="[Skin.HasTheme(skindefault)]">T00-C05</value>
+		<value condition="[Skin.HasTheme(skindefault)]">T00-C03</value>
 		<!-- AUTUMN THEME -->
 		<value condition="[Skin.HasTheme(autumn)]">T01-C02</value>
 	</variable>
@@ -68,7 +68,7 @@
 	<!-- COLOR DIFFUSE - GLOBAL DATE CLOCK ALT TEXT -->
 	<variable name="ColorDiffuseGlobalDateClockAltText">		
 		<!-- DEFAULT THEME -->
-		<value condition="[Skin.HasTheme(skindefault)]">T00-C06</value>
+		<value condition="[Skin.HasTheme(skindefault)]">T00-C08</value>
 		<!-- AUTUMN THEME -->
 		<value condition="[Skin.HasTheme(autumn)]">T01-C02</value>
 	</variable>
@@ -77,7 +77,7 @@
 	<!-- COLOR DIFFUSE - BREADCRUMBS TEXT -->
 	<variable name="ColorDiffuseBreadcrumbsText">		
 		<!-- DEFAULT THEME -->
-		<value condition="[Skin.HasTheme(skindefault)]">T00-C06</value>
+		<value condition="[Skin.HasTheme(skindefault)]">T00-C03</value>
 		<!-- AUTUMN THEME -->
 		<value condition="[Skin.HasTheme(autumn)]">T01-C02</value>
 	</variable>
@@ -231,7 +231,15 @@
 	<!-- COLOR DIFFUSE - POSTERLIST ITEM COUNTS TEXT -->
 	<variable name="ColorDiffusePosterListItemCountsText">		
 		<!-- DEFAULT THEME -->
-		<value condition="[Skin.HasTheme(skindefault)]">T00-C02</value>
+		<value condition="[Skin.HasTheme(skindefault)]">T00-C08</value>
+		<!-- AUTUMN THEME -->
+		<value condition="[Skin.HasTheme(autumn)]">T01-C02</value>
+	</variable>
+	
+	<!-- COLOR DIFFUSE - POSTERLIST ITEM COUNTS ALT TEXT -->
+	<variable name="ColorDiffusePosterListItemCountsAltText">		
+		<!-- DEFAULT THEME -->
+		<value condition="[Skin.HasTheme(skindefault)]">T00-C03</value>
 		<!-- AUTUMN THEME -->
 		<value condition="[Skin.HasTheme(autumn)]">T01-C02</value>
 	</variable>
@@ -239,7 +247,7 @@
 	<!-- COLOR DIFFUSE - POSTERLIST SEPERATORS -->
 	<variable name="ColorDiffusePosterListSeperators">		
 		<!-- DEFAULT THEME -->
-		<value condition="[Skin.HasTheme(skindefault)]">T00-C02</value>
+		<value condition="[Skin.HasTheme(skindefault)]">T00-C08</value>
 		<!-- AUTUMN THEME -->
 		<value condition="[Skin.HasTheme(autumn)]">T01-C02</value>
 	</variable>
@@ -321,7 +329,7 @@
 	<!-- COLOR DIFFUSE - OSD BG -->
 	<variable name="ColorDiffuseVideoOSDBackground">		
 		<!-- DEFAULT THEME -->
-		<value condition="[Skin.HasTheme(skindefault)]">T00-C05</value>
+		<value condition="[Skin.HasTheme(skindefault)]">T00-C08</value>
 		<!-- AUTUMN THEME -->
 		<value condition="[Skin.HasTheme(autumn)]">T01-C02</value>
 	</variable>
