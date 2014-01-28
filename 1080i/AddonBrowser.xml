@@ -8,7 +8,7 @@
 
 		<include>GlobalBackground</include>
 
-		<include>View_50_List</include>
+		<include>View_PosterList</include>
 
 		<control type="grouplist" id="9000">
 			<posx>15</posx>
