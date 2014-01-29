@@ -143,6 +143,14 @@
 		<value condition="[Skin.HasTheme(autumn)]">T01-C03</value>
 	</variable>
 	
+	<!-- COLOR DIFFUSE - NAVIGATION LOGO -->
+	<variable name="ColorDiffuseNavigationLogo">		
+		<!-- DEFAULT THEME -->
+		<value condition="[Skin.HasTheme(skindefault)]">T00-C08</value>
+		<!-- AUTUMN THEME -->
+		<value condition="[Skin.HasTheme(autumn)]">T01-C03</value>
+	</variable>
+	
 <!-- DIALOG CONTEXTMENU VARIABLES -->	
 	<!-- COLOR DIFFUSE - CONTEXTMENU BG -->
 	<variable name="ColorDiffuseContextMenuPanelBackground">		
@@ -152,7 +160,15 @@
 		<value condition="[Skin.HasTheme(autumn)]">T01-C03</value>
 	</variable>
 	
-<!-- DIALOG CONTEXTMENU VARIABLES -->	
+	<!-- COLOR DIFFUSE - CONTEXTMENU LOGO -->
+	<variable name="ColorDiffuseContextMenuLogo">		
+		<!-- DEFAULT THEME -->
+		<value condition="[Skin.HasTheme(skindefault)]">T00-C08</value>
+		<!-- AUTUMN THEME -->
+		<value condition="[Skin.HasTheme(autumn)]">T01-C03</value>
+	</variable>
+	
+<!-- DIALOG BUSY VARIABLES -->	
 	<!-- COLOR DIFFUSE - BUSY SMALL -->
 	<variable name="ColorDiffuseBusySmall">		
 		<!-- DEFAULT THEME -->

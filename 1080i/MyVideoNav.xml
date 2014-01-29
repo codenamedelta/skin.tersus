@@ -30,6 +30,18 @@
 				<effect type="slide" start="0" end="-360" time="200"/>
 			</animation>
 		</control>
+		
+		<control type="image">
+			<left>2.5</left>
+			<top>15</top>
+			<width>355</width>
+			<height>75</height>
+			<texture colordiffuse="$VAR[ColorDiffuseNavigationLogo]">skindefault/colordiffuse/tersuslogo.png</texture>
+			<animation type="Conditional" condition="!ControlGroup(9000).HasFocus()">
+				<effect type="slide" start="0" end="-360" time="200"/>
+			</animation>
+		</control>
+		
 		<control type="grouplist" id="9000">
 			<left>15</left>
 			<width>360</width>
