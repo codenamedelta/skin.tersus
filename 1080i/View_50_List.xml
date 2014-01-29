@@ -44,6 +44,7 @@
 					<width>735</width>
 					<font>ViewFontMedium</font>
 					<textcolor>$VAR[ColorDiffusePosterListSelectionLabelText]</textcolor>
+					<selectedcolor>$VAR[ColorDiffusePosterListSelectionLabelTextFocused]</selectedcolor>
 					<label>$INFO[ListItem.Label]</label>
 					<visible>![Container.Content(episodes)]</visible>
 				</control>
@@ -54,6 +55,7 @@
 					<width>735</width>
 					<font>ViewFontMedium</font>
 					<textcolor>$VAR[ColorDiffusePosterListSelectionLabelText]</textcolor>
+					<selectedcolor>$VAR[ColorDiffusePosterListSelectionLabelTextFocused]</selectedcolor>
 					<label>$INFO[ListItem.Title]</label>
 					<visible>[Container.Content(episodes)]</visible>
 				</control>
@@ -75,6 +77,7 @@
 					<width>730</width>
 					<font>ViewFontMedium</font>
 					<textcolor>$VAR[ColorDiffusePosterListSelectionLabelTextFocused]</textcolor>
+					<selectedcolor>$VAR[ColorDiffusePosterListSelectionLabelTextFocused]</selectedcolor>
 					<label>$INFO[ListItem.Label]</label>
 					<include>PosterListSelectionAnimation</include>		
 					<include>PosterListSelectionEpisodeWatchedAnimation</include>					
@@ -86,6 +89,7 @@
 					<width>730</width>
 					<font>ViewFontSmall</font>
 					<textcolor>$VAR[ColorDiffusePosterListSelectionLabel2TextFocused]</textcolor>
+					<selectedcolor>$VAR[ColorDiffusePosterListSelectionLabel2TextFocused]</selectedcolor>
 					<label>$INFO[ListItem.Year]$INFO[ListItem.Genre, - ]</label>
 					<scrollsuffix>   |   </scrollsuffix>
 					<include>PosterListSelectionAnimation</include>
@@ -139,6 +143,7 @@
 					<font>ViewFontMedium</font>
 					<align>center</align>
 					<textcolor>$VAR[ColorDiffusePosterListSelectionLabelTextFocused]</textcolor>
+					<selectedcolor>$VAR[ColorDiffusePosterListSelectionLabelTextFocused]</selectedcolor>
 					<label>$INFO[ListItem.Episode]</label>	
 					<include>PosterListSelectionAnimation</include>
 				</control>
@@ -149,6 +154,7 @@
 					<width>725</width>
 					<font>ViewFontMedium</font>
 					<textcolor>$VAR[ColorDiffusePosterListSelectionLabelTextFocused]</textcolor>
+					<selectedcolor>$VAR[ColorDiffusePosterListSelectionLabelTextFocused]</selectedcolor>
 					<label>$INFO[ListItem.Title]</label>
 					<include>PosterListSelectionAnimation</include>
 					<include>PosterListSelectionEpisodeWatchedAnimation</include>
@@ -160,6 +166,7 @@
 					<width>725</width>
 					<font>ViewFontSmall</font>
 					<textcolor>$VAR[ColorDiffusePosterListSelectionLabel2TextFocused]</textcolor>
+					<selectedcolor>$VAR[ColorDiffusePosterListSelectionLabel2TextFocused]</selectedcolor>
 					<label>$INFO[ListItem.Year]$INFO[ListItem.Genre, - ]</label>
 					<scrollsuffix>   |   </scrollsuffix>
 					<include>PosterListSelectionAnimation</include>
@@ -280,17 +287,19 @@
 			<animation effect="fade" start="0" end="100" time="400" condition="Control.HasFocus(60) | Container.Scrolling">Conditional</animation>
 		</control>-->
 		
+		<!-- BOTTOM BAR BG - ITEM COUNTS -->
+		<control type="image">
+			<left>558</left>
+			<top>1010</top>
+			<width>1314</width>
+			<height>70</height>
+			<texture colordiffuse="$VAR[ColorDiffusePosterListItemCounts]">skindefault/colordiffuse/white100solid.png</texture>
+		</control>
 			
-			<control type="image">
-				<left>558</left>
-				<top>1010</top>
-				<width>1314</width>
-				<height>70</height>
-				<texture colordiffuse="$VAR[ColorDiffusePosterListItemCounts]">skindefault/colordiffuse/white80.png</texture>
-			</control>
-			
+		<!-- ITEM COUNTS -->	
 		<control type="group">
-					
+			
+			<!-- SEASON, EPISODE, UNWATCHED COUNT -->			
 			<control type="grouplist">
 				<left>558</left>
 				<top>1010</top>
@@ -326,7 +335,7 @@
 			</control>		
 			
 			<!-- PAGE COUNT & TOTAL ITEM COUNT -->
-				<control type="grouplist">
+			<control type="grouplist">
 				<right>70</right>
 				<top>1010</top>
 				<align>right</align>
@@ -337,7 +346,7 @@
 						<height>75</height>
 						<width min="15" max="500">auto</width>
 						<label>$LOCALIZE[31028] [COLOR $VAR[ColorDiffusePosterListSeperators]]([/COLOR]$INFO[Container.CurrentPage][COLOR $VAR[ColorDiffusePosterListSeperators]]/[/COLOR]$INFO[Container.NumPages][COLOR $VAR[ColorDiffusePosterListSeperators]])[/COLOR]  </label>
-						<font>SmallCAP</font>
+						<font>MediumCAP</font>
 						<textcolor>$VAR[ColorDiffusePosterListItemCountsAltText]</textcolor>
 						<scroll>false</scroll>
 					</control>
@@ -345,7 +354,7 @@
 						<height>75</height>
 						<width min="15" max="500">auto</width>
 						<label>$LOCALIZE[31027] [COLOR $VAR[ColorDiffusePosterListSeperators]]([/COLOR]$INFO[Container.NumItems][COLOR $VAR[ColorDiffusePosterListSeperators]])[/COLOR]</label>
-						<font>SmallCAP</font>
+						<font>MediumCAP</font>
 						<textcolor>$VAR[ColorDiffusePosterListItemCountsAltText]</textcolor>
 						<scroll>false</scroll>
 					</control>

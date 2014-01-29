@@ -156,7 +156,7 @@
 				<top>0</top>
 				<width>350</width>
 				<height>70</height>
-				<texture colordiffuse="$VAR[ColorDiffuseGlobalDateClock]">skindefault/colordiffuse/white80.png</texture>
+				<texture colordiffuse="$VAR[ColorDiffuseGlobalDateClock]">skindefault/colordiffuse/white100solid.png</texture>
 			</control>
 			<control type="label">
 				<left>0</left>
@@ -177,7 +177,7 @@
 				<top>0</top>
 				<width>1920</width>
 				<height>70</height>
-				<texture colordiffuse="$VAR[ColorDiffuseGlobalDateClock]">skindefault/colordiffuse/white80.png</texture>
+				<texture colordiffuse="$VAR[ColorDiffuseGlobalDateClock]">skindefault/colordiffuse/white100solid.png</texture>
 			</control>
 			<control type="label">
 				<left>0</left>

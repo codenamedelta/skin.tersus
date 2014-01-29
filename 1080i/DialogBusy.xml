@@ -16,12 +16,28 @@
 				<description>Busy animation</description>
 				<width>128</width>
 				<height>128</height>
-				<texture>$INFO[Skin.CurrentTheme]/ui/busy.png</texture>
+				<texture colordiffuse="$VAR[ColorDiffuseBusySmall]">skindefault/colordiffuse/busysmallsolid.png</texture>
 				<aspectratio>keep</aspectratio>
 				<animation effect="rotate" start="0" end="360" center="64,64" time="3000" loop="true" condition="true">conditional</animation>
 			</control>
-
 		</control>
+		
+		<control type="group">
+			<left>832</left>
+			<top>412</top>
+			
+			<control type="image">
+				<description>Busy animation</description>
+				<width>256</width>
+				<height>256</height>
+				<texture colordiffuse="$VAR[ColorDiffuseBusyLarge]">skindefault/colordiffuse/busylargesolid.png</texture>
+				<aspectratio>keep</aspectratio>
+				<animation effect="rotate" start="360" end="0" center="128,128" time="3000" loop="true" condition="true">conditional</animation>
+			</control>
+		
+		</control>
+
+		
 
 	</controls>
 

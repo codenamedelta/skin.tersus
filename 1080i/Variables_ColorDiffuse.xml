@@ -44,7 +44,7 @@
 	<!-- COLOR DIFFUSE - GLOBAL DATE CLOCK SEEKBAR TEXT -->
 	<variable name="ColorDiffuseGlobalDateClockSeekbarText">		
 		<!-- DEFAULT THEME -->
-		<value condition="[Skin.HasTheme(skindefault)]">T00-C03</value>
+		<value condition="[Skin.HasTheme(skindefault)]">T00-C04</value>
 		<!-- AUTUMN THEME -->
 		<value condition="[Skin.HasTheme(autumn)]">T01-C02</value>
 	</variable>
@@ -52,7 +52,7 @@
 	<!-- COLOR DIFFUSE - GLOBAL DATE SEEKBAR ALT TEXT -->
 	<variable name="ColorDiffuseGlobalDateClockSeekbarAltText">		
 		<!-- DEFAULT THEME -->
-		<value condition="[Skin.HasTheme(skindefault)]">T00-C04</value>
+		<value condition="[Skin.HasTheme(skindefault)]">T00-C03</value>
 		<!-- AUTUMN THEME -->
 		<value condition="[Skin.HasTheme(autumn)]">T01-C02</value>
 	</variable>
@@ -138,7 +138,33 @@
 	<!-- COLOR DIFFUSE - NAVIGATION BG -->
 	<variable name="ColorDiffuseNavigationPanel">		
 		<!-- DEFAULT THEME -->
-		<value condition="[Skin.HasTheme(skindefault)]">T00-C06</value>
+		<value condition="[Skin.HasTheme(skindefault)]">T00-C04</value>
+		<!-- AUTUMN THEME -->
+		<value condition="[Skin.HasTheme(autumn)]">T01-C03</value>
+	</variable>
+	
+<!-- DIALOG CONTEXTMENU VARIABLES -->	
+	<!-- COLOR DIFFUSE - CONTEXTMENU BG -->
+	<variable name="ColorDiffuseContextMenuPanelBackground">		
+		<!-- DEFAULT THEME -->
+		<value condition="[Skin.HasTheme(skindefault)]">T00-C04</value>
+		<!-- AUTUMN THEME -->
+		<value condition="[Skin.HasTheme(autumn)]">T01-C03</value>
+	</variable>
+	
+<!-- DIALOG CONTEXTMENU VARIABLES -->	
+	<!-- COLOR DIFFUSE - BUSY SMALL -->
+	<variable name="ColorDiffuseBusySmall">		
+		<!-- DEFAULT THEME -->
+		<value condition="[Skin.HasTheme(skindefault)]">T00-C04</value>
+		<!-- AUTUMN THEME -->
+		<value condition="[Skin.HasTheme(autumn)]">T01-C03</value>
+	</variable>
+	
+	<!-- COLOR DIFFUSE - BUSY LARGE -->
+	<variable name="ColorDiffuseBusyLarge">		
+		<!-- DEFAULT THEME -->
+		<value condition="[Skin.HasTheme(skindefault)]">T00-C08</value>
 		<!-- AUTUMN THEME -->
 		<value condition="[Skin.HasTheme(autumn)]">T01-C03</value>
 	</variable>
@@ -203,7 +229,7 @@
 	<!-- COLOR DIFFUSE - POSTERLIST PLOT BG -->
 	<variable name="ColorDiffusePosterListPlot">		
 		<!-- DEFAULT THEME -->		
-		<value condition="[Skin.HasTheme(skindefault)]">T00-C02</value>
+		<value condition="[Skin.HasTheme(skindefault)]">T00-C08</value>
 	</variable>
 	
 	<!-- COLOR DIFFUSE - POSTERLIST PLOT TEXT -->
