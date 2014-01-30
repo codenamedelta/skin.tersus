@@ -55,7 +55,7 @@
 		<textcolor>T00-C01</textcolor>
 		<focusedcolor>T00-C01</focusedcolor>
 		<disabledcolor>T00-C04</disabledcolor>
-		<texturefocus border="5">skindefault/ui/buttonhover.png</texturefocus>
+		<texturefocus colordiffuse="$VAR[ColorDiffuseDefaultButtons]">skindefault/colordiffuse/white100solid.png</texturefocus>
 		<pulseonselect>false</pulseonselect>
 	</default>
 
@@ -70,9 +70,8 @@
 		<textcolor>T00-C01</textcolor>
 		<focusedcolor>White</focusedcolor>
 		<disabledcolor>T00-C04</disabledcolor>
-		<texturefocus border="5">other_textures/ButtonFo.png</texturefocus>
-		<alttexturenofocus border="2">other_textures/ButtonNF.png</alttexturenofocus>
-		<alttexturefocus border="5">other_textures/ButtonFo.png</alttexturefocus>
+		<texturefocus colordiffuse="$VAR[ColorDiffuseDefaultButtons]">skindefault/colordiffuse/white100solid.png</texturefocus>
+		<alttexturefocus colordiffuse="$VAR[ColorDiffuseDefaultButtons]">skindefault/colordiffuse/white100solid.png</alttexturefocus>
 		<align>center</align>
 		<aligny>center</aligny>
 		<pulseonselect>false</pulseonselect>
@@ -92,7 +91,7 @@
 		<disabledcolor>T00-C04</disabledcolor>
 		<radiowidth>48</radiowidth>
 		<radioheight>48</radioheight>
-		<texturefocus border="5">skindefault/ui/buttonhover.png</texturefocus>
+		<texturefocus colordiffuse="$VAR[ColorDiffuseDefaultButtons]">skindefault/colordiffuse/white100solid.png</texturefocus>
 		<textureradiofocus>skindefault/ui/radiobuttonfo.png</textureradiofocus>
 		<textureradionofocus>skindefault/ui/radiobuttonnf.png</textureradionofocus>
 		<textoffsetx>15</textoffsetx>
@@ -108,7 +107,7 @@
 		<font>Small</font>
 		<spinwidth>48</spinwidth>
 		<spinheight>48</spinheight>
-		<texturefocus border="5">skindefault/ui/buttonhover.png</texturefocus>
+		<texturefocus colordiffuse="$VAR[ColorDiffuseDefaultButtons]">skindefault/colordiffuse/white100solid.png</texturefocus>
 		<textureup>skindefault/ui/spinarrownfup.png</textureup>
 		<texturedown>skindefault/ui/spinarrownfdown.png</texturedown>
 		<textureupfocus>skindefault/ui/spinarrowfoup.png</textureupfocus>

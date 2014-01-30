@@ -79,7 +79,7 @@
 			<control type="label">
 				<left>5</left>
 				<top>5</top>
-				<width>500</width>
+				<width>600</width>
 				<height>30</height>
 				<label>$INFO[System.Date(DDD)], $INFO[System.Date(MMM d)], $INFO[System.Date(yyyy)]</label>
 				<font>MediumCAP</font>
@@ -104,7 +104,7 @@
 			<control type="label">
 				<left>5</left>
 				<top>5</top>
-				<width>500</width>
+				<width>600</width>
 				<height>30</height>
 				<label>$INFO[System.Date(DDD)], $INFO[System.Date(MMM d)], $INFO[System.Date(yyyy)]</label>
 				<font>MediumCAP</font>
@@ -129,7 +129,7 @@
 			<control type="label">
 				<left>5</left>
 				<top>5</top>
-				<width>500</width>
+				<width>600</width>
 				<height>30</height>
 				<label>$INFO[System.Date(DDD)], $INFO[System.Date(MMM d)], $INFO[System.Date(yyyy)]</label>
 				<font>MediumCAP</font>

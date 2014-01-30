@@ -17,34 +17,35 @@
 				<animation effect="slide" start="-360" end="0" time="200">WindowOpen</animation>
 				<animation effect="slide" start="0" end="-360" time="200">WindowClose</animation>
 
-				
-				
 			<control type="image">
 				<width>360</width>
 				<height>1080</height>
 				<texture colordiffuse="$VAR[ColorDiffuseContextMenuPanelBackground]" background="true">skindefault/colordiffuse/white100solid.png</texture>
-				<bordertexture>skindefault/colordiffuse/white100solid.png</bordertexture>
-				<bordersize>0,0,0,0</bordersize>
+				<bordertexture colordiffuse="$VAR[ColorDiffuseContextMenuPanelBorder]">skindefault/colordiffuse/white100solid.png</bordertexture>
+				<bordersize>0,0,2,0</bordersize>
 			</control>
 			
 			<control type="image">
 				<top>15</top>
-				<left>2.5</left>
+				<left>.5</left>
 				<width>355</width>
 				<height>75</height>
 				<texture colordiffuse="$VAR[ColorDiffuseContextMenuLogo]" background="true">skindefault/colordiffuse/tersuslogo.png</texture>
 			</control>
 			
 			<control type="grouplist" id="996">
-				<left>15</left>
-				<width>330</width>
+				<left>0</left>
+				<width>360</width>
 				<align>center</align>
 				<height>auto</height>
 				<itemgap>3</itemgap>
 				
 				<control type="button" id="1000">
-					<width>330</width>
+					<width>360</width>
 					<align>left</align>
+					<font>SmallCAP</font>
+					<textcolor>$VAR[ColorDiffuseContextMenuText]</textcolor>
+					<focusedcolor>$VAR[ColorDiffuseContextMenuTextFocused]</focusedcolor>
 				</control>
 			</control>
 		

@@ -20,8 +20,8 @@
 			<top>108</top>
 			<width>1314</width>
 			<height>864</height>
-			<onleft>9050</onleft>
-			<onright>9000</onright>
+			<onleft>9000</onleft>
+			<onright>9050</onright>
 			<onup>50</onup>
 			<ondown>50</ondown>
 			<pagecontrol>60</pagecontrol>
@@ -218,6 +218,7 @@
 		<control type="button" id="9050">
 			<include>HiddenButton</include>
 			<onright>50</onright>
+			<onleft>50</onleft>
 			<visible>!IsEmpty(ListItem.Plot)</visible>
 		</control>
 		

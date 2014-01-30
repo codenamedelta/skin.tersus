@@ -1,5 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <includes>
+<!-- DEFAULT VARIABLES -->
+	<!-- COLOR DIFFUSE - DEFAULT BUTTONS -->
+	<variable name="ColorDiffuseDefaultButtons">		
+		<!-- DEFAULT THEME -->
+		<value condition="[Skin.HasTheme(skindefault)]">T00-C03</value>
+		<!-- AUTUMN THEME -->
+		<value condition="[Skin.HasTheme(autumn)]">T01-C02</value>
+	</variable>
+	
 <!-- GLOBAL VARIABLES -->
 	<!-- COLOR DIFFUSE - GLOBAL OVERLAY -->
 	<variable name="ColorDiffuseGlobalOverlay">		
@@ -138,7 +147,15 @@
 	<!-- COLOR DIFFUSE - NAVIGATION BG -->
 	<variable name="ColorDiffuseNavigationPanel">		
 		<!-- DEFAULT THEME -->
-		<value condition="[Skin.HasTheme(skindefault)]">T00-C04</value>
+		<value condition="[Skin.HasTheme(skindefault)]">T00-C08</value>
+		<!-- AUTUMN THEME -->
+		<value condition="[Skin.HasTheme(autumn)]">T01-C03</value>
+	</variable>
+	
+	<!-- COLOR DIFFUSE - NAVIGATION BORDER -->
+	<variable name="ColorDiffuseNavigationPanelBorder">		
+		<!-- DEFAULT THEME -->
+		<value condition="[Skin.HasTheme(skindefault)]">T00-C03</value>
 		<!-- AUTUMN THEME -->
 		<value condition="[Skin.HasTheme(autumn)]">T01-C03</value>
 	</variable>
@@ -146,7 +163,7 @@
 	<!-- COLOR DIFFUSE - NAVIGATION LOGO -->
 	<variable name="ColorDiffuseNavigationLogo">		
 		<!-- DEFAULT THEME -->
-		<value condition="[Skin.HasTheme(skindefault)]">T00-C08</value>
+		<value condition="[Skin.HasTheme(skindefault)]">T00-C04</value>
 		<!-- AUTUMN THEME -->
 		<value condition="[Skin.HasTheme(autumn)]">T01-C03</value>
 	</variable>
@@ -155,13 +172,37 @@
 	<!-- COLOR DIFFUSE - CONTEXTMENU BG -->
 	<variable name="ColorDiffuseContextMenuPanelBackground">		
 		<!-- DEFAULT THEME -->
-		<value condition="[Skin.HasTheme(skindefault)]">T00-C04</value>
+		<value condition="[Skin.HasTheme(skindefault)]">T00-C08</value>
+		<!-- AUTUMN THEME -->
+		<value condition="[Skin.HasTheme(autumn)]">T01-C03</value>
+	</variable>
+	
+	<!-- COLOR DIFFUSE - CONTEXTMENU BORDER -->
+	<variable name="ColorDiffuseContextMenuPanelBorder">		
+		<!-- DEFAULT THEME -->
+		<value condition="[Skin.HasTheme(skindefault)]">T00-C03</value>
 		<!-- AUTUMN THEME -->
 		<value condition="[Skin.HasTheme(autumn)]">T01-C03</value>
 	</variable>
 	
 	<!-- COLOR DIFFUSE - CONTEXTMENU LOGO -->
 	<variable name="ColorDiffuseContextMenuLogo">		
+		<!-- DEFAULT THEME -->
+		<value condition="[Skin.HasTheme(skindefault)]">T00-C04</value>
+		<!-- AUTUMN THEME -->
+		<value condition="[Skin.HasTheme(autumn)]">T01-C03</value>
+	</variable>
+	
+	<!-- COLOR DIFFUSE - CONTEXTMENU TEXT -->
+	<variable name="ColorDiffuseContextMenuText">		
+		<!-- DEFAULT THEME -->
+		<value condition="[Skin.HasTheme(skindefault)]">T00-C06</value>
+		<!-- AUTUMN THEME -->
+		<value condition="[Skin.HasTheme(autumn)]">T01-C03</value>
+	</variable>
+	
+	<!-- COLOR DIFFUSE - CONTEXTMENU TEXT FOCUSED -->
+	<variable name="ColorDiffuseContextMenuTextFocused">		
 		<!-- DEFAULT THEME -->
 		<value condition="[Skin.HasTheme(skindefault)]">T00-C08</value>
 		<!-- AUTUMN THEME -->

@@ -53,6 +53,12 @@
 			<filename>NCS.ttf</filename>
 			<size>30</size>
 		</font>
+		<font>
+			<name>XSmallCAP</name>
+			<style>uppercase</style>
+			<filename>NCS.ttf</filename>
+			<size>25</size>
+		</font>
 		<!-- VIEW FONTS -->
 		<font>
 			<name>ViewFontMedium</name>
