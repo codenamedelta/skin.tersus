@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<includes>
+	
+	<!-- DIALOG BUTTONS -->
+	<include name="LeftDialogButtonCommonValues">
+		<width>360</width>
+		<align>left</align>
+		<font>SmallCAP</font>
+		<textcolor>$VAR[ColorDiffuseCommonDialogText]</textcolor>
+		<focusedcolor>$VAR[ColorDiffuseCommonDialogTextFocused]</focusedcolor>
+	</include>	
+	
+	<include name="KeyboardDialogButtonValues">
+		<textcolor>$VAR[ColorDiffuseCommonDialogText]</textcolor>
+		<focusedcolor>$VAR[ColorDiffuseCommonDialogTextFocused]</focusedcolor>
+	</include>
+
+</includes>

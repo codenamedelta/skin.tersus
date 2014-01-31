@@ -6,81 +6,80 @@
 
 	<controls>
 
-		<include>GlobalOverlay</include>
+		
 
 		<control type="group">
-			<posx>510</posx>
-			<posy>360</posy>
+			<left>0</left>
+			<top>0</top>
+			
+			<animation effect="slide" start="0,-360" end="0,0" time="200">WindowOpen</animation>
+			<animation effect="slide" start="0,0" end="0,-360" time="200">WindowClose</animation>
 
 			<control type="image">
-				<posx>-30</posx>
-				<posy>-30</posy>
-				<width>960</width>
-				<height>444</height>
-				<texture border="22">other_textures/ContentPanel.png</texture>
+				<left>0</left>
+				<top>0</top>
+				<width>1920</width>
+				<height>360</height>
+				<texture colordiffuse="$VAR[ColorDiffuseCommonDialogBackground]">skindefault/colordiffuse/white100solid.png</texture>
+				<bordertexture colordiffuse="$VAR[ColorDiffuseCommonDialogBorder]">skindefault/colordiffuse/white100solid.png</bordertexture>
+					<bordersize>0,0,0,2</bordersize>
 			</control>
 
 			<control type="label" id="1">
 				<description>Heading</description>
-				<posx>15</posx>
+				<left>15</left>
 				<label>-</label>
-				<width>885</width>
+				<width>1920</width>
 				<font>Medium</font>
 				<shadowcolor>black</shadowcolor>
 				<align>center</align>
 			</control>
 
-			<control type="label" id="2">
+			<control type="textbox" id="9">
 				<description>Line 1</description>
-				<posx>15</posx>
-				<posy>108</posy>
+				<top>108</top>
 				<label>-</label>
-				<width>885</width>
-				<scroll>true</scroll>
+				<width>1920</width>
+				<align>center</align>
 			</control>
 
-			<control type="label" id="3">
-				<description>Line 2</description>
-				<posx>15</posx>
-				<posy>156</posy>
-				<label>-</label>
-				<width>885</width>
-				<scroll>true</scroll>
-			</control>
+			<control type="grouplist">
+			<top>285</top>
+			<width>1920</width>
+			<align>center</align>
+			<orientation>horizontal</orientation>
+			<itemgap>3</itemgap>
+			
+				<!-- NO -->
+				<control type="button" id="10">
+					<width>360</width>
+					<align>center</align>
+					<font>SmallCAP</font>
+					<textcolor>$VAR[ColorDiffuseCommonDialogText]</textcolor>
+					<focusedcolor>$VAR[ColorDiffuseCommonDialogTextFocused]</focusedcolor>
+					<label>$LOCALIZE[106]</label>
+					<onleft>11</onleft>
+					<onright>11</onright>
+					<onup>10</onup>
+					<ondown>10</ondown>
+				</control>
 
-			<control type="label" id="4">
-				<description>Line 3</description>
-				<posx>15</posx>
-				<posy>204</posy>
-				<label>-</label>
-				<width>885</width>
-				<scroll>true</scroll>
+				<!-- YES -->
+				<control type="button" id="11">
+					<width>360</width>
+					<align>center</align>
+					<font>SmallCAP</font>
+					<textcolor>$VAR[ColorDiffuseCommonDialogText]</textcolor>
+					<focusedcolor>$VAR[ColorDiffuseCommonDialogTextFocused]</focusedcolor>
+					<label>$LOCALIZE[107]</label>
+					<onleft>10</onleft>
+					<onright>10</onright>
+					<onup>11</onup>
+					<ondown>11</ondown>
+				</control>
+				
 			</control>
-
-			<control type="button" id="10">
-				<description>No</description>
-				<posx>150</posx>
-				<posy>285</posy>
-				<width>270</width>
-				<label>106</label>
-				<onleft>11</onleft>
-				<onright>11</onright>
-				<onup>10</onup>
-				<ondown>10</ondown>
-			</control>
-
-			<control type="button" id="11">
-				<description>Yes</description>
-				<posx>480</posx>
-				<posy>285</posy>
-				<width>270</width>
-				<label>107</label>
-				<onleft>10</onleft>
-				<onright>10</onright>
-				<onup>11</onup>
-				<ondown>11</ondown>
-			</control>
-
+			
 		</control>
 
 	</controls>

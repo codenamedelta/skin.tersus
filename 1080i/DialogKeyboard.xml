@@ -4,29 +4,25 @@
 	<defaultcontrol always="true">300</defaultcontrol>
 	<allowoverlay>yes</allowoverlay>
 
-	<coordinates>
-		<origin x="420" y="270" />
-	</coordinates>
-
 	<controls>
-
+			
+		<control type="group">
+		<top>510</top>
+		<left>420</left>
+		<width>1920</width>
+		<animation effect="slide" start="0,650" end="0," time="200">WindowOpen</animation>
+		<animation effect="slide" start="0,0" end="0,650" time="200">WindowClose</animation>
+		
 		<control type="group">
 			<visible>!Window.IsVisible(numericinput)</visible>
 
 			<control type="image">
-				<posx>-420</posx>
-				<posy>-270</posy>
-				<width>1920</width>
-				<height>1080</height>
-				<texture border="2">other_textures/black-back.png</texture>
-			</control>
-
-			<control type="image">
-				<posx>-30</posx>
-				<posy>-30</posy>
+				<left>-30</left>
 				<width>1140</width>
-				<height>654</height>
-				<texture border="22">other_textures/ContentPanel.png</texture>
+				<height>650</height>
+				<texture colordiffuse="$VAR[ColorDiffuseCommonDialogBackground]">skindefault/colordiffuse/white100solid.png</texture>
+				<bordertexture colordiffuse="$VAR[ColorDiffuseCommonDialogBorder]">skindefault/colordiffuse/white100solid.png</bordertexture>
+				<bordersize>2,2,2,0</bordersize>
 			</control>
 
 			<control type="label" id="311">
@@ -43,8 +39,9 @@
 				<posy>75</posy>
 				<width>990</width>
 				<height>75</height>
-				<aspectratio>stretch</aspectratio>
-				<texture border="20">other_textures/KeyboardEditArea.png</texture>
+				<texture colordiffuse="$VAR[ColorDiffuseKeyboardEditArea]">skindefault/colordiffuse/white100solid.png</texture>
+				<bordertexture colordiffuse="$VAR[ColorDiffuseCommonDialogBorder]">skindefault/colordiffuse/white100solid.png</bordertexture>
+					<bordersize>2,2,2,2</bordersize>
 			</control>
 
 			<control type="label" id="310">
@@ -54,12 +51,13 @@
 				<width>975</width>
 				<height>75</height>
 				<align>center</align>
+				<textcolor>$VAR[ColorDiffuseCommonDialogTextFocused]</textcolor>
 			</control>
 
 			<control type="group">
 				<posx>15</posx>
 				<posy>188</posy>
-
+				
 				<control type="button" id="300">
 					<description>DONE button</description>
 					<posx>0</posx>
@@ -71,10 +69,8 @@
 					<onright>48</onright>
 					<onup>307</onup>
 					<ondown>302</ondown>
-					<texturenofocus border="25,25,5,5">other_textures/KeyboardCornerTopNF.png</texturenofocus>
-					<texturefocus border="25,25,5,5">other_textures/KeyboardCornerTop.png</texturefocus>
 					<textoffsetx>0</textoffsetx>
-					<focusedcolor>black</focusedcolor>
+					<include>KeyboardDialogButtonValues</include>
 				</control>
 
 				<control type="button" id="48">
@@ -87,10 +83,8 @@
 					<onright>49</onright>
 					<onup>32</onup>
 					<ondown>65</ondown>
-					<texturenofocus border="3">other_textures/KeyboardKeyNF.png</texturenofocus>
-					<texturefocus border="5">other_textures/KeyboardKey.png</texturefocus>
 					<textoffsetx>0</textoffsetx>
-					<focusedcolor>black</focusedcolor>
+					<include>KeyboardDialogButtonValues</include>
 				</control>
 
 				<control type="button" id="49">
@@ -103,10 +97,8 @@
 					<onright>50</onright>
 					<onup>32</onup>
 					<ondown>66</ondown>
-					<texturenofocus border="3">other_textures/KeyboardKeyNF.png</texturenofocus>
-					<texturefocus border="5">other_textures/KeyboardKey.png</texturefocus>
 					<textoffsetx>0</textoffsetx>
-					<focusedcolor>black</focusedcolor>
+					<include>KeyboardDialogButtonValues</include>
 				</control>
 
 				<control type="button" id="50">
@@ -119,10 +111,8 @@
 					<onright>51</onright>
 					<onup>32</onup>
 					<ondown>67</ondown>
-					<texturenofocus border="3">other_textures/KeyboardKeyNF.png</texturenofocus>
-					<texturefocus border="5">other_textures/KeyboardKey.png</texturefocus>
 					<textoffsetx>0</textoffsetx>
-					<focusedcolor>black</focusedcolor>
+					<include>KeyboardDialogButtonValues</include>
 				</control>
 
 				<control type="button" id="51">
@@ -135,10 +125,8 @@
 					<onright>52</onright>
 					<onup>32</onup>
 					<ondown>68</ondown>
-					<texturenofocus border="3">other_textures/KeyboardKeyNF.png</texturenofocus>
-					<texturefocus border="5">other_textures/KeyboardKey.png</texturefocus>
 					<textoffsetx>0</textoffsetx>
-					<focusedcolor>black</focusedcolor>
+					<include>KeyboardDialogButtonValues</include>
 				</control>
 
 				<control type="button" id="52">
@@ -151,10 +139,8 @@
 					<onright>53</onright>
 					<onup>32</onup>
 					<ondown>69</ondown>
-					<texturenofocus border="3">other_textures/KeyboardKeyNF.png</texturenofocus>
-					<texturefocus border="5">other_textures/KeyboardKey.png</texturefocus>
 					<textoffsetx>0</textoffsetx>
-					<focusedcolor>black</focusedcolor>
+					<include>KeyboardDialogButtonValues</include>
 				</control>
 
 				<control type="button" id="53">
@@ -167,10 +153,8 @@
 					<onright>54</onright>
 					<onup>32</onup>
 					<ondown>70</ondown>
-					<texturenofocus border="3">other_textures/KeyboardKeyNF.png</texturenofocus>
-					<texturefocus border="5">other_textures/KeyboardKey.png</texturefocus>
 					<textoffsetx>0</textoffsetx>
-					<focusedcolor>black</focusedcolor>
+					<include>KeyboardDialogButtonValues</include>
 				</control>
 
 				<control type="button" id="54">
@@ -183,10 +167,8 @@
 					<onright>55</onright>
 					<onup>305</onup>
 					<ondown>71</ondown>
-					<texturenofocus border="3">other_textures/KeyboardKeyNF.png</texturenofocus>
-					<texturefocus border="5">other_textures/KeyboardKey.png</texturefocus>
 					<textoffsetx>0</textoffsetx>
-					<focusedcolor>black</focusedcolor>
+					<include>KeyboardDialogButtonValues</include>
 				</control>
 
 				<control type="button" id="55">
@@ -199,10 +181,8 @@
 					<onright>56</onright>
 					<onup>305</onup>
 					<ondown>72</ondown>
-					<texturenofocus border="3">other_textures/KeyboardKeyNF.png</texturenofocus>
-					<texturefocus border="5">other_textures/KeyboardKey.png</texturefocus>
 					<textoffsetx>0</textoffsetx>
-					<focusedcolor>black</focusedcolor>
+					<include>KeyboardDialogButtonValues</include>
 				</control>
 
 				<control type="button" id="56">
@@ -215,10 +195,8 @@
 					<onright>57</onright>
 					<onup>306</onup>
 					<ondown>73</ondown>
-					<texturenofocus border="3">other_textures/KeyboardKeyNF.png</texturenofocus>
-					<texturefocus border="5">other_textures/KeyboardKey.png</texturefocus>
 					<textoffsetx>0</textoffsetx>
-					<focusedcolor>black</focusedcolor>
+					<include>KeyboardDialogButtonValues</include>
 				</control>
 
 				<control type="button" id="57">
@@ -231,10 +209,8 @@
 					<onright>300</onright>
 					<onup>306</onup>
 					<ondown>74</ondown>
-					<texturenofocus flipx="true" border="5,25,25,5">other_textures/KeyboardCornerTopNF.png</texturenofocus>
-					<texturefocus flipx="true" border="5,25,25,5">other_textures/KeyboardCornerTop.png</texturefocus>
 					<textoffsetx>0</textoffsetx>
-					<focusedcolor>black</focusedcolor>
+					<include>KeyboardDialogButtonValues</include>
 				</control>
 
 				<control type="radiobutton" id="302">
@@ -248,11 +224,9 @@
 					<onright>65</onright>
 					<onup>300</onup>
 					<ondown>303</ondown>
-					<texturenofocus border="3">other_textures/KeyboardKeyNF.png</texturenofocus>
-					<texturefocus border="5">other_textures/KeyboardKey.png</texturefocus>
 					<radioposy>12</radioposy>
 					<textoffsetx>0</textoffsetx>
-					<focusedcolor>black</focusedcolor>
+					<include>KeyboardDialogButtonValues</include>
 				</control>
 
 				<control type="button" id="65">
@@ -265,10 +239,8 @@
 					<onright>66</onright>
 					<onup>48</onup>
 					<ondown>75</ondown>
-					<texturenofocus border="3">other_textures/KeyboardKeyNF.png</texturenofocus>
-					<texturefocus border="5">other_textures/KeyboardKey.png</texturefocus>
 					<textoffsetx>0</textoffsetx>
-					<focusedcolor>black</focusedcolor>
+					<include>KeyboardDialogButtonValues</include>
 				</control>
 
 				<control type="button" id="66">
@@ -281,10 +253,8 @@
 					<onright>67</onright>
 					<onup>49</onup>
 					<ondown>76</ondown>
-					<texturenofocus border="3">other_textures/KeyboardKeyNF.png</texturenofocus>
-					<texturefocus border="5">other_textures/KeyboardKey.png</texturefocus>
 					<textoffsetx>0</textoffsetx>
-					<focusedcolor>black</focusedcolor>
+					<include>KeyboardDialogButtonValues</include>
 				</control>
 
 				<control type="button" id="67">
@@ -297,10 +267,8 @@
 					<onright>68</onright>
 					<onup>50</onup>
 					<ondown>77</ondown>
-					<texturenofocus border="3">other_textures/KeyboardKeyNF.png</texturenofocus>
-					<texturefocus border="5">other_textures/KeyboardKey.png</texturefocus>
 					<textoffsetx>0</textoffsetx>
-					<focusedcolor>black</focusedcolor>
+					<include>KeyboardDialogButtonValues</include>
 				</control>
 
 				<control type="button" id="68">
@@ -313,10 +281,8 @@
 					<onright>69</onright>
 					<onup>51</onup>
 					<ondown>78</ondown>
-					<texturenofocus border="3">other_textures/KeyboardKeyNF.png</texturenofocus>
-					<texturefocus border="5">other_textures/KeyboardKey.png</texturefocus>
 					<textoffsetx>0</textoffsetx>
-					<focusedcolor>black</focusedcolor>
+					<include>KeyboardDialogButtonValues</include>
 				</control>
 
 				<control type="button" id="69">
@@ -329,10 +295,8 @@
 					<onright>70</onright>
 					<onup>52</onup>
 					<ondown>79</ondown>
-					<texturenofocus border="3">other_textures/KeyboardKeyNF.png</texturenofocus>
-					<texturefocus border="5">other_textures/KeyboardKey.png</texturefocus>
 					<textoffsetx>0</textoffsetx>
-					<focusedcolor>black</focusedcolor>
+					<include>KeyboardDialogButtonValues</include>
 				</control>
 
 				<control type="button" id="70">
@@ -345,10 +309,8 @@
 					<onright>71</onright>
 					<onup>53</onup>
 					<ondown>80</ondown>
-					<texturenofocus border="3">other_textures/KeyboardKeyNF.png</texturenofocus>
-					<texturefocus border="5">other_textures/KeyboardKey.png</texturefocus>
 					<textoffsetx>0</textoffsetx>
-					<focusedcolor>black</focusedcolor>
+					<include>KeyboardDialogButtonValues</include>
 				</control>
 
 				<control type="button" id="71">
@@ -361,10 +323,8 @@
 					<onright>72</onright>
 					<onup>54</onup>
 					<ondown>81</ondown>
-					<texturenofocus border="3">other_textures/KeyboardKeyNF.png</texturenofocus>
-					<texturefocus border="5">other_textures/KeyboardKey.png</texturefocus>
 					<textoffsetx>0</textoffsetx>
-					<focusedcolor>black</focusedcolor>
+					<include>KeyboardDialogButtonValues</include>
 				</control>
 
 				<control type="button" id="72">
@@ -377,10 +337,8 @@
 					<onright>73</onright>
 					<onup>55</onup>
 					<ondown>82</ondown>
-					<texturenofocus border="3">other_textures/KeyboardKeyNF.png</texturenofocus>
-					<texturefocus border="5">other_textures/KeyboardKey.png</texturefocus>
 					<textoffsetx>0</textoffsetx>
-					<focusedcolor>black</focusedcolor>
+					<include>KeyboardDialogButtonValues</include>
 				</control>
 
 				<control type="button" id="73">
@@ -393,10 +351,8 @@
 					<onright>74</onright>
 					<onup>56</onup>
 					<ondown>83</ondown>
-					<texturenofocus border="3">other_textures/KeyboardKeyNF.png</texturenofocus>
-					<texturefocus border="5">other_textures/KeyboardKey.png</texturefocus>
 					<textoffsetx>0</textoffsetx>
-					<focusedcolor>black</focusedcolor>
+					<include>KeyboardDialogButtonValues</include>
 				</control>
 
 				<control type="button" id="74">
@@ -409,10 +365,8 @@
 					<onright>302</onright>
 					<onup>57</onup>
 					<ondown>84</ondown>
-					<texturenofocus border="3">other_textures/KeyboardKeyNF.png</texturenofocus>
-					<texturefocus border="5">other_textures/KeyboardKey.png</texturefocus>
 					<textoffsetx>0</textoffsetx>
-					<focusedcolor>black</focusedcolor>
+					<include>KeyboardDialogButtonValues</include>
 				</control>
 
 				<control type="radiobutton" id="303">
@@ -426,11 +380,9 @@
 					<onright>75</onright>
 					<onup>302</onup>
 					<ondown>304</ondown>
-					<texturenofocus border="3">other_textures/KeyboardKeyNF.png</texturenofocus>
-					<texturefocus border="5">other_textures/KeyboardKey.png</texturefocus>
 					<radioposy>12</radioposy>
 					<textoffsetx>0</textoffsetx>
-					<focusedcolor>black</focusedcolor>
+					<include>KeyboardDialogButtonValues</include>
 				</control>
 
 				<control type="button" id="75">
@@ -443,10 +395,8 @@
 					<onright>76</onright>
 					<onup>65</onup>
 					<ondown>85</ondown>
-					<texturenofocus border="3">other_textures/KeyboardKeyNF.png</texturenofocus>
-					<texturefocus border="5">other_textures/KeyboardKey.png</texturefocus>
 					<textoffsetx>0</textoffsetx>
-					<focusedcolor>black</focusedcolor>
+					<include>KeyboardDialogButtonValues</include>
 				</control>
 
 				<control type="button" id="76">
@@ -459,10 +409,8 @@
 					<onright>77</onright>
 					<onup>66</onup>
 					<ondown>86</ondown>
-					<texturenofocus border="3">other_textures/KeyboardKeyNF.png</texturenofocus>
-					<texturefocus border="5">other_textures/KeyboardKey.png</texturefocus>
 					<textoffsetx>0</textoffsetx>
-					<focusedcolor>black</focusedcolor>
+					<include>KeyboardDialogButtonValues</include>
 				</control>
 
 				<control type="button" id="77">
@@ -475,10 +423,8 @@
 					<onright>78</onright>
 					<onup>67</onup>
 					<ondown>87</ondown>
-					<texturenofocus border="3">other_textures/KeyboardKeyNF.png</texturenofocus>
-					<texturefocus border="5">other_textures/KeyboardKey.png</texturefocus>
 					<textoffsetx>0</textoffsetx>
-					<focusedcolor>black</focusedcolor>
+					<include>KeyboardDialogButtonValues</include>
 				</control>
 
 				<control type="button" id="78">
@@ -491,10 +437,8 @@
 					<onright>79</onright>
 					<onup>68</onup>
 					<ondown>88</ondown>
-					<texturenofocus border="3">other_textures/KeyboardKeyNF.png</texturenofocus>
-					<texturefocus border="5">other_textures/KeyboardKey.png</texturefocus>
 					<textoffsetx>0</textoffsetx>
-					<focusedcolor>black</focusedcolor>
+					<include>KeyboardDialogButtonValues</include>
 				</control>
 
 				<control type="button" id="79">
@@ -507,10 +451,8 @@
 					<onright>80</onright>
 					<onup>69</onup>
 					<ondown>89</ondown>
-					<texturenofocus border="3">other_textures/KeyboardKeyNF.png</texturenofocus>
-					<texturefocus border="5">other_textures/KeyboardKey.png</texturefocus>
 					<textoffsetx>0</textoffsetx>
-					<focusedcolor>black</focusedcolor>
+					<include>KeyboardDialogButtonValues</include>
 				</control>
 
 				<control type="button" id="80">
@@ -523,10 +465,8 @@
 					<onright>81</onright>
 					<onup>70</onup>
 					<ondown>90</ondown>
-					<texturenofocus border="3">other_textures/KeyboardKeyNF.png</texturenofocus>
-					<texturefocus border="5">other_textures/KeyboardKey.png</texturefocus>
 					<textoffsetx>0</textoffsetx>
-					<focusedcolor>black</focusedcolor>
+					<include>KeyboardDialogButtonValues</include>
 				</control>
 
 				<control type="button" id="81">
@@ -539,10 +479,8 @@
 					<onright>82</onright>
 					<onup>71</onup>
 					<ondown>8</ondown>
-					<texturenofocus border="3">other_textures/KeyboardKeyNF.png</texturenofocus>
-					<texturefocus border="5">other_textures/KeyboardKey.png</texturefocus>
 					<textoffsetx>0</textoffsetx>
-					<focusedcolor>black</focusedcolor>
+					<include>KeyboardDialogButtonValues</include>
 				</control>
 
 				<control type="button" id="82">
@@ -555,10 +493,8 @@
 					<onright>83</onright>
 					<onup>72</onup>
 					<ondown>8</ondown>
-					<texturenofocus border="3">other_textures/KeyboardKeyNF.png</texturenofocus>
-					<texturefocus border="5">other_textures/KeyboardKey.png</texturefocus>
 					<textoffsetx>0</textoffsetx>
-					<focusedcolor>black</focusedcolor>
+					<include>KeyboardDialogButtonValues</include>
 				</control>
 
 				<control type="button" id="83">
@@ -571,10 +507,8 @@
 					<onright>84</onright>
 					<onup>73</onup>
 					<ondown>8</ondown>
-					<texturenofocus border="3">other_textures/KeyboardKeyNF.png</texturenofocus>
-					<texturefocus border="5">other_textures/KeyboardKey.png</texturefocus>
 					<textoffsetx>0</textoffsetx>
-					<focusedcolor>black</focusedcolor>
+					<include>KeyboardDialogButtonValues</include>
 				</control>
 
 				<control type="button" id="84">
@@ -587,10 +521,8 @@
 					<onright>303</onright>
 					<onup>74</onup>
 					<ondown>8</ondown>
-					<texturenofocus border="3">other_textures/KeyboardKeyNF.png</texturenofocus>
-					<texturefocus border="5">other_textures/KeyboardKey.png</texturefocus>
 					<textoffsetx>0</textoffsetx>
-					<focusedcolor>black</focusedcolor>
+					<include>KeyboardDialogButtonValues</include>
 				</control>
 
 				<control type="radiobutton" id="304">
@@ -604,11 +536,9 @@
 					<onright>85</onright>
 					<onup>303</onup>
 					<ondown>307</ondown>
-					<texturenofocus border="3">other_textures/KeyboardKeyNF.png</texturenofocus>
-					<texturefocus border="5">other_textures/KeyboardKey.png</texturefocus>
 					<radioposy>12</radioposy>
 					<textoffsetx>0</textoffsetx>
-					<focusedcolor>black</focusedcolor>
+					<include>KeyboardDialogButtonValues</include>
 				</control>
 
 				<control type="button" id="85">
@@ -621,10 +551,8 @@
 					<onright>86</onright>
 					<onup>75</onup>
 					<ondown>32</ondown>
-					<texturenofocus border="3">other_textures/KeyboardKeyNF.png</texturenofocus>
-					<texturefocus border="5">other_textures/KeyboardKey.png</texturefocus>
 					<textoffsetx>0</textoffsetx>
-					<focusedcolor>black</focusedcolor>
+					<include>KeyboardDialogButtonValues</include>
 				</control>
 
 				<control type="button" id="86">
@@ -637,10 +565,8 @@
 					<onright>87</onright>
 					<onup>76</onup>
 					<ondown>32</ondown>
-					<texturenofocus border="3">other_textures/KeyboardKeyNF.png</texturenofocus>
-					<texturefocus border="5">other_textures/KeyboardKey.png</texturefocus>
 					<textoffsetx>0</textoffsetx>
-					<focusedcolor>black</focusedcolor>
+					<include>KeyboardDialogButtonValues</include>
 				</control>
 
 				<control type="button" id="87">
@@ -653,10 +579,8 @@
 					<onright>88</onright>
 					<onup>77</onup>
 					<ondown>32</ondown>
-					<texturenofocus border="3">other_textures/KeyboardKeyNF.png</texturenofocus>
-					<texturefocus border="5">other_textures/KeyboardKey.png</texturefocus>
 					<textoffsetx>0</textoffsetx>
-					<focusedcolor>black</focusedcolor>
+					<include>KeyboardDialogButtonValues</include>
 				</control>
 
 				<control type="button" id="88">
@@ -669,10 +593,8 @@
 					<onright>89</onright>
 					<onup>78</onup>
 					<ondown>32</ondown>
-					<texturenofocus border="3">other_textures/KeyboardKeyNF.png</texturenofocus>
-					<texturefocus border="5">other_textures/KeyboardKey.png</texturefocus>
 					<textoffsetx>0</textoffsetx>
-					<focusedcolor>black</focusedcolor>
+					<include>KeyboardDialogButtonValues</include>
 				</control>
 
 				<control type="button" id="89">
@@ -685,10 +607,8 @@
 					<onright>90</onright>
 					<onup>79</onup>
 					<ondown>32</ondown>
-					<texturenofocus border="3">other_textures/KeyboardKeyNF.png</texturenofocus>
-					<texturefocus border="5">other_textures/KeyboardKey.png</texturefocus>
 					<textoffsetx>0</textoffsetx>
-					<focusedcolor>black</focusedcolor>
+					<include>KeyboardDialogButtonValues</include>
 				</control>
 
 				<control type="button" id="90">
@@ -701,10 +621,8 @@
 					<onright>8</onright>
 					<onup>80</onup>
 					<ondown>32</ondown>
-					<texturenofocus border="3">other_textures/KeyboardKeyNF.png</texturenofocus>
-					<texturefocus border="5">other_textures/KeyboardKey.png</texturefocus>
 					<textoffsetx>0</textoffsetx>
-					<focusedcolor>black</focusedcolor>
+					<include>KeyboardDialogButtonValues</include>
 				</control>
 
 				<control type="button" id="8">
@@ -718,10 +636,8 @@
 					<onright>304</onright>
 					<onup>81</onup>
 					<ondown>305</ondown>
-					<texturenofocus border="3">other_textures/KeyboardKeyNF.png</texturenofocus>
-					<texturefocus border="5">other_textures/KeyboardKey.png</texturefocus>
 					<textoffsetx>0</textoffsetx>
-					<focusedcolor>black</focusedcolor>
+					<include>KeyboardDialogButtonValues</include>
 				</control>
 
 				<control type="button" id="307">
@@ -730,15 +646,13 @@
 					<posy>300</posy>
 					<width>300</width>
 					<height>75</height>
-					<texturenofocus border="25,5,25,5">other_textures/KeyboardCornerBottomNF.png</texturenofocus>
-					<texturefocus border="25,5,25,5">other_textures/KeyboardCornerBottom.png</texturefocus>
 					<label>1006</label>
 					<textoffsetx>0</textoffsetx>
 					<onleft>306</onleft>
 					<onright>32</onright>
 					<onup>304</onup>
 					<ondown>300</ondown>
-					<focusedcolor>black</focusedcolor>
+					<include>KeyboardDialogButtonValues</include>
 				</control>
 
 				<control type="button" id="32">
@@ -748,14 +662,12 @@
 					<width>450</width>
 					<height>75</height>
 					<label>20182</label>
-					<texturenofocus border="3">other_textures/KeyboardKeyNF.png</texturenofocus>
-					<texturefocus border="5">other_textures/KeyboardKey.png</texturefocus>
 					<textoffsetx>0</textoffsetx>
-					<focusedcolor>black</focusedcolor>
 					<onleft>307</onleft>
 					<onright>305</onright>
 					<onup>85</onup>
 					<ondown>48</ondown>
+					<include>KeyboardDialogButtonValues</include>
 				</control>
 
 				<control type="button" id="305">
@@ -765,13 +677,11 @@
 					<width>150</width>
 					<height>75</height>
 					<label>&lt;</label>
-					<texturenofocus border="3">other_textures/KeyboardKeyNF.png</texturenofocus>
-					<texturefocus border="5">other_textures/KeyboardKey.png</texturefocus>
-					<focusedcolor>black</focusedcolor>
 					<onleft>32</onleft>
 					<onright>306</onright>
 					<onup>8</onup>
 					<ondown>54</ondown>
+					<include>KeyboardDialogButtonValues</include>
 				</control>
 
 				<control type="button" id="306">
@@ -781,17 +691,16 @@
 					<width>150</width>
 					<height>75</height>
 					<label>&gt;</label>
-					<texturenofocus flipx="true" border="5,5,25,25">other_textures/KeyboardCornerBottomNF.png</texturenofocus>
-					<texturefocus flipx="true" border="5,5,25,25">other_textures/KeyboardCornerBottom.png</texturefocus>
-					<focusedcolor>black</focusedcolor>
 					<onleft>305</onleft>
 					<onright>307</onright>
 					<onup>8</onup>
 					<ondown>56</ondown>
+					<include>KeyboardDialogButtonValues</include>
 				</control>
 
 			</control>
 
+		</control>
 		</control>
 
 		<control type="image">

@@ -25,8 +25,8 @@
 			<top>0</top>
 			<width>360</width>
 			<height>1080</height>
-			<texture colordiffuse="$VAR[ColorDiffuseNavigationPanel]">skindefault/colordiffuse/white100solid.png</texture>
-			<bordertexture colordiffuse="$VAR[ColorDiffuseNavigationPanelBorder]">skindefault/colordiffuse/white100solid.png</bordertexture>
+			<texture colordiffuse="$VAR[ColorDiffuseCommonDialogBackground]">skindefault/colordiffuse/white100solid.png</texture>
+			<bordertexture colordiffuse="$VAR[ColorDiffuseCommonDialogBorder]">skindefault/colordiffuse/white100solid.png</bordertexture>
 				<bordersize>0,0,2,0</bordersize>
 			<animation type="Conditional" condition="!ControlGroup(9000).HasFocus()">
 				<effect type="slide" start="0" end="-360" time="200"/>
@@ -38,7 +38,7 @@
 			<top>15</top>
 			<width>355</width>
 			<height>75</height>
-			<texture colordiffuse="$VAR[ColorDiffuseNavigationLogo]">skindefault/colordiffuse/tersuslogo.png</texture>
+			<texture colordiffuse="$VAR[ColorDiffuseCommonDialogLogo]">skindefault/colordiffuse/tersuslogo.png</texture>
 			<animation type="Conditional" condition="!ControlGroup(9000).HasFocus()">
 				<effect type="slide" start="0" end="-360" time="200"/>
 			</animation>
@@ -58,139 +58,89 @@
 				<effect type="slide" start="0" end="-360" time="200"/>
 			</animation>
 			
+			<!-- VIEW -->
 			<control type="button" id="2">
-				<description>View</description>
-				<width>360</width>
-				<align>left</align>
-				<font>SmallCAP</font>
-				<textcolor>$VAR[ColorDiffuseContextMenuText]</textcolor>
-				<focusedcolor>$VAR[ColorDiffuseContextMenuTextFocused]</focusedcolor>
+				<include>LeftDialogButtonCommonValues</include>
 			</control>
 
+			<!-- SORT -->
 			<control type="button" id="3">
-				<description>Sort</description>
-				<width>360</width>
-				<align>left</align>
-				<font>SmallCAP</font>
-				<textcolor>$VAR[ColorDiffuseContextMenuText]</textcolor>
-				<focusedcolor>$VAR[ColorDiffuseContextMenuTextFocused]</focusedcolor>
+				<include>LeftDialogButtonCommonValues</include>
 			</control>
 
+			<!-- ASCENDING/DECENDING -->
 			<control type="togglebutton" id="4">
-				<description>Ascending</description>
-				<width>360</width>
+				<include>LeftDialogButtonCommonValues</include>
 				<align>left</align>
-				<label>584</label>
-				<altlabel>585</altlabel>
-				<font>SmallCAP</font>
-				<textcolor>$VAR[ColorDiffuseContextMenuText]</textcolor>
-				<focusedcolor>$VAR[ColorDiffuseContextMenuTextFocused]</focusedcolor>
+				<label>$LOCALIZE[584]</label>
+				<altlabel>$LOCALIZE[585]</altlabel>
 			</control>
 
+			<!-- FILES MODE -->
 			<control type="button" id="5">
-				<description>Files</description>
-				<width>360</width>
-				<align>left</align>
-				<label>31001</label>
+				<include>LeftDialogButtonCommonValues</include>
+				<label>$LOCALIZE[31001]</label>
 				<onclick>SetFocus(50)</onclick>
-				<font>SmallCAP</font>
-				<textcolor>$VAR[ColorDiffuseContextMenuText]</textcolor>
-				<focusedcolor>$VAR[ColorDiffuseContextMenuTextFocused]</focusedcolor>
 			</control>
 
+			<!-- SEARCH -->
 			<control type="button" id="8">
-				<description>Search</description>
-				<width>360</width>
-				<align>left</align>
-				<label>137</label>
-				<font>SmallCAP</font>
-				<textcolor>$VAR[ColorDiffuseContextMenuText]</textcolor>
-				<focusedcolor>$VAR[ColorDiffuseContextMenuTextFocused]</focusedcolor>
+				<include>LeftDialogButtonCommonValues</include>
+				<label>$LOCALIZE[137]</label>
 			</control>
 
+			<!-- UNLOCK SHARES -->
 			<control type="radiobutton" id="11">
-				<description>Unlock Shares</description>
-				<width>360</width>
-				<align>left</align>
-				<label>20336</label>
+				<include>LeftDialogButtonCommonValues</include>
+				<label>$LOCALIZE[20336]</label>
 				<onclick>xbmc.mastermode</onclick>
 				<selected>system.ismaster</selected>
 				<visible>system.haslocks</visible>
-				<font>SmallCAP</font>
-				<textcolor>$VAR[ColorDiffuseContextMenuText]</textcolor>
-				<focusedcolor>$VAR[ColorDiffuseContextMenuTextFocused]</focusedcolor>
 			</control>
 			
+			<!-- WATCHED TOGGLE -->
 			<control type="radiobutton" id="14">
-				<description>Watched Toggle</description>
-				<width>360</width>
-				<align>left</align>
-				<label>20367</label>
-				<font>SmallCAP</font>
-				<textcolor>$VAR[ColorDiffuseContextMenuText]</textcolor>
-				<focusedcolor>$VAR[ColorDiffuseContextMenuTextFocused]</focusedcolor>
+				<include>LeftDialogButtonCommonValues</include>
+				<label>$LOCALIZE[20367]</label>
 			</control>
 
+			<!-- PARTY MODE -->
 			<control type="radiobutton" id="16">
-				<description>PartyMode</description>
-				<width>360</width>
-				<align>left</align>
-				<label>589</label>
-				<font>SmallCAP</font>
-				<textcolor>$VAR[ColorDiffuseContextMenuText]</textcolor>
-				<focusedcolor>$VAR[ColorDiffuseContextMenuTextFocused]</focusedcolor>
+				<include>LeftDialogButtonCommonValues</include>
+				<label>$LOCALIZE[589]</label>
 			</control>
 
+			<!-- FILTER -->
 			<control type="button" id="21">
-				<description>Activate Filter</description>
-				<width>360</width>
-				<align>left</align>
-				<label>587</label>
+				<include>LeftDialogButtonCommonValues</include>
+				<label>$LOCALIZE[587]</label>
 				<onclick>SendClick(videolibrary,19)</onclick>
 				<onclick>SetFocus(22)</onclick>
 				<visible>IsEmpty(Window.Property(filter))</visible>
-				<font>SmallCAP</font>
-				<textcolor>$VAR[ColorDiffuseContextMenuText]</textcolor>
-				<focusedcolor>$VAR[ColorDiffuseContextMenuTextFocused]</focusedcolor>
 			</control>
 
 			<control type="button" id="22">
-				<description>Show Filter Label</description>
-				<width>360</width>
-				<align>left</align>
+				<include>LeftDialogButtonCommonValues</include>
 				<label>$INFO[Window.Property(filter)]</label>
 				<onclick>SendClick(videolibrary,19)</onclick>
 				<onclick>SetFocus(21)</onclick>
 				<visible>!IsEmpty(Window.Property(filter))</visible>
-				<font>SmallCAP</font>
-				<textcolor>$VAR[ColorDiffuseContextMenuText]</textcolor>
-				<focusedcolor>$VAR[ColorDiffuseContextMenuTextFocused]</focusedcolor>
 			</control>
 
+			<!-- UPDATE LIBRARY -->
 			<control type="togglebutton" id="20">
-				<description>Update library</description>
-				<width>360</width>
-				<align>left</align>
-				<label>653</label>
-				<altlabel>13353</altlabel>
-				<alttexturefocus border="5">button-focus.png</alttexturefocus>
-				<alttexturenofocus>-</alttexturenofocus>
+				<include>LeftDialogButtonCommonValues</include>
+				<label>$LOCALIZE[653]</label>
+				<altlabel>$LOCALIZE[13353]</altlabel>
 				<usealttexture>library.isscanningvideo</usealttexture>
-				<font>SmallCAP</font>
-				<textcolor>$VAR[ColorDiffuseContextMenuText]</textcolor>
-				<focusedcolor>$VAR[ColorDiffuseContextMenuTextFocused]</focusedcolor>
 			</control>
 				
+			<!-- PLAYER CONTROLS -->
 			<control type="button" id="98">
-				<description>Open Player Controls</description>
-				<width>360</width>
-				<align>left</align>
-				<label>31015</label>
+				<include>LeftDialogButtonCommonValues</include>
+				<label>$LOCALIZE[31015]</label>
 				<onclick>ActivateWindow(playercontrols)</onclick>
 				<visible>Player.HasMedia</visible>
-				<font>SmallCAP</font>
-				<textcolor>$VAR[ColorDiffuseContextMenuText]</textcolor>
-				<focusedcolor>$VAR[ColorDiffuseContextMenuTextFocused]</focusedcolor>
 			</control>
 			
 		</control>

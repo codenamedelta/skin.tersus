@@ -142,73 +142,57 @@
 		<!-- DEFAULT THEME -->
 		<value condition="[Skin.HasTheme(skindefault)]">T00-C03</value>
 	</variable>
-	
-<!-- VIDEO NAVIGATION VARIABLES -->	
-	<!-- COLOR DIFFUSE - NAVIGATION BG -->
-	<variable name="ColorDiffuseNavigationPanel">		
+
+<!-- COMMON DIALOG VARIABLES -->	
+	<!-- COLOR DIFFUSE - DIALOG BACKGROUND -->
+	<variable name="ColorDiffuseCommonDialogBackground">		
 		<!-- DEFAULT THEME -->
 		<value condition="[Skin.HasTheme(skindefault)]">T00-C08</value>
 		<!-- AUTUMN THEME -->
 		<value condition="[Skin.HasTheme(autumn)]">T01-C03</value>
-	</variable>
+	</variable>	
 	
-	<!-- COLOR DIFFUSE - NAVIGATION BORDER -->
-	<variable name="ColorDiffuseNavigationPanelBorder">		
+	<!-- COLOR DIFFUSE - DIALOG BORDER -->
+	<variable name="ColorDiffuseCommonDialogBorder">		
 		<!-- DEFAULT THEME -->
 		<value condition="[Skin.HasTheme(skindefault)]">T00-C03</value>
 		<!-- AUTUMN THEME -->
 		<value condition="[Skin.HasTheme(autumn)]">T01-C03</value>
-	</variable>
+	</variable>	
 	
-	<!-- COLOR DIFFUSE - NAVIGATION LOGO -->
-	<variable name="ColorDiffuseNavigationLogo">		
+	<!-- COLOR DIFFUSE - DIALOG LOGO -->
+	<variable name="ColorDiffuseCommonDialogLogo">		
 		<!-- DEFAULT THEME -->
 		<value condition="[Skin.HasTheme(skindefault)]">T00-C04</value>
 		<!-- AUTUMN THEME -->
 		<value condition="[Skin.HasTheme(autumn)]">T01-C03</value>
-	</variable>
+	</variable>	
 	
-<!-- DIALOG CONTEXTMENU VARIABLES -->	
-	<!-- COLOR DIFFUSE - CONTEXTMENU BG -->
-	<variable name="ColorDiffuseContextMenuPanelBackground">		
-		<!-- DEFAULT THEME -->
-		<value condition="[Skin.HasTheme(skindefault)]">T00-C08</value>
-		<!-- AUTUMN THEME -->
-		<value condition="[Skin.HasTheme(autumn)]">T01-C03</value>
-	</variable>
-	
-	<!-- COLOR DIFFUSE - CONTEXTMENU BORDER -->
-	<variable name="ColorDiffuseContextMenuPanelBorder">		
-		<!-- DEFAULT THEME -->
-		<value condition="[Skin.HasTheme(skindefault)]">T00-C03</value>
-		<!-- AUTUMN THEME -->
-		<value condition="[Skin.HasTheme(autumn)]">T01-C03</value>
-	</variable>
-	
-	<!-- COLOR DIFFUSE - CONTEXTMENU LOGO -->
-	<variable name="ColorDiffuseContextMenuLogo">		
-		<!-- DEFAULT THEME -->
-		<value condition="[Skin.HasTheme(skindefault)]">T00-C04</value>
-		<!-- AUTUMN THEME -->
-		<value condition="[Skin.HasTheme(autumn)]">T01-C03</value>
-	</variable>
-	
-	<!-- COLOR DIFFUSE - CONTEXTMENU TEXT -->
-	<variable name="ColorDiffuseContextMenuText">		
+	<!-- COLOR DIFFUSE - DIALOG TEXT -->
+	<variable name="ColorDiffuseCommonDialogText">		
 		<!-- DEFAULT THEME -->
 		<value condition="[Skin.HasTheme(skindefault)]">T00-C06</value>
 		<!-- AUTUMN THEME -->
 		<value condition="[Skin.HasTheme(autumn)]">T01-C03</value>
-	</variable>
+	</variable>	
 	
-	<!-- COLOR DIFFUSE - CONTEXTMENU TEXT FOCUSED -->
-	<variable name="ColorDiffuseContextMenuTextFocused">		
+	<!-- COLOR DIFFUSE - DIALOG TEXT FOCUSED -->
+	<variable name="ColorDiffuseCommonDialogTextFocused">		
 		<!-- DEFAULT THEME -->
 		<value condition="[Skin.HasTheme(skindefault)]">T00-C08</value>
 		<!-- AUTUMN THEME -->
 		<value condition="[Skin.HasTheme(autumn)]">T01-C03</value>
 	</variable>
 	
+<!-- DIALOG KEYBOARD VARIABLES -->	
+	<!-- COLOR DIFFUSE - KEYBOARD EDIT AREA -->
+	<variable name="ColorDiffuseKeyboardEditArea">		
+		<!-- DEFAULT THEME -->
+		<value condition="[Skin.HasTheme(skindefault)]">T00-C04</value>
+		<!-- AUTUMN THEME -->
+		<value condition="[Skin.HasTheme(autumn)]">T01-C03</value>
+	</variable>	
+		
 <!-- DIALOG BUSY VARIABLES -->	
 	<!-- COLOR DIFFUSE - BUSY SMALL -->
 	<variable name="ColorDiffuseBusySmall">		
