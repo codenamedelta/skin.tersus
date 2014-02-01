@@ -27,12 +27,12 @@
 				</control>
 				
 				<control type="image">
-				<left>.5</left>
-				<top>15</top>
-				<width>355</width>
-				<height>75</height>
-				<texture colordiffuse="$VAR[ColorDiffuseCommonDialogLogo]" background="true">skindefault/colordiffuse/tersuslogo.png</texture>
-			</control>
+					<left>.5</left>
+					<top>15</top>
+					<width>355</width>
+					<height>75</height>
+					<texture colordiffuse="$VAR[ColorDiffuseCommonDialogLogo]" background="true">skindefault/colordiffuse/tersuslogo.png</texture>
+				</control>
 
 				<control type="grouplist" id="3110">
 					<width>360</width>

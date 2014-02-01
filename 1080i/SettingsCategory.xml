@@ -29,12 +29,13 @@
 			<top>128</top>
 			<height>75</height>
 			<width>355</width>
-			<texture>skindefault/logos/tersus.png</texture>
+			<texture colordiffuse="$VAR[ColorDiffuseSettingsLogo]">skindefault/colordiffuse/tersuslogo.png</texture>
 		</control>
 		
 		<include>GlobalDateClock</include>
 
 		<control type="grouplist" id="3">
+			
 			<description>Button Area</description>
 			<left>96</left>
 			<top>225</top>
@@ -46,7 +47,7 @@
 			<onup>20</onup>
 			<ondown>20</ondown>
 			<orientation>vertical</orientation>
-
+			
 		</control>
 		
 		<control type="button" id="20">
@@ -58,12 +59,14 @@
 				<align>left</align>
 				<label>10037</label>
 				<font>SettingsLarge</font>
-				<textcolor>T00-C03</textcolor>
 				<onleft>5</onleft>
 				<onright>5</onright>
 				<onup>3</onup>
 				<ondown>3</ondown>
 				<onclick>SettingsLevelChange</onclick>
+				<textcolor>$VAR[ColorDiffuseSettingsText]</textcolor>
+				<focusedcolor>$VAR[ColorDiffuseSettingsTextFocused]</focusedcolor>
+				<texturefocus colordiffuse="$VAR[ColorDiffuseSettingsSelection]">skindefault/colordiffuse/white100solid.png</texturefocus>
 		</control>
 		
 		<control type="label">
@@ -97,6 +100,9 @@
 			<align>left</align>
 			<height>75</height>
 			<font>SettingsMedium</font>
+			<textcolor>$VAR[ColorDiffuseSettingsText]</textcolor>
+			<focusedcolor>$VAR[ColorDiffuseSettingsTextFocused]</focusedcolor>
+			<texturefocus colordiffuse="$VAR[ColorDiffuseSettingsSelection]">skindefault/colordiffuse/white100solid.png</texturefocus>
 		</control>
 
 		<control type="radiobutton" id="8">
@@ -104,19 +110,27 @@
 			<radioposx>1262</radioposx>
 			<align>left</align>
 			<font>SettingsMedium</font>
+			<textcolor>$VAR[ColorDiffuseSettingsText]</textcolor>
+			<focusedcolor>$VAR[ColorDiffuseSettingsTextFocused]</focusedcolor>
+			<texturefocus colordiffuse="$VAR[ColorDiffuseSettingsSelection]">skindefault/colordiffuse/white100solid.png</texturefocus>
 		</control>
 
 		<control type="spincontrolex" id="9">
 			<description>Default Spin Control</description>
 			<align>left</align>
 			<font>SettingsMedium</font>
+			<textcolor>$VAR[ColorDiffuseSettingsText]</textcolor>
+			<focusedcolor>$VAR[ColorDiffuseSettingsTextFocused]</focusedcolor>
+			<texturefocus colordiffuse="$VAR[ColorDiffuseSettingsSelection]">skindefault/colordiffuse/white100solid.png</texturefocus>
 		</control>
 
 		<control type="button" id="10">
 			<description>Default Category Button</description>
 			<align>left</align>
 			<font>SettingsLarge</font>
-			<textcolor>T00-C03</textcolor>
+			<textcolor>$VAR[ColorDiffuseSettingsText]</textcolor>
+			<focusedcolor>$VAR[ColorDiffuseSettingsTextFocused]</focusedcolor>
+			<texturefocus colordiffuse="$VAR[ColorDiffuseSettingsSelection]">skindefault/colordiffuse/white100solid.png</texturefocus>
 		</control>
 
 	</controls>

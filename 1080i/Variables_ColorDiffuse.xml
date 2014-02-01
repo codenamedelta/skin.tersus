@@ -121,12 +121,16 @@
 	<variable name="ColorDiffuseSettingsIcons">		
 		<!-- DEFAULT THEME -->
 		<value condition="[Skin.HasTheme(skindefault)]">T00-C04</value>
+		<!-- AUTUMN THEME -->
+		<value condition="[Skin.HasTheme(autumn)]">T01-C03</value>
 	</variable>
 	
 	<!-- COLOR DIFFUSE - SETTINGS LEFT PANEL BG -->
 	<variable name="ColorDiffuseSettingsLeftPanel">		
 		<!-- DEFAULT THEME -->
 		<value condition="[Skin.HasTheme(skindefault)]">T00-C04</value>
+		<!-- AUTUMN THEME -->
+		<value condition="[Skin.HasTheme(autumn)]">T01-C03</value>
 	</variable>
 	
 	<!-- COLOR DIFFUSE - SETTINGS RIGHT PANEL BG -->
@@ -137,12 +141,46 @@
 		<value condition="[Skin.HasTheme(autumn)]">T01-C03</value>
 	</variable>
 	
+	<!-- COLOR DIFFUSE - SETTINGS TERSUS LOGO -->
+	<variable name="ColorDiffuseSettingsLogo">		
+		<!-- DEFAULT THEME -->
+		<value condition="[Skin.HasTheme(skindefault)]">T00-C08</value>
+		<!-- AUTUMN THEME -->
+		<value condition="[Skin.HasTheme(autumn)]">T01-C03</value>
+	</variable>
+	
+	<!-- COLOR DIFFUSE - SETTINGS XBMC LOGO -->
+	<variable name="ColorDiffuseSettingsXBMCLogo">		
+		<!-- DEFAULT THEME -->
+		<value condition="[Skin.HasTheme(skindefault)]">T00-C04</value>
+		<!-- AUTUMN THEME -->
+		<value condition="[Skin.HasTheme(autumn)]">T01-C03</value>
+	</variable>
+	
 	<!-- COLOR DIFFUSE - SETTINGS SELECTION -->
 	<variable name="ColorDiffuseSettingsSelection">		
 		<!-- DEFAULT THEME -->
-		<value condition="[Skin.HasTheme(skindefault)]">T00-C03</value>
+		<value condition="[Skin.HasTheme(skindefault)]">T00-C08</value>
+		<!-- AUTUMN THEME -->
+		<value condition="[Skin.HasTheme(autumn)]">T01-C03</value>
 	</variable>
-
+	
+	<!-- COLOR DIFFUSE - SETTINGS TEXT -->
+	<variable name="ColorDiffuseSettingsText">		
+		<!-- DEFAULT THEME -->
+		<value condition="[Skin.HasTheme(skindefault)]">T00-C08</value>
+		<!-- AUTUMN THEME -->
+		<value condition="[Skin.HasTheme(autumn)]">T01-C03</value>
+	</variable>
+	
+	<!-- COLOR DIFFUSE - SETTINGS TEXT FOCUSED -->
+	<variable name="ColorDiffuseSettingsTextFocused">		
+		<!-- DEFAULT THEME -->
+		<value condition="[Skin.HasTheme(skindefault)]">T00-C03</value>
+		<!-- AUTUMN THEME -->
+		<value condition="[Skin.HasTheme(autumn)]">T01-C03</value>
+	</variable>
+	
 <!-- COMMON DIALOG VARIABLES -->	
 	<!-- COLOR DIFFUSE - DIALOG BACKGROUND -->
 	<variable name="ColorDiffuseCommonDialogBackground">		

@@ -179,6 +179,8 @@
 				<width>1920</width>
 				<height>70</height>
 				<texture colordiffuse="$VAR[ColorDiffuseGlobalDateClock]">skindefault/colordiffuse/white100solid.png</texture>
+				<bordertexture colordiffuse="$VAR[ColorDiffuseGlobalDateClockAltText]">skindefault/colordiffuse/white100solid.png</bordertexture>
+				<bordersize>0,0,0,2</bordersize>
 			</control>
 			<control type="label">
 				<left>0</left>
