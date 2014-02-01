@@ -15,7 +15,7 @@
 			<texture colordiffuse="$VAR[ColorDiffusePosterListContentPanel]">skindefault/colordiffuse/white60.png</texture>
 		</control>
 		
-		<control type="list" id="50">
+		<control type="fixedlist" id="50">
 			<left>558</left>
 			<top>108</top>
 			<width>1314</width>
@@ -25,6 +25,7 @@
 			<onup>50</onup>
 			<ondown>50</ondown>
 			<pagecontrol>60</pagecontrol>
+			<focusposition>5</focusposition>
 			<viewtype label="535">list</viewtype>
 			<scrolltime>200</scrolltime>
 			<animation type="Conditional" condition="ControlGroup(9000).HasFocus()">
@@ -174,6 +175,19 @@
 				</control>
 				
 				<control type="image">
+					<left>950</left>
+					<top>-207</top>
+					<width>364</width>
+					<height>205</height>
+					<fadetime>100</fadetime>
+					<texture>$INFO[ListItem.Icon]</texture>
+					<bordertexture colordiffuse="$VAR[ColorDiffusePosterListPosterBorder]">skindefault/colordiffuse/white100solid.png</bordertexture>
+					<bordersize>2</bordersize>
+					<include>PosterListSelectionAnimation</include>
+					<visible>!Skin.HasSetting(DisablePosterListEpisodeIcon)</visible>
+				</control>
+				
+				<control type="image">
 					<left>77</left>
 					<top>15</top>
 					<width>50</width>
@@ -261,7 +275,7 @@
 			<fadetime>100</fadetime>
 			<aspectratio align="left" aligny="top">scale</aspectratio>
 			<texture fallback="DefaultAddonNone.png">$VAR[PosterVar]</texture>
-			<bordertexture colordiffuse="$VAR[ColorDiffusePosterListPosterBorder]">skindefault/colordiffuse/white60.png</bordertexture>
+			<bordertexture colordiffuse="$VAR[ColorDiffusePosterListPosterBorder]">skindefault/colordiffuse/white100solid.png</bordertexture>
 			<bordersize>2</bordersize>
 		</control>
 		
@@ -295,6 +309,8 @@
 			<width>1314</width>
 			<height>70</height>
 			<texture colordiffuse="$VAR[ColorDiffusePosterListItemCounts]">skindefault/colordiffuse/white100solid.png</texture>
+			<bordertexture colordiffuse="$VAR[ColorDiffusePosterListPosterBorder]">skindefault/colordiffuse/white100solid.png</bordertexture>
+			<bordersize>2,2,2,0</bordersize>
 		</control>
 			
 		<!-- ITEM COUNTS -->	
