@@ -108,7 +108,7 @@
 				</control>
 				
 				<control type="label">
-					<left>952</left>
+					<left>1012</left>
 					<width>120</width>
 					<height>80</height>
 					<font>LargeCAP</font>
@@ -208,7 +208,7 @@
 				</control>
 				
 				<control type="image">
-					<posx>952</posx>
+					<left>952</left>
 					<width>120</width>
 					<height>80</height>
 					<aspectratio>keep</aspectratio>
@@ -217,7 +217,7 @@
 				</control>
 				
 				<control type="image">
-					<posx>1072</posx>
+					<left>1072</left>
 					<width>120</width>
 					<height>80</height>
 					<aspectratio>keep</aspectratio>			
@@ -226,7 +226,7 @@
 				</control>
 				
 				<control type="image">
-					<posx>1194</posx>
+					<left>1194</left>
 					<width>120</width>
 					<height>80</height>
 					<aspectratio>keep</aspectratio>
