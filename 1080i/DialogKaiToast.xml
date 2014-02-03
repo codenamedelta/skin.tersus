@@ -11,12 +11,13 @@
 			<top>0</top>
 
 			<control type="image">
-				<description>background image</description>
 				<left>0</left>
 				<top>0</top>
 				<width>610</width>
 				<height>90</height>
-				<texture>$INFO[Skin.CurrentTheme]/ui/views/contentpanelbg.png</texture>
+				<texture colordiffuse="$VAR[ColorDiffuseKaiToastBackground]">skindefault/colordiffuse/white100solid.png</texture>
+				<bordertexture colordiffuse="$VAR[ColorDiffusePosterListPosterBorder]">skindefault/colordiffuse/white100solid.png</bordertexture>
+				<bordersize>2,0,2,2</bordersize>
 			</control>
 
 			<control type="image" id="400">

@@ -29,7 +29,7 @@
 				<width>650</width>
 				<height>85</height>
 				<texture colordiffuse="$VAR[ColorDiffuseVideoOSDBackground]">skindefault/colordiffuse/white100solid.png</texture>
-				<bordertexture colordiffuse="$VAR[ColorDiffuseSeekbarBorder]">skindefault/colordiffuse/white100solid.png</bordertexture>
+				<bordertexture colordiffuse="$VAR[ColorDiffuseVideoOSDBorder]">skindefault/colordiffuse/white100solid.png</bordertexture>
 				<bordersize>2,0,2,2</bordersize>
 				<animation effect="slide" start="0,-100" time="500">WindowOpen</animation>
 				<animation effect="slide" end="0,-100" time="500">WindowClose</animation>
@@ -43,6 +43,7 @@
 					<left>610</left>
 					<top>30</top>
 					<font>SmallCAP</font>
+					<textcolor>$VAR[ColorDiffuseVideoOSDText]</textcolor>
 					<width>650</width>
 					<align>center</align>
 					<label>$INFO[System.CurrentControl]</label>

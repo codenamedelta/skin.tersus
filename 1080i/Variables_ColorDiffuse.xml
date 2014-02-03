@@ -230,6 +230,40 @@
 		<!-- AUTUMN THEME -->
 		<value condition="[Skin.HasTheme(autumn)]">T01-C03</value>
 	</variable>	
+
+<!-- DIALOG KAITOAST VARIABLES -->	
+	<!-- COLOR DIFFUSE - KAITOAST BACKGROUND -->
+	<variable name="ColorDiffuseKaiToastBackground">		
+		<!-- DEFAULT THEME -->
+		<value condition="[Skin.HasTheme(skindefault)]">T00-C04</value>
+		<!-- AUTUMN THEME -->
+		<value condition="[Skin.HasTheme(autumn)]">T01-C03</value>
+	</variable>	
+	
+	<!-- COLOR DIFFUSE - KAITOAST BORDER -->
+	<variable name="ColorDiffuseKaiToastBorder">		
+		<!-- DEFAULT THEME -->
+		<value condition="[Skin.HasTheme(skindefault)]">T00-C03</value>
+		<!-- AUTUMN THEME -->
+		<value condition="[Skin.HasTheme(autumn)]">T01-C03</value>
+	</variable>	
+	
+<!-- DIALOG EXTENDED PROGRESS BAR VARIABLES -->	
+	<!-- COLOR DIFFUSE - EXTENDED PROGRESS BAR BACKGROUND -->
+	<variable name="ColorDiffuseExtendedProgressBackground">		
+		<!-- DEFAULT THEME -->
+		<value condition="[Skin.HasTheme(skindefault)]">T00-C04</value>
+		<!-- AUTUMN THEME -->
+		<value condition="[Skin.HasTheme(autumn)]">T01-C03</value>
+	</variable>	
+	
+	<!-- COLOR DIFFUSE - EXTENDED PROGRESS BAR BORDER -->
+	<variable name="ColorDiffuseExtendedProgressBorder">		
+		<!-- DEFAULT THEME -->
+		<value condition="[Skin.HasTheme(skindefault)]">T00-C03</value>
+		<!-- AUTUMN THEME -->
+		<value condition="[Skin.HasTheme(autumn)]">T01-C03</value>
+	</variable>	
 		
 <!-- DIALOG BUSY VARIABLES -->	
 	<!-- COLOR DIFFUSE - BUSY SMALL -->
@@ -246,6 +280,63 @@
 		<value condition="[Skin.HasTheme(skindefault)]">T00-C08</value>
 		<!-- AUTUMN THEME -->
 		<value condition="[Skin.HasTheme(autumn)]">T01-C03</value>
+	</variable>
+	
+<!-- SEEKBAR VARIABLES -->	
+	<!-- COLOR DIFFUSE - SEEKBAR BACKGROUND -->
+	<variable name="ColorDiffuseSeekbarBackground">		
+		<!-- DEFAULT THEME -->
+		<value condition="[Skin.HasTheme(skindefault)]">T00-C08</value>
+		<!-- AUTUMN THEME -->
+		<value condition="[Skin.HasTheme(autumn)]">T01-C02</value>
+	</variable>
+	
+	<!-- COLOR DIFFUSE - SEEKBAR BORDER -->
+	<variable name="ColorDiffuseSeekbarBorder">		
+		<!-- DEFAULT THEME -->
+		<value condition="[Skin.HasTheme(skindefault)]">T00-C03</value>
+		<!-- AUTUMN THEME -->
+		<value condition="[Skin.HasTheme(autumn)]">T01-C02</value>
+	</variable>
+	
+	<!-- COLOR DIFFUSE - SEEKBAR PROGRESS -->
+	<variable name="ColorDiffuseSeekbarProgress">		
+		<!-- DEFAULT THEME -->
+		<value condition="[Skin.HasTheme(skindefault)]">T00-C03</value>
+		<!-- AUTUMN THEME -->
+		<value condition="[Skin.HasTheme(autumn)]">T01-C02</value>
+	</variable>
+	
+	<!-- COLOR DIFFUSE - SEEKBAR TEXT -->
+	<variable name="ColorDiffuseSeekbarText">		
+		<!-- DEFAULT THEME -->
+		<value condition="[Skin.HasTheme(skindefault)]">T00-C06</value>
+		<!-- AUTUMN THEME -->
+		<value condition="[Skin.HasTheme(autumn)]">T01-C02</value>
+	</variable>
+	
+	<!-- COLOR DIFFUSE - SEEKBAR ALT TEXT -->
+	<variable name="ColorDiffuseSeekbarAltText">		
+		<!-- DEFAULT THEME -->
+		<value condition="[Skin.HasTheme(skindefault)]">T00-C06</value>
+		<!-- AUTUMN THEME -->
+		<value condition="[Skin.HasTheme(autumn)]">T01-C02</value>
+	</variable>
+	
+	<!-- COLOR DIFFUSE - SEEKBAR FLAGS -->
+	<variable name="ColorDiffuseSeekbarFlags">		
+		<!-- DEFAULT THEME -->
+		<value condition="[Skin.HasTheme(skindefault)]">T00-C03</value>
+		<!-- AUTUMN THEME -->
+		<value condition="[Skin.HasTheme(autumn)]">T01-C02</value>
+	</variable>
+	
+	<!-- COLOR DIFFUSE - SEEKBAR RATING BG -->
+	<variable name="ColorDiffuseSeekbarRatingBackground">		
+		<!-- DEFAULT THEME -->
+		<value condition="[Skin.HasTheme(skindefault)]">T00-C08</value>
+		<!-- AUTUMN THEME -->
+		<value condition="[Skin.HasTheme(autumn)]">T01-C02</value>
 	</variable>
 	
 <!-- POSTERLIST VIEW VARIABLES -->	
@@ -357,68 +448,11 @@
 		<value condition="[Skin.HasTheme(autumn)]">T01-C02</value>
 	</variable>
 	
-<!-- SEEKBAR VARIABLES -->	
-	<!-- COLOR DIFFUSE - SEEKBAR BACKGROUND -->
-	<variable name="ColorDiffuseSeekbarBackground">		
-		<!-- DEFAULT THEME -->
-		<value condition="[Skin.HasTheme(skindefault)]">T00-C08</value>
-		<!-- AUTUMN THEME -->
-		<value condition="[Skin.HasTheme(autumn)]">T01-C02</value>
-	</variable>
-	
-	<!-- COLOR DIFFUSE - SEEKBAR BORDER -->
-	<variable name="ColorDiffuseSeekbarBorder">		
-		<!-- DEFAULT THEME -->
-		<value condition="[Skin.HasTheme(skindefault)]">T00-C04</value>
-		<!-- AUTUMN THEME -->
-		<value condition="[Skin.HasTheme(autumn)]">T01-C02</value>
-	</variable>
-	
-	<!-- COLOR DIFFUSE - SEEKBAR PROGRESS -->
-	<variable name="ColorDiffuseSeekbarProgress">		
-		<!-- DEFAULT THEME -->
-		<value condition="[Skin.HasTheme(skindefault)]">T00-C03</value>
-		<!-- AUTUMN THEME -->
-		<value condition="[Skin.HasTheme(autumn)]">T01-C02</value>
-	</variable>
-	
-	<!-- COLOR DIFFUSE - SEEKBAR TEXT -->
-	<variable name="ColorDiffuseSeekbarText">		
-		<!-- DEFAULT THEME -->
-		<value condition="[Skin.HasTheme(skindefault)]">T00-C06</value>
-		<!-- AUTUMN THEME -->
-		<value condition="[Skin.HasTheme(autumn)]">T01-C02</value>
-	</variable>
-	
-	<!-- COLOR DIFFUSE - SEEKBAR ALT TEXT -->
-	<variable name="ColorDiffuseSeekbarAltText">		
-		<!-- DEFAULT THEME -->
-		<value condition="[Skin.HasTheme(skindefault)]">T00-C06</value>
-		<!-- AUTUMN THEME -->
-		<value condition="[Skin.HasTheme(autumn)]">T01-C02</value>
-	</variable>
-	
-	<!-- COLOR DIFFUSE - SEEKBAR FLAGS -->
-	<variable name="ColorDiffuseSeekbarFlags">		
-		<!-- DEFAULT THEME -->
-		<value condition="[Skin.HasTheme(skindefault)]">T00-C03</value>
-		<!-- AUTUMN THEME -->
-		<value condition="[Skin.HasTheme(autumn)]">T01-C02</value>
-	</variable>
-	
-	<!-- COLOR DIFFUSE - SEEKBAR RATING BG -->
-	<variable name="ColorDiffuseSeekbarRatingBackground">		
-		<!-- DEFAULT THEME -->
-		<value condition="[Skin.HasTheme(skindefault)]">T00-C08</value>
-		<!-- AUTUMN THEME -->
-		<value condition="[Skin.HasTheme(autumn)]">T01-C02</value>
-	</variable>
-	
 <!-- VIDEO OSD VARIABLES -->	
 	<!-- COLOR DIFFUSE - OSD FOCUS -->
 	<variable name="ColorDiffuseVideoOSDFocus">		
 		<!-- DEFAULT THEME -->
-		<value condition="[Skin.HasTheme(skindefault)]">T00-C03</value>
+		<value condition="[Skin.HasTheme(skindefault)]">T00-C08</value>
 		<!-- AUTUMN THEME -->
 		<value condition="[Skin.HasTheme(autumn)]">T01-C02</value>
 	</variable>
@@ -433,6 +467,22 @@
 	
 	<!-- COLOR DIFFUSE - OSD BG -->
 	<variable name="ColorDiffuseVideoOSDBackground">		
+		<!-- DEFAULT THEME -->
+		<value condition="[Skin.HasTheme(skindefault)]">T00-C03</value>
+		<!-- AUTUMN THEME -->
+		<value condition="[Skin.HasTheme(autumn)]">T01-C02</value>
+	</variable>
+	
+	<!-- COLOR DIFFUSE - OSD BORDER -->
+	<variable name="ColorDiffuseVideoOSDBorder">		
+		<!-- DEFAULT THEME -->
+		<value condition="[Skin.HasTheme(skindefault)]">T00-C08</value>
+		<!-- AUTUMN THEME -->
+		<value condition="[Skin.HasTheme(autumn)]">T01-C02</value>
+	</variable>
+	
+	<!-- COLOR DIFFUSE - OSD TEXT -->
+	<variable name="ColorDiffuseVideoOSDText">		
 		<!-- DEFAULT THEME -->
 		<value condition="[Skin.HasTheme(skindefault)]">T00-C08</value>
 		<!-- AUTUMN THEME -->

@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- TERSUS -->
+<window>
+    <defaultcontrol></defaultcontrol>
+	
+    <controls>
+	
+            <control type="group">
+			<left>1260</left>
+			<top>0</top>
+			<animation effect="slide" start="0,100" time="250">WindowOpen</animation>
+			<animation effect="slide" end="0,100" time="250">WindowClose</animation>
+			<visible>!Window.IsActive(startup)</visible>
+			
+				<!-- DIALOG -->
+				<control type="image">
+					<top>0</top>
+					<width>610</width>
+					<height>90</height>
+					<align>center</align>
+					<texture colordiffuse="$VAR[ColorDiffuseExtendedProgressBackground]">skindefault/colordiffuse/white100solid.png</texture>
+					<bordertexture colordiffuse="$VAR[ColorDiffuseExtendedProgressBorder]">skindefault/colordiffuse/white100solid.png</bordertexture>
+					<bordersize>2,0,2,2</bordersize>
+				</control>
+				
+				<!-- HEADING LABEL -->
+				<control type="label" id="31">
+					<top>0</top>
+					<width>610</width>
+					<align>center</align>
+					<font>Small</font>
+					<textcolor>T00-C08</textcolor>
+					<label>-</label>
+					<scroll>true</scroll>
+				</control>
+				
+				<!-- MESSAGE LABEL -->
+				<control type="label" id="30">
+					<top>30</top>
+					<align>center</align>
+					<width>610</width>
+					<font>Small</font>
+					<textcolor>T00-C08</textcolor>
+					<label>-</label>
+					<scroll>true</scroll>
+				</control>
+			
+				<control type="progress" id="32">
+				   <left>0</left>
+				   <top>84</top>
+				   <width>610</width>
+				   <height>16</height>
+				   <alignz>5</alignz>
+				</control>
+
+		</control>		
+			
+    </controls>
+	
+</window>
