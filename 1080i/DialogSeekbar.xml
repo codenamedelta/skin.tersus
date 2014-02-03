@@ -311,8 +311,8 @@
 				<width>1890</width>
 				<height>16</height>
 				<info>Player.Progress</info>
-				<texturebg colordiffuse="$VAR[ColorDiffuseSeekbarBorder]" border="1">skindefault/colordiffuse/white100solid.png</texturebg>
-				<midtexture colordiffuse="$VAR[ColorDiffuseSeekbarProgress]" border="1">skindefault/colordiffuse/white100solid.png</midtexture>
+				<texturebg colordiffuse="$VAR[ColorDiffuseSeekbarProgress]" border="1">skindefault/colordiffuse/white100solid.png</texturebg>
+				<midtexture colordiffuse="$VAR[ColorDiffuseSeekbarAltProgress]" border="1">skindefault/colordiffuse/white100solid.png</midtexture>
 				<visible>true</visible>
 			</control>
 

@@ -302,6 +302,14 @@
 	<!-- COLOR DIFFUSE - SEEKBAR PROGRESS -->
 	<variable name="ColorDiffuseSeekbarProgress">		
 		<!-- DEFAULT THEME -->
+		<value condition="[Skin.HasTheme(skindefault)]">T00-C04</value>
+		<!-- AUTUMN THEME -->
+		<value condition="[Skin.HasTheme(autumn)]">T01-C02</value>
+	</variable>
+	
+	<!-- COLOR DIFFUSE - SEEKBAR PROGRESS -->
+	<variable name="ColorDiffuseSeekbarAltProgress">		
+		<!-- DEFAULT THEME -->
 		<value condition="[Skin.HasTheme(skindefault)]">T00-C03</value>
 		<!-- AUTUMN THEME -->
 		<value condition="[Skin.HasTheme(autumn)]">T01-C02</value>
