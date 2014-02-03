@@ -1,27 +1,56 @@
 <?xml version="1.0" encoding="utf-8"?>
 <includes>
+
 <!-- SETTINGS/SETTINGS CATEGORY ANIMATIONS -->   
 	<include name="SettingsSelectionAnimation">
+		
 		<animation type="Focus" condition="Container(9000).OnNext" reversible="false">
+		
 			<effect type="slide" start="0,-100" end="0,0" time="300" tween="back" easing="out" />
+		
 		</animation>
+		
 		<animation type="Focus" condition="Container(9000).OnPrevious" reversible="false">
+		
 			<effect type="slide" start="0,100" end="0,0" time="300" tween="back" easing="out" />
+		
 		</animation>
+		
 	</include>
 
 <!-- POSTERLIST ANIMATIONS -->    
 	<include name="PosterListSelectionAnimation">
+		
 		<animation type="Focus" condition="Container(50).OnNext" reversible="false">
+		
 			<effect type="slide" start="0,-100" end="0,0" time="300" tween="back" easing="out" />
+		
 		</animation>
+		
 		<animation type="Focus" condition="Container(50).OnPrevious" reversible="false">
+		
 			<effect type="slide" start="0,100" end="0,0" time="300" tween="back" easing="out" />
+		
 		</animation>
+	
 	</include>
+	
 	<include name="PosterListSelectionEpisodeWatchedAnimation">
+		
 		<animation type="conditional" condition="StringCompare(ListItem.Overlay,OverlayWatched.png)" reversible="false">
+			
 			<effect type="slide" start="0,0" end="20,0" time="300" tween="back" easing="out" />
+		
 		</animation>
+	
+	</include>
+	
+<!-- DIALOG TOP ANIMATIONS -->
+	<include name="DialogTopWindowAnimation">
+		
+		<animation effect="slide" start="0,-360" end="0,0" time="200">WindowOpen</animation>
+	
+		<animation effect="slide" start="0,0" end="0,-360" time="200">WindowClose</animation>
+	
 	</include>
 </includes>

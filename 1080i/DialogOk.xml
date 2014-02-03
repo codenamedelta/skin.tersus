@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<!-- Foundation -->
+<!-- TERSUS -->
 <window id="2002">
 	<defaultcontrol always="true">10</defaultcontrol>
 	<allowoverlay>yes</allowoverlay>
@@ -9,61 +9,59 @@
 		<include>GlobalOverlay</include>
 
 		<control type="group">
-			<posx>570</posx>
-			<posy>333</posy>
+			<left>570</left>
+			<top>333</top>
+			
+			<include>DialogTopWindowAnimation</include>
 
 			<control type="image">
-				<posx>-30</posx>
-				<posy>-30</posy>
-				<width>840</width>
-				<height>414</height>
-				<texture border="22">other_textures/ContentPanel.png</texture>
+				<left>0</left>
+				<top>0</top>
+				<width>1920</width>
+				<height>360</height>
+				<texture colordiffuse="$VAR[ColorDiffuseCommonDialogBackground]">skindefault/colordiffuse/white100solid.png</texture>
+				<bordertexture colordiffuse="$VAR[ColorDiffuseCommonDialogBorder]">skindefault/colordiffuse/white100solid.png</bordertexture>
+				<bordersize>0,0,0,2</bordersize>
 			</control>
 
 			<control type="label" id="1">
-				<description>heading</description>
-				<posx>15</posx>
-				<width>750</width>
+				<description>Heading</description>
+				<left>15</left>
 				<label>-</label>
+				<width>1920</width>
 				<font>Medium</font>
 				<shadowcolor>black</shadowcolor>
 				<align>center</align>
 			</control>
 
-			<control type="label" id="2">
+			<control type="textbox" id="9">
 				<description>Line 1</description>
-				<posx>15</posx>
-				<posy>108</posy>
-				<width>750</width>
+				<top>108</top>
 				<label>-</label>
+				<width>1920</width>
+				<align>center</align>
 			</control>
 
-			<control type="label" id="3">
-				<description>Line 2</description>
-				<posx>15</posx>
-				<posy>156</posy>
-				<width>750</width>
-				<label>-</label>
-			</control>
-
-			<control type="label" id="4">
-				<description>Line 3</description>
-				<posx>15</posx>
-				<posy>204</posy>
-				<width>750</width>
-				<label>-</label>
-			</control>
-
-			<control type="button" id="10">
-				<description>Ok</description>
-				<posx>278</posx>
-				<posy>255</posy>
-				<width>225</width>
-				<label>186</label>
-				<onleft>10</onleft>
-				<onright>10</onright>
-				<onup>10</onup>
-				<ondown>10</ondown>
+			<control type="grouplist">
+				<top>285</top>
+				<width>1920</width>
+				<align>center</align>
+				<orientation>horizontal</orientation>
+				<itemgap>3</itemgap>
+				
+				<control type="button" id="10">
+					<width>360</width>
+					<align>center</align>
+					<font>SmallCAP</font>
+					<textcolor>$VAR[ColorDiffuseCommonDialogText]</textcolor>
+					<focusedcolor>$VAR[ColorDiffuseCommonDialogTextFocused]</focusedcolor>
+					<label>$LOCALIZE[186]</label>
+					<onleft>10</onleft>
+					<onright>10</onright>
+					<onup>10</onup>
+					<ondown>10</ondown>
+				</control>
+				
 			</control>
 
 		</control>

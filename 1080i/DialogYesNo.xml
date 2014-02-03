@@ -1,19 +1,16 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<!-- Foundation -->
+<!-- TERSUS -->
 <window id="100">
 	<defaultcontrol always="true">10</defaultcontrol>
 	<allowoverlay>yes</allowoverlay>
 
 	<controls>
 
-		
-
 		<control type="group">
 			<left>0</left>
 			<top>0</top>
 			
-			<animation effect="slide" start="0,-360" end="0,0" time="200">WindowOpen</animation>
-			<animation effect="slide" start="0,0" end="0,-360" time="200">WindowClose</animation>
+			<include>DialogTopWindowAnimation</include>
 
 			<control type="image">
 				<left>0</left>
@@ -22,7 +19,7 @@
 				<height>360</height>
 				<texture colordiffuse="$VAR[ColorDiffuseCommonDialogBackground]">skindefault/colordiffuse/white100solid.png</texture>
 				<bordertexture colordiffuse="$VAR[ColorDiffuseCommonDialogBorder]">skindefault/colordiffuse/white100solid.png</bordertexture>
-					<bordersize>0,0,0,2</bordersize>
+				<bordersize>0,0,0,2</bordersize>
 			</control>
 
 			<control type="label" id="1">
@@ -44,11 +41,11 @@
 			</control>
 
 			<control type="grouplist">
-			<top>285</top>
-			<width>1920</width>
-			<align>center</align>
-			<orientation>horizontal</orientation>
-			<itemgap>3</itemgap>
+				<top>285</top>
+				<width>1920</width>
+				<align>center</align>
+				<orientation>horizontal</orientation>
+				<itemgap>3</itemgap>
 			
 				<!-- NO -->
 				<control type="button" id="10">
