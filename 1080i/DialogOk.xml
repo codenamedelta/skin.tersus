@@ -9,8 +9,8 @@
 		<include>GlobalOverlay</include>
 
 		<control type="group">
-			<left>570</left>
-			<top>333</top>
+			<left>0</left>
+			<top>0</top>
 			
 			<include>DialogTopWindowAnimation</include>
 
