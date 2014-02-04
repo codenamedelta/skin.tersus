@@ -5,15 +5,11 @@
 	<include name="SettingsSelectionAnimation">
 		
 		<animation type="Focus" condition="Container(9000).OnNext" reversible="false">
-		
 			<effect type="slide" start="0,-100" end="0,0" time="300" tween="back" easing="out" />
-		
 		</animation>
 		
 		<animation type="Focus" condition="Container(9000).OnPrevious" reversible="false">
-		
 			<effect type="slide" start="0,100" end="0,0" time="300" tween="back" easing="out" />
-		
 		</animation>
 		
 	</include>
@@ -22,15 +18,11 @@
 	<include name="PosterListSelectionAnimation">
 		
 		<animation type="Focus" condition="Container(50).OnNext" reversible="false">
-		
 			<effect type="slide" start="0,-100" end="0,0" time="300" tween="back" easing="out" />
-		
 		</animation>
 		
 		<animation type="Focus" condition="Container(50).OnPrevious" reversible="false">
-		
 			<effect type="slide" start="0,100" end="0,0" time="300" tween="back" easing="out" />
-		
 		</animation>
 	
 	</include>
@@ -38,9 +30,7 @@
 	<include name="PosterListSelectionEpisodeWatchedAnimation">
 		
 		<animation type="conditional" condition="StringCompare(ListItem.Overlay,OverlayWatched.png)" reversible="false">
-			
 			<effect type="slide" start="0,0" end="20,0" time="300" tween="back" easing="out" />
-		
 		</animation>
 	
 	</include>
@@ -51,6 +41,15 @@
 		<animation effect="slide" start="0,-360" end="0,0" time="200">WindowOpen</animation>
 	
 		<animation effect="slide" start="0,0" end="0,-360" time="200">WindowClose</animation>
+	
+	</include>
+	
+<!-- CLOCK/TEMP ANIMATIONS -->
+	<include name="ClockTempAnimation">
+		
+		<animation type="visible" reversible="false">
+					<effect type="slide" start="1920,0" end="0,0" time="300" tween="sine" easing="in" />
+		</animation>
 	
 	</include>
 </includes>

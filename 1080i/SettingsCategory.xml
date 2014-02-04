@@ -113,6 +113,10 @@
 			<textcolor>$VAR[ColorDiffuseSettingsText]</textcolor>
 			<focusedcolor>$VAR[ColorDiffuseSettingsTextFocused]</focusedcolor>
 			<texturefocus colordiffuse="$VAR[ColorDiffuseSettingsSelection]">skindefault/colordiffuse/white100solid.png</texturefocus>
+			<textureradioonfocus>skindefault/ui/radioonfocus.png</textureradioonfocus>
+			<textureradioonnofocus>skindefault/ui/radioonnofocus.png</textureradioonnofocus>
+			<textureradioofffocus>skindefault/ui/radioofffocus.png</textureradioofffocus>
+			<textureradiooffnofocus>skindefault/ui/radiooffnofocus.png</textureradiooffnofocus>
 		</control>
 
 		<control type="spincontrolex" id="9">

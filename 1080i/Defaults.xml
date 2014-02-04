@@ -92,8 +92,10 @@
 		<radiowidth>48</radiowidth>
 		<radioheight>48</radioheight>
 		<texturefocus colordiffuse="$VAR[ColorDiffuseDefaultButtons]">skindefault/colordiffuse/white100solid.png</texturefocus>
-		<textureradiofocus>skindefault/ui/radiobuttonfo.png</textureradiofocus>
-		<textureradionofocus>skindefault/ui/radiobuttonnf.png</textureradionofocus>
+		<textureradioonfocus>skindefault/ui/radioonfocus.png</textureradioonfocus>
+		<textureradioonnofocus>skindefault/ui/radioonnofocus.png</textureradioonnofocus>
+		<textureradioofffocus>skindefault/ui/radioofffocus.png</textureradioofffocus>
+		<textureradiooffnofocus>skindefault/ui/radiooffnofocus.png</textureradiooffnofocus>
 		<textoffsetx>15</textoffsetx>
 		<pulseonselect>false</pulseonselect>
 	</default>

@@ -9,6 +9,38 @@
 		<value condition="[Skin.HasTheme(autumn)]">T01-C02</value>
 	</variable>
 	
+	<!-- COLOR DIFFUSE - DEFAULT RADIO ON FOCUS -->
+	<variable name="ColorDiffuseDefaultRadioOnFocus">		
+		<!-- DEFAULT THEME -->
+		<value condition="[Skin.HasTheme(skindefault)]">skindefault/ui/radioonfocus.png</value>
+		<!-- AUTUMN THEME -->
+		<value condition="[Skin.HasTheme(autumn)]">autumn/ui/radioonfocus.png</value>
+	</variable>
+	
+	<!-- COLOR DIFFUSE - DEFAULT RADIO ON NO FOCUS -->
+	<variable name="ColorDiffuseDefaultRadioOnNoFocus">		
+		<!-- DEFAULT THEME -->
+		<value condition="[Skin.HasTheme(skindefault)]">skindefault/ui/radioonnofocus.png</value>
+		<!-- AUTUMN THEME -->
+		<value condition="[Skin.HasTheme(autumn)]">autumn/ui/radioonnofocus.png</value>
+	</variable>
+	
+	<!-- COLOR DIFFUSE - DEFAULT RADIO OFF FOCUS -->
+	<variable name="ColorDiffuseDefaultRadioOffFocus">		
+		<!-- DEFAULT THEME -->
+		<value condition="[Skin.HasTheme(skindefault)]">skindefault/ui/radioofffocus.png</value>
+		<!-- AUTUMN THEME -->
+		<value condition="[Skin.HasTheme(autumn)]">autumn/ui/radioofffocus.png</value>
+	</variable>
+	
+	<!-- COLOR DIFFUSE - DEFAULT RADIO OFF NO FOCUS -->
+	<variable name="ColorDiffuseDefaultRadioOffNoFocus">		
+		<!-- DEFAULT THEME -->
+		<value condition="[Skin.HasTheme(skindefault)]">skindefault/ui/radiooffnofocus.png</value>
+		<!-- AUTUMN THEME -->
+		<value condition="[Skin.HasTheme(autumn)]">autumn/ui/radiooffnofocus.png</value>
+	</variable>
+	
 <!-- GLOBAL VARIABLES -->
 	<!-- COLOR DIFFUSE - GLOBAL OVERLAY -->
 	<variable name="ColorDiffuseGlobalOverlay">		
@@ -408,12 +440,16 @@
 	<variable name="ColorDiffusePosterListPlot">		
 		<!-- DEFAULT THEME -->		
 		<value condition="[Skin.HasTheme(skindefault)]">T00-C08</value>
+		<!-- AUTUMN THEME -->		
+		<value condition="[Skin.HasTheme(autumn)]">T01-C04</value>
 	</variable>
 	
 	<!-- COLOR DIFFUSE - POSTERLIST PLOT TEXT -->
 	<variable name="ColorDiffusePosterListPlotText">		
 		<!-- DEFAULT THEME -->		
-		<value condition="[Skin.HasTheme(skindefault)]">T00-C04</value>
+		<value condition="[Skin.HasTheme(skindefault)]">T00-C03</value>
+		<!-- AUTUMN THEME -->		
+		<value condition="[Skin.HasTheme(autumn)]">T01-C04</value>
 	</variable>
 	
 	<!-- COLOR DIFFUSE - POSTERLIST WATCHED OVERLAY -->
