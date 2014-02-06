@@ -12,7 +12,7 @@
 	<!-- COLOR DIFFUSE - DEFAULT RADIO ON FOCUS -->
 	<variable name="ColorDiffuseDefaultRadioOnFocus">		
 		<!-- DEFAULT THEME -->
-		<value condition="[Skin.HasTheme(skindefault)]">skindefault/ui/radioonfocus.png</value>
+		<value condition="[Skin.HasTheme(skindefault)]">ui/radioonfocus.png</value>
 		<!-- AUTUMN THEME -->
 		<value condition="[Skin.HasTheme(autumn)]">autumn/ui/radioonfocus.png</value>
 	</variable>
@@ -20,7 +20,7 @@
 	<!-- COLOR DIFFUSE - DEFAULT RADIO ON NO FOCUS -->
 	<variable name="ColorDiffuseDefaultRadioOnNoFocus">		
 		<!-- DEFAULT THEME -->
-		<value condition="[Skin.HasTheme(skindefault)]">skindefault/ui/radioonnofocus.png</value>
+		<value condition="[Skin.HasTheme(skindefault)]">ui/radioonnofocus.png</value>
 		<!-- AUTUMN THEME -->
 		<value condition="[Skin.HasTheme(autumn)]">autumn/ui/radioonnofocus.png</value>
 	</variable>
@@ -28,7 +28,7 @@
 	<!-- COLOR DIFFUSE - DEFAULT RADIO OFF FOCUS -->
 	<variable name="ColorDiffuseDefaultRadioOffFocus">		
 		<!-- DEFAULT THEME -->
-		<value condition="[Skin.HasTheme(skindefault)]">skindefault/ui/radioofffocus.png</value>
+		<value condition="[Skin.HasTheme(skindefault)]">ui/radioofffocus.png</value>
 		<!-- AUTUMN THEME -->
 		<value condition="[Skin.HasTheme(autumn)]">autumn/ui/radioofffocus.png</value>
 	</variable>
@@ -36,7 +36,7 @@
 	<!-- COLOR DIFFUSE - DEFAULT RADIO OFF NO FOCUS -->
 	<variable name="ColorDiffuseDefaultRadioOffNoFocus">		
 		<!-- DEFAULT THEME -->
-		<value condition="[Skin.HasTheme(skindefault)]">skindefault/ui/radiooffnofocus.png</value>
+		<value condition="[Skin.HasTheme(skindefault)]">ui/radiooffnofocus.png</value>
 		<!-- AUTUMN THEME -->
 		<value condition="[Skin.HasTheme(autumn)]">autumn/ui/radiooffnofocus.png</value>
 	</variable>

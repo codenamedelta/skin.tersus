@@ -71,7 +71,7 @@
 	<include name="GlobalOverlay">
 		<control type="image">
 			<include>Dimensions_Fullscreen</include>
-			<texture colordiffuse="$VAR[ColorDiffuseGlobalOverlay]" border="2">skindefault/colordiffuse/white80.png</texture>
+			<texture colordiffuse="$VAR[ColorDiffuseGlobalOverlay]" border="2">colordiffuse/white80.png</texture>
 		</control>
 	</include>
 	<!-- Global Date/Clock/Temperature -->
@@ -159,8 +159,8 @@
 				<top>0</top>
 				<width>350</width>
 				<height>70</height>
-				<texture colordiffuse="$VAR[ColorDiffuseGlobalDateClock]">skindefault/colordiffuse/white100solid.png</texture>
-				<bordertexture colordiffuse="$VAR[ColorDiffuseGlobalDateClockAltText]">skindefault/colordiffuse/white100solid.png</bordertexture>
+				<texture colordiffuse="$VAR[ColorDiffuseGlobalDateClock]">colordiffuse/white100solid.png</texture>
+				<bordertexture colordiffuse="$VAR[ColorDiffuseGlobalDateClockAltText]">colordiffuse/white100solid.png</bordertexture>
 				<bordersize>0,0,2,2</bordersize>
 			</control>
 			<control type="label">
@@ -183,8 +183,8 @@
 				<top>0</top>
 				<width>1920</width>
 				<height>70</height>
-				<texture colordiffuse="$VAR[ColorDiffuseGlobalDateClock]">skindefault/colordiffuse/white100solid.png</texture>
-				<bordertexture colordiffuse="$VAR[ColorDiffuseGlobalDateClockAltText]">skindefault/colordiffuse/white100solid.png</bordertexture>
+				<texture colordiffuse="$VAR[ColorDiffuseGlobalDateClock]">colordiffuse/white100solid.png</texture>
+				<bordertexture colordiffuse="$VAR[ColorDiffuseGlobalDateClockAltText]">colordiffuse/white100solid.png</bordertexture>
 				<bordersize>0,0,0,2</bordersize>
 			</control>
 			<control type="label">
@@ -216,14 +216,14 @@
 			
 			<control type="image">
 				<include>Dimensions_Fullscreen</include>
-				<texture colordiffuse="$VAR[ColorDiffuseGlobalOverlay]" border="2">skindefault/colordiffuse/white80.png</texture>
+				<texture colordiffuse="$VAR[ColorDiffuseGlobalOverlay]" border="2">colordiffuse/white80.png</texture>
 				<visible>[!IsEmpty(ListItem.foldername) + Container.Content(Movies)]</visible>
 			</control>
 			
 			<control type="image">
 				<include>Dimensions_Fullscreen</include>
 				<fadetime>800</fadetime>
-				<texture colordiffuse="$VAR[ColorDiffuseGlobalBackground]" border="2">skindefault/colordiffuse/white100solid.png</texture>
+				<texture colordiffuse="$VAR[ColorDiffuseGlobalBackground]" border="2">colordiffuse/white100solid.png</texture>
 				<visible>!Window.IsVisible(videolibrary)</visible>
 			</control>
 
@@ -236,7 +236,7 @@
 			
 			<control type="image">
 				<include>Dimensions_Fullscreen</include>
-				<texture colordiffuse="$VAR[ColorDiffuseGlobalOverlay]" border="2">skindefault/colordiffuse/white80.png</texture>
+				<texture colordiffuse="$VAR[ColorDiffuseGlobalOverlay]" border="2">colordiffuse/white80.png</texture>
 				<visible>!IsEmpty(ListItem.foldername) + [Container.Content(TVShows) | [Container.Content(Episodes) + stringcompare(Container.FolderPath,videodb://5/)]]</visible>
 			</control>
 			
@@ -249,7 +249,7 @@
 			
 			<control type="image">
 				<include>Dimensions_Fullscreen</include>
-				<texture colordiffuse="$VAR[ColorDiffuseGlobalOverlay]" border="2">skindefault/colordiffuse/white80.png</texture>
+				<texture colordiffuse="$VAR[ColorDiffuseGlobalOverlay]" border="2">colordiffuse/white80.png</texture>
 				<visible>!IsEmpty(ListItem.foldername) + [Container.Content(Seasons) | [Container.Content(Episodes) + !stringcompare(Container.FolderPath,videodb://5/)]]</visible>
 			</control>
 		</control>
@@ -269,7 +269,7 @@
 
 			<control type="image">
 				<include>Dimensions_Fullscreen</include>
-				<texture colordiffuse="$VAR[ColorDiffuseGlobalBackground]" border="2">skindefault/colordiffuse/white100solid.png</texture>
+				<texture colordiffuse="$VAR[ColorDiffuseGlobalBackground]" border="2">colordiffuse/white100solid.png</texture>
 			</control>
 
 		</control>

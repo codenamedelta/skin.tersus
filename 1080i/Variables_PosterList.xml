@@ -3,10 +3,10 @@
 
 	<!-- POSTERLIST SELECTION BUTTON -->
 	<variable name="PosterListSelectionButton">
-		<value condition="[Container.Content(tvshows) | Container.Content(movies)]">skindefault/ui/views/buttonhoverposterlist.png</value>
-		<value condition="[Container.Content(seasons)]">skindefault/ui/views/buttonhoverposterlistseasons.png</value>
-		<value condition="Container.Content(episodes)">skindefault/ui/views/buttonhoverposterlistepisodes.png</value>
-		<value>skindefault/ui/views/buttonhover.png</value>
+		<value condition="[Container.Content(tvshows) | Container.Content(movies)]">ui/views/buttonhoverposterlist.png</value>
+		<value condition="[Container.Content(seasons)]">ui/views/buttonhoverposterlistseasons.png</value>
+		<value condition="Container.Content(episodes)">ui/views/buttonhoverposterlistepisodes.png</value>
+		<value>ui/views/buttonhover.png</value>
 	</variable>	
 	
 	<!-- POSTERLIST COUNTS -->

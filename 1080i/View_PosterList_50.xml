@@ -15,7 +15,7 @@
 				<top>108</top>
 				<width>1314</width>
 				<height>864</height>
-				<texture colordiffuse="$VAR[ColorDiffusePosterListContentPanel]">skindefault/colordiffuse/white60.png</texture>
+				<texture colordiffuse="$VAR[ColorDiffusePosterListContentPanel]">colordiffuse/white60.png</texture>
 			</control>
 			
 			<control type="fixedlist" id="50">
@@ -126,7 +126,7 @@
 						<width>120</width>
 						<height>80</height>
 						<aspectratio>keep</aspectratio>
-						<texture colordiffuse="$VAR[ColorDiffusePosterListFlags]">$VAR[RatingFlagVar,skindefault/flags/rating/,.png]</texture>
+						<texture colordiffuse="$VAR[ColorDiffusePosterListFlags]">$VAR[RatingFlagVar,flags/rating/,.png]</texture>
 						<include>PosterListSelectionAnimation</include>
 					</control>
 					
@@ -135,7 +135,7 @@
 						<width>120</width>
 						<height>80</height>
 						<aspectratio>keep</aspectratio>
-						<texture colordiffuse="$VAR[ColorDiffusePosterListFlags]">$INFO[ListItem.Studio,skindefault/flags/studios/,.png]</texture>
+						<texture colordiffuse="$VAR[ColorDiffusePosterListFlags]">$INFO[ListItem.Studio,flags/studios/,.png]</texture>
 						<include>PosterListSelectionAnimation</include>
 					</control>			
 
@@ -189,19 +189,6 @@
 					</control>
 					
 					<control type="image">
-						<left>950</left>
-						<top>-207</top>
-						<width>364</width>
-						<height>205</height>
-						<fadetime>100</fadetime>
-						<texture>$INFO[ListItem.Icon]</texture>
-						<bordertexture colordiffuse="$VAR[ColorDiffusePosterListPosterBorder]">skindefault/colordiffuse/white100solid.png</bordertexture>
-						<bordersize>2</bordersize>
-						<include>PosterListSelectionAnimation</include>
-						<visible>!Skin.HasSetting(DisablePosterListEpisodeIcon)</visible>
-					</control>
-					
-					<control type="image">
 						<left>77</left>
 						<top>15</top>
 						<width>50</width>
@@ -216,7 +203,7 @@
 						<width>120</width>
 						<height>80</height>
 						<aspectratio>keep</aspectratio>
-						<texture colordiffuse="$VAR[ColorDiffusePosterListFlags]">$INFO[ListItem.VideoResolution,skindefault/flags/resolution/,.png]</texture>
+						<texture colordiffuse="$VAR[ColorDiffusePosterListFlags]">$INFO[ListItem.VideoResolution,flags/resolution/,.png]</texture>
 						<include>PosterListSelectionAnimation</include>
 					</control>
 					
@@ -225,7 +212,7 @@
 						<width>120</width>
 						<height>80</height>
 						<aspectratio>keep</aspectratio>			
-						<texture colordiffuse="$VAR[ColorDiffusePosterListFlags]">$VAR[SourceFlagVar,skindefault/flags/source/,.png]</texture>
+						<texture colordiffuse="$VAR[ColorDiffusePosterListFlags]">$VAR[SourceFlagVar,flags/source/,.png]</texture>
 						<include>PosterListSelectionAnimation</include>
 					</control>
 					
@@ -234,12 +221,31 @@
 						<width>120</width>
 						<height>80</height>
 						<aspectratio>keep</aspectratio>
-						<texture colordiffuse="$VAR[ColorDiffusePosterListFlags]">$VAR[AudioFlagVar,skindefault/flags/audio/,.png]</texture>
+						<texture colordiffuse="$VAR[ColorDiffusePosterListFlags]">$VAR[AudioFlagVar,flags/audio/,.png]</texture>
 						<include>PosterListSelectionAnimation</include>
 					</control>				
 
 				</focusedlayout>
 
+			</control>
+			
+			<control type="image">
+				<left>1508</left>
+				<top>308</top>
+				<width>364</width>
+				<height>205</height>
+				<fadetime>100</fadetime>
+				<texture>$INFO[ListItem.Icon]</texture>
+				<bordertexture colordiffuse="$VAR[ColorDiffusePosterListPosterBorder]">colordiffuse/white100solid.png</bordertexture>
+				<bordersize>2</bordersize>
+				<visible>!Skin.HasSetting(DisablePosterListEpisodeIcon)</visible>
+				<animation type="Conditional" condition="Control.HasFocus(9050)">
+					<effect type="slide" start="0,0" end="0,-80" time="200" />
+				</animation>
+				<animation type="Conditional" condition="ControlGroup(9000).HasFocus()">
+					<effect type="fade" start="100" end="50" time="200" />
+					<effect type="zoom" center="1290,540" start="100" end="90" time="200" />
+				</animation>
 			</control>
 			
 			<!-- HIDDEN CONTROL FOR PLOT -->
@@ -262,7 +268,7 @@
 				<control type="image">
 					<width>1314</width>
 					<height>240</height>
-					<texture colordiffuse="$VAR[ColorDiffusePosterListPlot]">skindefault/colordiffuse/white100solid.png</texture>
+					<texture colordiffuse="$VAR[ColorDiffusePosterListPlot]">colordiffuse/white100solid.png</texture>
 				</control>
 				
 				<control type="textbox" id="9050">
@@ -289,7 +295,7 @@
 				<fadetime>100</fadetime>
 				<aspectratio align="left" aligny="top">stretch</aspectratio>
 				<texture fallback="DefaultAddonNone.png">$VAR[PosterVar]</texture>
-				<bordertexture colordiffuse="$VAR[ColorDiffusePosterListPosterBorder]">skindefault/colordiffuse/white100solid.png</bordertexture>
+				<bordertexture colordiffuse="$VAR[ColorDiffusePosterListPosterBorder]">colordiffuse/white100solid.png</bordertexture>
 				<bordersize>2</bordersize>
 			</control>
 			
@@ -322,8 +328,8 @@
 				<top>1010</top>
 				<width>1314</width>
 				<height>70</height>
-				<texture colordiffuse="$VAR[ColorDiffusePosterListItemCounts]">skindefault/colordiffuse/white100solid.png</texture>
-				<bordertexture colordiffuse="$VAR[ColorDiffusePosterListPosterBorder]">skindefault/colordiffuse/white100solid.png</bordertexture>
+				<texture colordiffuse="$VAR[ColorDiffusePosterListItemCounts]">colordiffuse/white100solid.png</texture>
+				<bordertexture colordiffuse="$VAR[ColorDiffusePosterListPosterBorder]">colordiffuse/white100solid.png</bordertexture>
 				<bordersize>2,2,2,0</bordersize>
 			</control>
 				

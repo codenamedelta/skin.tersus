@@ -55,7 +55,7 @@
 		<textcolor>T00-C01</textcolor>
 		<focusedcolor>T00-C01</focusedcolor>
 		<disabledcolor>T00-C04</disabledcolor>
-		<texturefocus colordiffuse="$VAR[ColorDiffuseDefaultButtons]">skindefault/colordiffuse/white100solid.png</texturefocus>
+		<texturefocus colordiffuse="$VAR[ColorDiffuseDefaultButtons]">colordiffuse/white100solid.png</texturefocus>
 		<pulseonselect>false</pulseonselect>
 	</default>
 
@@ -70,8 +70,8 @@
 		<textcolor>T00-C01</textcolor>
 		<focusedcolor>White</focusedcolor>
 		<disabledcolor>T00-C04</disabledcolor>
-		<texturefocus colordiffuse="$VAR[ColorDiffuseDefaultButtons]">skindefault/colordiffuse/white100solid.png</texturefocus>
-		<alttexturefocus colordiffuse="$VAR[ColorDiffuseDefaultButtons]">skindefault/colordiffuse/white100solid.png</alttexturefocus>
+		<texturefocus colordiffuse="$VAR[ColorDiffuseDefaultButtons]">colordiffuse/white100solid.png</texturefocus>
+		<alttexturefocus colordiffuse="$VAR[ColorDiffuseDefaultButtons]">colordiffuse/white100solid.png</alttexturefocus>
 		<align>center</align>
 		<aligny>center</aligny>
 		<pulseonselect>false</pulseonselect>
@@ -91,11 +91,11 @@
 		<disabledcolor>T00-C04</disabledcolor>
 		<radiowidth>48</radiowidth>
 		<radioheight>48</radioheight>
-		<texturefocus colordiffuse="$VAR[ColorDiffuseDefaultButtons]">skindefault/colordiffuse/white100solid.png</texturefocus>
-		<textureradioonfocus>skindefault/ui/radioonfocus.png</textureradioonfocus>
-		<textureradioonnofocus>skindefault/ui/radioonnofocus.png</textureradioonnofocus>
-		<textureradioofffocus>skindefault/ui/radioofffocus.png</textureradioofffocus>
-		<textureradiooffnofocus>skindefault/ui/radiooffnofocus.png</textureradiooffnofocus>
+		<texturefocus colordiffuse="$VAR[ColorDiffuseDefaultButtons]">colordiffuse/white100solid.png</texturefocus>
+		<textureradioonfocus>ui/radioonfocus.png</textureradioonfocus>
+		<textureradioonnofocus>ui/radioonnofocus.png</textureradioonnofocus>
+		<textureradioofffocus>ui/radioofffocus.png</textureradioofffocus>
+		<textureradiooffnofocus>ui/radiooffnofocus.png</textureradiooffnofocus>
 		<textoffsetx>15</textoffsetx>
 		<pulseonselect>false</pulseonselect>
 	</default>
@@ -109,11 +109,11 @@
 		<font>Small</font>
 		<spinwidth>48</spinwidth>
 		<spinheight>48</spinheight>
-		<texturefocus colordiffuse="$VAR[ColorDiffuseDefaultButtons]">skindefault/colordiffuse/white100solid.png</texturefocus>
-		<textureup>skindefault/ui/spinarrownfup.png</textureup>
-		<texturedown>skindefault/ui/spinarrownfdown.png</texturedown>
-		<textureupfocus>skindefault/ui/spinarrowfoup.png</textureupfocus>
-		<texturedownfocus>skindefault/ui/spinarrowfodown.png</texturedownfocus>
+		<texturefocus colordiffuse="$VAR[ColorDiffuseDefaultButtons]">colordiffuse/white100solid.png</texturefocus>
+		<textureup>ui/spinarrownfup.png</textureup>
+		<texturedown>ui/spinarrownfdown.png</texturedown>
+		<textureupfocus>ui/spinarrowfoup.png</textureupfocus>
+		<texturedownfocus>ui/spinarrowfodown.png</texturedownfocus>
 		<textcolor>T00-C01</textcolor>
 		<focusedcolor>T00-C01</focusedcolor>
 		<disabledcolor>T00-C04</disabledcolor>

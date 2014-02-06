@@ -13,7 +13,7 @@
 			<top>108</top>
 			<height>861</height>
 			<width>355</width>
-			<texture colordiffuse="$VAR[ColorDiffuseSettingsLeftPanel]">skindefault/colordiffuse/white100solid.png</texture>
+			<texture colordiffuse="$VAR[ColorDiffuseSettingsLeftPanel]">colordiffuse/white100solid.png</texture>
 		</control>
 		
 		<control type="image">
@@ -21,7 +21,7 @@
 			<top>108</top>
 			<height>861</height>
 			<width>1363</width>
-			<texture colordiffuse="$VAR[ColorDiffuseSettingsRightPanel]">skindefault/colordiffuse/white100solid.png</texture>
+			<texture colordiffuse="$VAR[ColorDiffuseSettingsRightPanel]">colordiffuse/white100solid.png</texture>
 		</control>
 		
 		<control type="image">
@@ -29,7 +29,7 @@
 			<top>128</top>
 			<height>75</height>
 			<width>355</width>
-			<texture colordiffuse="$VAR[ColorDiffuseSettingsLogo]">skindefault/colordiffuse/tersuslogo.png</texture>
+			<texture colordiffuse="$VAR[ColorDiffuseSettingsLogo]">colordiffuse/tersuslogo.png</texture>
 		</control>
 		
 		<include>GlobalDateClock</include>
@@ -66,7 +66,7 @@
 				<onclick>SettingsLevelChange</onclick>
 				<textcolor>$VAR[ColorDiffuseSettingsText]</textcolor>
 				<focusedcolor>$VAR[ColorDiffuseSettingsTextFocused]</focusedcolor>
-				<texturefocus colordiffuse="$VAR[ColorDiffuseSettingsSelection]">skindefault/colordiffuse/white100solid.png</texturefocus>
+				<texturefocus colordiffuse="$VAR[ColorDiffuseSettingsSelection]">colordiffuse/white100solid.png</texturefocus>
 		</control>
 		
 		<control type="label">
@@ -102,7 +102,7 @@
 			<font>SettingsMedium</font>
 			<textcolor>$VAR[ColorDiffuseSettingsText]</textcolor>
 			<focusedcolor>$VAR[ColorDiffuseSettingsTextFocused]</focusedcolor>
-			<texturefocus colordiffuse="$VAR[ColorDiffuseSettingsSelection]">skindefault/colordiffuse/white100solid.png</texturefocus>
+			<texturefocus colordiffuse="$VAR[ColorDiffuseSettingsSelection]">colordiffuse/white100solid.png</texturefocus>
 		</control>
 
 		<control type="radiobutton" id="8">
@@ -112,11 +112,11 @@
 			<font>SettingsMedium</font>
 			<textcolor>$VAR[ColorDiffuseSettingsText]</textcolor>
 			<focusedcolor>$VAR[ColorDiffuseSettingsTextFocused]</focusedcolor>
-			<texturefocus colordiffuse="$VAR[ColorDiffuseSettingsSelection]">skindefault/colordiffuse/white100solid.png</texturefocus>
-			<textureradioonfocus>skindefault/ui/radioonfocus.png</textureradioonfocus>
-			<textureradioonnofocus>skindefault/ui/radioonnofocus.png</textureradioonnofocus>
-			<textureradioofffocus>skindefault/ui/radioofffocus.png</textureradioofffocus>
-			<textureradiooffnofocus>skindefault/ui/radiooffnofocus.png</textureradiooffnofocus>
+			<texturefocus colordiffuse="$VAR[ColorDiffuseSettingsSelection]">colordiffuse/white100solid.png</texturefocus>
+			<textureradioonfocus>ui/radioonfocus.png</textureradioonfocus>
+			<textureradioonnofocus>ui/radioonnofocus.png</textureradioonnofocus>
+			<textureradioofffocus>ui/radioofffocus.png</textureradioofffocus>
+			<textureradiooffnofocus>ui/radiooffnofocus.png</textureradiooffnofocus>
 		</control>
 
 		<control type="spincontrolex" id="9">
@@ -125,7 +125,7 @@
 			<font>SettingsMedium</font>
 			<textcolor>$VAR[ColorDiffuseSettingsText]</textcolor>
 			<focusedcolor>$VAR[ColorDiffuseSettingsTextFocused]</focusedcolor>
-			<texturefocus colordiffuse="$VAR[ColorDiffuseSettingsSelection]">skindefault/colordiffuse/white100solid.png</texturefocus>
+			<texturefocus colordiffuse="$VAR[ColorDiffuseSettingsSelection]">colordiffuse/white100solid.png</texturefocus>
 		</control>
 
 		<control type="button" id="10">
@@ -134,7 +134,7 @@
 			<font>SettingsLarge</font>
 			<textcolor>$VAR[ColorDiffuseSettingsText]</textcolor>
 			<focusedcolor>$VAR[ColorDiffuseSettingsTextFocused]</focusedcolor>
-			<texturefocus colordiffuse="$VAR[ColorDiffuseSettingsSelection]">skindefault/colordiffuse/white100solid.png</texturefocus>
+			<texturefocus colordiffuse="$VAR[ColorDiffuseSettingsSelection]">colordiffuse/white100solid.png</texturefocus>
 		</control>
 
 	</controls>

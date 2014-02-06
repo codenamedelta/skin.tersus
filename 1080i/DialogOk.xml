@@ -19,8 +19,8 @@
 				<top>0</top>
 				<width>1920</width>
 				<height>360</height>
-				<texture colordiffuse="$VAR[ColorDiffuseCommonDialogBackground]">skindefault/colordiffuse/white100solid.png</texture>
-				<bordertexture colordiffuse="$VAR[ColorDiffuseCommonDialogBorder]">skindefault/colordiffuse/white100solid.png</bordertexture>
+				<texture colordiffuse="$VAR[ColorDiffuseCommonDialogBackground]">colordiffuse/white100solid.png</texture>
+				<bordertexture colordiffuse="$VAR[ColorDiffuseCommonDialogBorder]">colordiffuse/white100solid.png</bordertexture>
 				<bordersize>0,0,0,2</bordersize>
 			</control>
 

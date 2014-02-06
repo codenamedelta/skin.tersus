@@ -18,8 +18,8 @@
 					<width>610</width>
 					<height>90</height>
 					<align>center</align>
-					<texture colordiffuse="$VAR[ColorDiffuseExtendedProgressBackground]">skindefault/colordiffuse/white100solid.png</texture>
-					<bordertexture colordiffuse="$VAR[ColorDiffuseExtendedProgressBorder]">skindefault/colordiffuse/white100solid.png</bordertexture>
+					<texture colordiffuse="$VAR[ColorDiffuseExtendedProgressBackground]">colordiffuse/white100solid.png</texture>
+					<bordertexture colordiffuse="$VAR[ColorDiffuseExtendedProgressBorder]">colordiffuse/white100solid.png</bordertexture>
 					<bordersize>2,0,2,2</bordersize>
 				</control>
 				

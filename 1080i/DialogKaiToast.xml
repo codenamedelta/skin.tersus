@@ -15,8 +15,8 @@
 				<top>0</top>
 				<width>610</width>
 				<height>90</height>
-				<texture colordiffuse="$VAR[ColorDiffuseKaiToastBackground]">skindefault/colordiffuse/white100solid.png</texture>
-				<bordertexture colordiffuse="$VAR[ColorDiffusePosterListPosterBorder]">skindefault/colordiffuse/white100solid.png</bordertexture>
+				<texture colordiffuse="$VAR[ColorDiffuseKaiToastBackground]">colordiffuse/white100solid.png</texture>
+				<bordertexture colordiffuse="$VAR[ColorDiffusePosterListPosterBorder]">colordiffuse/white100solid.png</bordertexture>
 				<bordersize>2,0,2,2</bordersize>
 			</control>
 

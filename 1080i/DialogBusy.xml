@@ -16,7 +16,7 @@
 				<description>Busy animation</description>
 				<width>128</width>
 				<height>128</height>
-				<texture colordiffuse="$VAR[ColorDiffuseBusySmall]">skindefault/colordiffuse/busysmallsolid.png</texture>
+				<texture colordiffuse="$VAR[ColorDiffuseBusySmall]">colordiffuse/busysmallsolid.png</texture>
 				<aspectratio>keep</aspectratio>
 				<animation effect="rotate" start="0" end="360" center="64,64" time="3000" loop="true" condition="true">conditional</animation>
 			</control>
@@ -30,7 +30,7 @@
 				<description>Busy animation</description>
 				<width>256</width>
 				<height>256</height>
-				<texture colordiffuse="$VAR[ColorDiffuseBusyLarge]">skindefault/colordiffuse/busylargesolid.png</texture>
+				<texture colordiffuse="$VAR[ColorDiffuseBusyLarge]">colordiffuse/busylargesolid.png</texture>
 				<aspectratio>keep</aspectratio>
 				<animation effect="rotate" start="360" end="0" center="128,128" time="3000" loop="true" condition="true">conditional</animation>
 			</control>

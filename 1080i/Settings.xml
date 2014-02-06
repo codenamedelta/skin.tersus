@@ -13,7 +13,7 @@
 			<top>108</top>
 			<height>861</height>
 			<width>355</width>
-			<texture colordiffuse="$VAR[ColorDiffuseSettingsLeftPanel]">skindefault/colordiffuse/white100solid.png</texture>
+			<texture colordiffuse="$VAR[ColorDiffuseSettingsLeftPanel]">colordiffuse/white100solid.png</texture>
 		</control>
 		
 		<control type="image">
@@ -21,7 +21,7 @@
 			<top>108</top>
 			<height>861</height>
 			<width>1363</width>
-			<texture colordiffuse="$VAR[ColorDiffuseSettingsRightPanel]">skindefault/colordiffuse/white100solid.png</texture>
+			<texture colordiffuse="$VAR[ColorDiffuseSettingsRightPanel]">colordiffuse/white100solid.png</texture>
 		</control>
 		
 		<control type="image">
@@ -29,7 +29,7 @@
 			<top>128</top>
 			<height>75</height>
 			<width>355</width>
-			<texture colordiffuse="$VAR[ColorDiffuseSettingsLogo]">skindefault/colordiffuse/tersuslogo.png</texture>
+			<texture colordiffuse="$VAR[ColorDiffuseSettingsLogo]">colordiffuse/tersuslogo.png</texture>
 		</control>
 		
 		<include>GlobalDateClock</include>
@@ -39,7 +39,7 @@
 			<top>129</top>
 			<width>1300</width>
 			<height>193</height>
-			<texture colordiffuse="$VAR[ColorDiffuseSettingsXBMCLogo]">skindefault/colordiffuse/xbmclogo.png</texture>
+			<texture colordiffuse="$VAR[ColorDiffuseSettingsXBMCLogo]">colordiffuse/xbmclogo.png</texture>
 		</control>
 		
 		<control type="image">
@@ -87,7 +87,7 @@
 				<control type="image">
 					<width>355</width>
 					<height>75</height>
-					<texture colordiffuse="$VAR[ColorDiffuseSettingsSelection]">skindefault/colordiffuse/white100solid.png</texture>
+					<texture colordiffuse="$VAR[ColorDiffuseSettingsSelection]">colordiffuse/white100solid.png</texture>
 					<include>SettingsSelectionAnimation</include>
 				</control>
 

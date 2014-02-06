@@ -20,8 +20,8 @@
 				<left>-30</left>
 				<width>1140</width>
 				<height>650</height>
-				<texture colordiffuse="$VAR[ColorDiffuseCommonDialogBackground]">skindefault/colordiffuse/white100solid.png</texture>
-				<bordertexture colordiffuse="$VAR[ColorDiffuseCommonDialogBorder]">skindefault/colordiffuse/white100solid.png</bordertexture>
+				<texture colordiffuse="$VAR[ColorDiffuseCommonDialogBackground]">colordiffuse/white100solid.png</texture>
+				<bordertexture colordiffuse="$VAR[ColorDiffuseCommonDialogBorder]">colordiffuse/white100solid.png</bordertexture>
 				<bordersize>2,2,2,0</bordersize>
 			</control>
 
@@ -39,8 +39,8 @@
 				<posy>75</posy>
 				<width>990</width>
 				<height>75</height>
-				<texture colordiffuse="$VAR[ColorDiffuseKeyboardEditArea]">skindefault/colordiffuse/white100solid.png</texture>
-				<bordertexture colordiffuse="$VAR[ColorDiffuseCommonDialogBorder]">skindefault/colordiffuse/white100solid.png</bordertexture>
+				<texture colordiffuse="$VAR[ColorDiffuseKeyboardEditArea]">colordiffuse/white100solid.png</texture>
+				<bordertexture colordiffuse="$VAR[ColorDiffuseCommonDialogBorder]">colordiffuse/white100solid.png</bordertexture>
 					<bordersize>2,2,2,2</bordersize>
 			</control>
 
