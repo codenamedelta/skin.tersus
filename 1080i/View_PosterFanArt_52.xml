@@ -2,42 +2,42 @@
 <!-- Foundation -->
 <includes>
 
-	<include name="View_PosterList">
+	<include name="View_PosterFanArt">
 	
-		<description>List View (id=50)</description>
+		<description>List View (id=52)</description>
 
 		<control type="group">
-			<visible>Control.IsVisible(50)</visible>
+			<visible>Control.IsVisible(52)</visible>
 		
 			<!-- CONTENT PANEL BACKGROUND -->
 			<control type="image">
 				<left>558</left>
-				<top>108</top>
+				<top>732</top>
 				<width>1314</width>
-				<height>864</height>
+				<height>240</height>
 				<texture colordiffuse="$VAR[ColorDiffusePosterListContentPanel]">colordiffuse/white60.png</texture>
 			</control>
 			
-			<control type="fixedlist" id="50">
+			<control type="list" id="52">
 				<left>558</left>
-				<top>108</top>
+				<top>732</top>
 				<width>1314</width>
-				<height>864</height>
+				<height>240</height>
 				<onleft>9000</onleft>
 				<onright>9050</onright>
 				<onup>50</onup>
 				<ondown>50</ondown>
 				<pagecontrol>60</pagecontrol>
-				<focusposition>5</focusposition>
-				<viewtype label="$LOCALIZE[31950]">list</viewtype>
+				<focusposition>1</focusposition>
+				<viewtype label="$LOCALIZE[31952]">list</viewtype>
 				<scrolltime>200</scrolltime>
 				<animation type="Conditional" condition="ControlGroup(9000).HasFocus()">
 					<effect type="fade" start="100" end="50" time="200" />
-					<effect type="zoom" center="1290,540" start="100" end="90" time="200" />
+					<effect type="zoom" center="1290,850" start="100" end="90" time="200" />
 				</animation>
 				<animation type="Conditional" condition="Control.HasFocus(9050)">
 					<effect type="fade" start="100" end="0" time="200" />
-					<effect type="zoom" center="1290,540" start="100" end="90" time="200" />
+					<effect type="zoom" center="1290,850" start="100" end="90" time="200" />
 				</animation>
 				
 				<itemlayout width="1314" height="80">
@@ -231,7 +231,7 @@
 			
 			<control type="image">
 				<left>1508</left>
-				<top>308</top>
+				<top>607</top>
 				<width>364</width>
 				<height>205</height>
 				<fadetime>100</fadetime>
@@ -244,7 +244,7 @@
 				</animation>
 				<animation type="Conditional" condition="ControlGroup(9000).HasFocus()">
 					<effect type="fade" start="100" end="50" time="200" />
-					<effect type="zoom" center="1290,540" start="100" end="90" time="200" />
+					<effect type="zoom" center="1290,850" start="100" end="90" time="200" />
 				</animation>
 			</control>
 			
@@ -259,7 +259,7 @@
 			<!-- PLOT GROUP - TV, TV SEASONS, MOVIES -->
 			<control type="group">
 				<left>558</left>
-				<top>435</top>
+				<top>732</top>
 				<animation type="Conditional" condition="!Control.HasFocus(9050)">
 					<effect type="fade" start="100" end="0" time="400"/>
 				</animation>
@@ -288,13 +288,25 @@
 				
 			<!-- POSTER IMAGE -->
 			<control type="image">
-				<left>48</left>
-				<top>177</top>
-				<width>505</width>
-				<height>720</height>
+				<left>174</left>
+				<top>400</top>
+				<width>379</width>
+				<height>540</height>
 				<fadetime>100</fadetime>
 				<aspectratio align="left" aligny="top">stretch</aspectratio>
 				<texture fallback="DefaultAddonNone.png">$VAR[PosterVar]</texture>
+				<bordertexture colordiffuse="$VAR[ColorDiffusePosterListPosterBorder]">colordiffuse/white100solid.png</bordertexture>
+				<bordersize>2</bordersize>
+			</control>
+			
+			<control type="image">
+				<left>556</left>
+				<top>150</top>
+				<width>960</width>
+				<height>540</height>
+				<fadetime>100</fadetime>
+				<aspectratio align="left" aligny="top">stretch</aspectratio>
+				<texture fallback="noart.png">$INFO[ListItem.Art(fanart)]</texture>
 				<bordertexture colordiffuse="$VAR[ColorDiffusePosterListPosterBorder]">colordiffuse/white100solid.png</bordertexture>
 				<bordersize>2</bordersize>
 			</control>

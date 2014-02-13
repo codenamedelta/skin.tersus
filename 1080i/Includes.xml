@@ -5,6 +5,7 @@
 	<include file="Defaults.xml" />
 	<include file="View_PosterList_50.xml" />
 	<include file="View_PosterListLow_51.xml" />
+	<include file="View_PosterFanArt_52.xml" />
 	<include file="Variables.xml" />
 	<include file="Variables_ColorDiffuse.xml" />
 	<include file="Variables_PosterList.xml" />
