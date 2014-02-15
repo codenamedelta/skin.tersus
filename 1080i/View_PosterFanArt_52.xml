@@ -18,7 +18,7 @@
 				<texture colordiffuse="$VAR[ColorDiffusePosterListContentPanel]">colordiffuse/white60.png</texture>
 			</control>
 			
-			<control type="list" id="52">
+			<control type="fixedlist" id="52">
 				<left>558</left>
 				<top>732</top>
 				<width>1314</width>
@@ -285,31 +285,55 @@
 					<autoscroll delay="8000" time="5000" repeat="8000">Control.IsVisible(9050)</autoscroll>
 				</control>
 			</control>
+			
+			<!-- POSTER IMAGE BORDER - FIX FOR BORDER FADE -->
+			<control type="image">
+				<left>0</left>
+				<top>68</top>
+				<width>455</width>
+				<height>648</height>
+				<texture>colordiffuse/white00clear.png</texture>
+				<bordertexture colordiffuse="$VAR[ColorDiffusePosterListPosterBorder]">colordiffuse/white100solid.png</bordertexture>
+				<bordersize>2</bordersize>
+			</control>	
 				
 			<!-- POSTER IMAGE -->
 			<control type="image">
-				<left>174</left>
-				<top>400</top>
-				<width>379</width>
-				<height>540</height>
-				<fadetime>100</fadetime>
+				<left>0</left>
+				<top>68</top>
+				<width>455</width>
+				<height>648</height>
+				<fadetime>200</fadetime>
 				<aspectratio align="left" aligny="top">stretch</aspectratio>
-				<texture fallback="DefaultAddonNone.png">$VAR[PosterVar]</texture>
+				<texture>$VAR[PosterVar]</texture>
+				<bordersize>0,2,2,2</bordersize>
+			</control>
+			
+			<!-- FANART IMAGE BORDER - FIX FOR BORDER FADE -->
+			<control type="image">
+				<left>453</left>
+				<top>68</top>
+				<width>1152</width>
+				<height>648</height>
+				<aspectratio align="left" aligny="top">stretch</aspectratio>
+				<texture>colordiffuse/white00clear.png</texture>
 				<bordertexture colordiffuse="$VAR[ColorDiffusePosterListPosterBorder]">colordiffuse/white100solid.png</bordertexture>
 				<bordersize>2</bordersize>
 			</control>
 			
+			<!-- FANART IMAGE -->
 			<control type="image">
-				<left>556</left>
-				<top>150</top>
-				<width>960</width>
-				<height>540</height>
-				<fadetime>100</fadetime>
+				<left>453</left>
+				<top>68</top>
+				<width>1152</width>
+				<height>648</height>
+				<fadetime>200</fadetime>
 				<aspectratio align="left" aligny="top">stretch</aspectratio>
-				<texture fallback="noart.png">$INFO[ListItem.Art(fanart)]</texture>
-				<bordertexture colordiffuse="$VAR[ColorDiffusePosterListPosterBorder]">colordiffuse/white100solid.png</bordertexture>
+				<texture>$INFO[ListItem.Art(fanart)]</texture>
 				<bordersize>2</bordersize>
 			</control>
+			
+			
 			
 			<!-- POSSIBLE LATER INTEGRATION - WATCHED OVERLAY
 			<control type="image">
